@@ -16,9 +16,5 @@
           (setf (gethash (list kind l-name) *name-mappings*) name)))
     l-name))
 
-(defun ffi-type-transformer (type context &rest args &key &allow-other-keys)
-  (declare (ignore context args))
-  type)
-
-(defun ffi-export-predicate (symbol)
+(defun ffi-export-predicate (symbol &key &allow-other-keys)
   (not (find-symbol (symbol-name symbol) :cl-user)))

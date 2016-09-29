@@ -22,7 +22,6 @@
                                 "/usr/include/arm-linux-gnueabihf"
                                 "/usr/include/X11/")
               :ffi-name-transformer "raw-bindings-nuklear.ffi::ffi-name-transformer"
-              :ffi-type-transformer "raw-bindings-nuklear.ffi::ffi-type-transformer"
               :ffi-export-predicate "raw-bindings-nuklear.ffi::ffi-export-predicate"
               :foreign-library-spec ((:unix (:or "/home/baggers/Code/lisp/raw-bindings-nuklear/libnuklear.so" "libnuklear.so" "lib/libnuklear.so"))
                                      (:windows "libnuklear.dll")

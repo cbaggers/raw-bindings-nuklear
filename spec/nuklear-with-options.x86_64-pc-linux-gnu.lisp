@@ -693,7 +693,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (TITLE (:POINTER :CHAR))
+  (TITLE :STRING)
   (BOUNDS (:STRUCT NK-RECT))
   (FLAGS NK-FLAGS))
 
@@ -707,8 +707,8 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (NAME (:POINTER :CHAR))
-  (TITLE (:POINTER :CHAR))
+  (NAME :STRING)
+  (TITLE :STRING)
   (BOUNDS (:STRUCT NK-RECT))
   (FLAGS NK-FLAGS))
 
@@ -733,7 +733,7 @@
 (CFFI:DEFCFUN ("nk_window_find" NK-WINDOW-FIND)
     (:POINTER (:STRUCT NK-WINDOW))
   (CTX (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR)))
+  (NAME :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:600:33"
@@ -845,7 +845,7 @@
 (CFFI:DEFCFUN ("nk_window_is_collapsed" NK-WINDOW-IS-COLLAPSED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:614:33"
@@ -854,7 +854,7 @@
 (CFFI:DEFCFUN ("nk_window_is_closed" NK-WINDOW-IS-CLOSED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:615:33"
@@ -863,7 +863,7 @@
 (CFFI:DEFCFUN ("nk_window_is_hidden" NK-WINDOW-IS-HIDDEN)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:616:33"
@@ -872,7 +872,7 @@
 (CFFI:DEFCFUN ("nk_window_is_active" NK-WINDOW-IS-ACTIVE)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:617:33"
@@ -932,7 +932,7 @@
 (CFFI:DEFCFUN ("nk_window_set_focus" NK-WINDOW-SET-FOCUS)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR)))
+  (NAME :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:626:33"
@@ -941,7 +941,7 @@
 (CFFI:DEFCFUN ("nk_window_close" NK-WINDOW-CLOSE)
     :VOID
   (CTX (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR)))
+  (NAME :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:627:33"
@@ -950,7 +950,7 @@
 (CFFI:DEFCFUN ("nk_window_collapse" NK-WINDOW-COLLAPSE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (ARG3 NK-COLLAPSE-STATES))
 
 
@@ -960,7 +960,7 @@
 (CFFI:DEFCFUN ("nk_window_collapse_if" NK-WINDOW-COLLAPSE-IF)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (ARG3 NK-COLLAPSE-STATES)
   (COND :INT))
 
@@ -971,7 +971,7 @@
 (CFFI:DEFCFUN ("nk_window_show" NK-WINDOW-SHOW)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (ARG3 NK-SHOW-STATES))
 
 
@@ -981,7 +981,7 @@
 (CFFI:DEFCFUN ("nk_window_show_if" NK-WINDOW-SHOW-IF)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (ARG3 NK-SHOW-STATES)
   (COND :INT))
 
@@ -1137,7 +1137,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (TITLE (:POINTER :CHAR))
+  (TITLE :STRING)
   (ARG4 NK-FLAGS))
 
 
@@ -1156,9 +1156,9 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-TREE-TYPE)
-  (TITLE (:POINTER :CHAR))
+  (TITLE :STRING)
   (INITIAL-STATE NK-COLLAPSE-STATES)
-  (HASH (:POINTER :CHAR))
+  (HASH :STRING)
   (LEN :INT)
   (SEED :INT))
 
@@ -1171,9 +1171,9 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-TREE-TYPE)
   (ARG3 (:STRUCT NK-IMAGE))
-  (TITLE (:POINTER :CHAR))
+  (TITLE :STRING)
   (INITIAL-STATE NK-COLLAPSE-STATES)
-  (HASH (:POINTER :CHAR))
+  (HASH :STRING)
   (LEN :INT)
   (SEED :INT))
 
@@ -1192,7 +1192,7 @@
 (CFFI:DEFCFUN ("nk_text" NK-TEXT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ARG4 NK-FLAGS))
 
@@ -1203,7 +1203,7 @@
 (CFFI:DEFCFUN ("nk_text_colored" NK-TEXT-COLORED)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ARG4 NK-FLAGS)
   (ARG5 (:STRUCT NK-COLOR)))
@@ -1215,7 +1215,7 @@
 (CFFI:DEFCFUN ("nk_text_wrap" NK-TEXT-WRAP)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT))
 
 
@@ -1225,7 +1225,7 @@
 (CFFI:DEFCFUN ("nk_text_wrap_colored" NK-TEXT-WRAP-COLORED)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ARG4 (:STRUCT NK-COLOR)))
 
@@ -1236,7 +1236,7 @@
 (CFFI:DEFCFUN ("nk_label" NK-LABEL)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGN NK-FLAGS))
 
 
@@ -1246,7 +1246,7 @@
 (CFFI:DEFCFUN ("nk_label_colored" NK-LABEL-COLORED)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGN NK-FLAGS)
   (ARG4 (:STRUCT NK-COLOR)))
 
@@ -1257,7 +1257,7 @@
 (CFFI:DEFCFUN ("nk_label_wrap" NK-LABEL-WRAP)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:674:33"
@@ -1266,7 +1266,7 @@
 (CFFI:DEFCFUN ("nk_label_colored_wrap" NK-LABEL-COLORED-WRAP)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 (:STRUCT NK-COLOR)))
 
 
@@ -1285,7 +1285,7 @@
 (CFFI:DEFCFUN ("nk_button_text" NK-BUTTON-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (TITLE (:POINTER :CHAR))
+  (TITLE :STRING)
   (LEN :INT))
 
 
@@ -1295,7 +1295,7 @@
 (CFFI:DEFCFUN ("nk_button_label" NK-BUTTON-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (TITLE (:POINTER :CHAR)))
+  (TITLE :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:694:33"
@@ -1332,7 +1332,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (TEXT-ALIGNMENT NK-FLAGS))
 
 
@@ -1343,7 +1343,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -1355,7 +1355,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (IMG (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (TEXT-ALIGNMENT NK-FLAGS))
 
 
@@ -1366,7 +1366,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (IMG (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -1403,7 +1403,7 @@
 (CFFI:DEFCFUN ("nk_check_label" NK-CHECK-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ACTIVE :INT))
 
 
@@ -1413,7 +1413,7 @@
 (CFFI:DEFCFUN ("nk_check_text" NK-CHECK-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ACTIVE :INT))
 
@@ -1424,7 +1424,7 @@
 (CFFI:DEFCFUN ("nk_check_flags_label" NK-CHECK-FLAGS-LABEL)
     :UNSIGNED-INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (FLAGS :UNSIGNED-INT)
   (VALUE :UNSIGNED-INT))
 
@@ -1435,7 +1435,7 @@
 (CFFI:DEFCFUN ("nk_check_flags_text" NK-CHECK-FLAGS-TEXT)
     :UNSIGNED-INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (FLAGS :UNSIGNED-INT)
   (VALUE :UNSIGNED-INT))
@@ -1447,7 +1447,7 @@
 (CFFI:DEFCFUN ("nk_checkbox_label" NK-CHECKBOX-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ACTIVE (:POINTER :INT)))
 
 
@@ -1457,7 +1457,7 @@
 (CFFI:DEFCFUN ("nk_checkbox_text" NK-CHECKBOX-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ACTIVE (:POINTER :INT)))
 
@@ -1468,7 +1468,7 @@
 (CFFI:DEFCFUN ("nk_checkbox_flags_label" NK-CHECKBOX-FLAGS-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (FLAGS (:POINTER :UNSIGNED-INT))
   (VALUE :UNSIGNED-INT))
 
@@ -1479,7 +1479,7 @@
 (CFFI:DEFCFUN ("nk_checkbox_flags_text" NK-CHECKBOX-FLAGS-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (FLAGS (:POINTER :UNSIGNED-INT))
   (VALUE :UNSIGNED-INT))
@@ -1491,7 +1491,7 @@
 (CFFI:DEFCFUN ("nk_radio_label" NK-RADIO-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ACTIVE (:POINTER :INT)))
 
 
@@ -1501,7 +1501,7 @@
 (CFFI:DEFCFUN ("nk_radio_text" NK-RADIO-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ACTIVE (:POINTER :INT)))
 
@@ -1512,7 +1512,7 @@
 (CFFI:DEFCFUN ("nk_option_label" NK-OPTION-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ACTIVE :INT))
 
 
@@ -1522,7 +1522,7 @@
 (CFFI:DEFCFUN ("nk_option_text" NK-OPTION-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ACTIVE :INT))
 
@@ -1533,7 +1533,7 @@
 (CFFI:DEFCFUN ("nk_selectable_label" NK-SELECTABLE-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGN NK-FLAGS)
   (VALUE (:POINTER :INT)))
 
@@ -1544,7 +1544,7 @@
 (CFFI:DEFCFUN ("nk_selectable_text" NK-SELECTABLE-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ALIGN NK-FLAGS)
   (VALUE (:POINTER :INT)))
@@ -1557,7 +1557,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGN NK-FLAGS)
   (VALUE (:POINTER :INT)))
 
@@ -1569,7 +1569,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGN NK-FLAGS)
   (VALUE (:POINTER :INT)))
@@ -1581,7 +1581,7 @@
 (CFFI:DEFCFUN ("nk_select_label" NK-SELECT-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGN NK-FLAGS)
   (VALUE :INT))
 
@@ -1592,7 +1592,7 @@
 (CFFI:DEFCFUN ("nk_select_text" NK-SELECT-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ALIGN NK-FLAGS)
   (VALUE :INT))
@@ -1605,7 +1605,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGN NK-FLAGS)
   (VALUE :INT))
 
@@ -1617,7 +1617,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGN NK-FLAGS)
   (VALUE :INT))
@@ -1719,7 +1719,7 @@
 (CFFI:DEFCFUN ("nk_property_int" NK-PROPERTY-INT)
     :VOID
   (LAYOUT (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (MIN :INT)
   (VAL (:POINTER :INT))
   (MAX :INT)
@@ -1733,7 +1733,7 @@
 (CFFI:DEFCFUN ("nk_property_float" NK-PROPERTY-FLOAT)
     :VOID
   (LAYOUT (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (MIN :FLOAT)
   (VAL (:POINTER :FLOAT))
   (MAX :FLOAT)
@@ -1747,7 +1747,7 @@
 (CFFI:DEFCFUN ("nk_property_double" NK-PROPERTY-DOUBLE)
     :VOID
   (LAYOUT (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (MIN :DOUBLE)
   (VAL (:POINTER :DOUBLE))
   (MAX :DOUBLE)
@@ -1761,7 +1761,7 @@
 (CFFI:DEFCFUN ("nk_propertyi" NK-PROPERTYI)
     :INT
   (LAYOUT (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (MIN :INT)
   (VAL :INT)
   (MAX :INT)
@@ -1775,7 +1775,7 @@
 (CFFI:DEFCFUN ("nk_propertyf" NK-PROPERTYF)
     :FLOAT
   (LAYOUT (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (MIN :FLOAT)
   (VAL :FLOAT)
   (MAX :FLOAT)
@@ -1789,7 +1789,7 @@
 (CFFI:DEFCFUN ("nk_propertyd" NK-PROPERTYD)
     :DOUBLE
   (LAYOUT (:POINTER (:STRUCT NK-CONTEXT)))
-  (NAME (:POINTER :CHAR))
+  (NAME :STRING)
   (MIN :DOUBLE)
   (VAL :DOUBLE)
   (MAX :DOUBLE)
@@ -1804,7 +1804,7 @@
     NK-FLAGS
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-FLAGS)
-  (BUFFER (:POINTER :CHAR))
+  (BUFFER :STRING)
   (LEN (:POINTER :INT))
   (MAX :INT)
   (ARG6 NK-PLUGIN-FILTER))
@@ -1830,7 +1830,7 @@
     NK-FLAGS
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-FLAGS)
-  (BUFFER (:POINTER :CHAR))
+  (BUFFER :STRING)
   (MAX :INT)
   (ARG5 NK-PLUGIN-FILTER))
 
@@ -1949,7 +1949,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
   (ARG3 NK-POPUP-TYPE)
-  (ARG4 (:POINTER :CHAR))
+  (ARG4 :STRING)
   (ARG5 NK-FLAGS)
   (BOUNDS (:STRUCT NK-RECT)))
 
@@ -1989,7 +1989,7 @@
 (CFFI:DEFCFUN ("nk_combo_separator" NK-COMBO-SEPARATOR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ITEMS-SEPARATED-BY-SEPARATOR (:POINTER :CHAR))
+  (ITEMS-SEPARATED-BY-SEPARATOR :STRING)
   (SEPARATOR :INT)
   (SELECTED :INT)
   (COUNT :INT)
@@ -2003,7 +2003,7 @@
 (CFFI:DEFCFUN ("nk_combo_string" NK-COMBO-STRING)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ITEMS-SEPARATED-BY-ZEROS (:POINTER :CHAR))
+  (ITEMS-SEPARATED-BY-ZEROS :STRING)
   (SELECTED :INT)
   (COUNT :INT)
   (ITEM-HEIGHT :INT)
@@ -2043,7 +2043,7 @@
 (CFFI:DEFCFUN ("nk_combobox_string" NK-COMBOBOX-STRING)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ITEMS-SEPARATED-BY-ZEROS (:POINTER :CHAR))
+  (ITEMS-SEPARATED-BY-ZEROS :STRING)
   (SELECTED (:POINTER :INT))
   (COUNT :INT)
   (ITEM-HEIGHT :INT)
@@ -2056,7 +2056,7 @@
 (CFFI:DEFCFUN ("nk_combobox_separator" NK-COMBOBOX-SEPARATOR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ITEMS-SEPARATED-BY-SEPARATOR (:POINTER :CHAR))
+  (ITEMS-SEPARATED-BY-SEPARATOR :STRING)
   (SEPARATOR :INT)
   (SELECTED (:POINTER :INT))
   (COUNT :INT)
@@ -2087,7 +2087,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (SELECTED (:POINTER :CHAR))
+  (SELECTED :STRING)
   (ARG4 :INT)
   (MAX-HEIGHT :INT))
 
@@ -2101,7 +2101,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (SELECTED (:POINTER :CHAR))
+  (SELECTED :STRING)
   (MAX-HEIGHT :INT))
 
 
@@ -2140,7 +2140,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (SELECTED (:POINTER :CHAR))
+  (SELECTED :STRING)
   (ARG4 NK-SYMBOL-TYPE)
   (HEIGHT :INT))
 
@@ -2154,7 +2154,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (SELECTED (:POINTER :CHAR))
+  (SELECTED :STRING)
   (ARG4 :INT)
   (ARG5 NK-SYMBOL-TYPE)
   (HEIGHT :INT))
@@ -2182,7 +2182,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (SELECTED (:POINTER :CHAR))
+  (SELECTED :STRING)
   (ARG4 (:STRUCT NK-IMAGE))
   (HEIGHT :INT))
 
@@ -2196,7 +2196,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (SELECTED (:POINTER :CHAR))
+  (SELECTED :STRING)
   (ARG4 :INT)
   (ARG5 (:STRUCT NK-IMAGE))
   (HEIGHT :INT))
@@ -2208,7 +2208,7 @@
 (CFFI:DEFCFUN ("nk_combo_item_label" NK-COMBO-ITEM-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2218,7 +2218,7 @@
 (CFFI:DEFCFUN ("nk_combo_item_text" NK-COMBO-ITEM-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2230,7 +2230,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2241,7 +2241,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2253,7 +2253,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2264,7 +2264,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2305,7 +2305,7 @@
 (CFFI:DEFCFUN ("nk_contextual_item_text" NK-CONTEXTUAL-ITEM-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ALIGN NK-FLAGS))
 
@@ -2316,7 +2316,7 @@
 (CFFI:DEFCFUN ("nk_contextual_item_label" NK-CONTEXTUAL-ITEM-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGN NK-FLAGS))
 
 
@@ -2327,7 +2327,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2338,7 +2338,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (LEN :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2351,7 +2351,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2362,7 +2362,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2389,7 +2389,7 @@
 (CFFI:DEFCFUN ("nk_tooltip" NK-TOOLTIP)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:818:33"
@@ -2437,7 +2437,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGN NK-FLAGS)
   (WIDTH :FLOAT))
@@ -2452,7 +2452,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGN NK-FLAGS)
   (WIDTH :FLOAT))
 
@@ -2466,7 +2466,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 (:STRUCT NK-IMAGE))
   (WIDTH :FLOAT))
 
@@ -2480,7 +2480,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGN NK-FLAGS)
   (ARG6 (:STRUCT NK-IMAGE))
@@ -2496,7 +2496,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGN NK-FLAGS)
   (ARG5 (:STRUCT NK-IMAGE))
   (WIDTH :FLOAT))
@@ -2511,7 +2511,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 NK-SYMBOL-TYPE)
   (WIDTH :FLOAT))
 
@@ -2525,7 +2525,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGN NK-FLAGS)
   (ARG6 NK-SYMBOL-TYPE)
@@ -2541,7 +2541,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:POINTER (:STRUCT NK-PANEL)))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGN NK-FLAGS)
   (ARG5 NK-SYMBOL-TYPE)
   (WIDTH :FLOAT))
@@ -2553,7 +2553,7 @@
 (CFFI:DEFCFUN ("nk_menu_item_text" NK-MENU-ITEM-TEXT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT)
   (ALIGN NK-FLAGS))
 
@@ -2564,7 +2564,7 @@
 (CFFI:DEFCFUN ("nk_menu_item_label" NK-MENU-ITEM-LABEL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2575,7 +2575,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2586,7 +2586,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 (:STRUCT NK-IMAGE))
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (LEN :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2598,7 +2598,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT)
   (ALIGNMENT NK-FLAGS))
 
@@ -2610,7 +2610,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT)))
   (ARG2 NK-SYMBOL-TYPE)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ALIGNMENT NK-FLAGS))
 
 
@@ -2812,7 +2812,7 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:868:33"
 (CFFI:DEFCFUN ("nk_style_get_color_by_name" NK-STYLE-GET-COLOR-BY-NAME)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 NK-STYLE-COLORS))
 
 
@@ -3081,7 +3081,7 @@
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:908:33"
 (CFFI:DEFCFUN ("nk_rgb_hex" NK-RGB-HEX)
     (:STRUCT NK-COLOR)
-  (RGB (:POINTER :CHAR)))
+  (RGB :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:910:33"
@@ -3129,7 +3129,7 @@
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:916:33"
 (CFFI:DEFCFUN ("nk_rgba_hex" NK-RGBA-HEX)
     (:STRUCT NK-COLOR)
-  (RGB (:POINTER :CHAR)))
+  (RGB :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:918:33"
@@ -3228,14 +3228,14 @@
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:934:33"
 (CFFI:DEFCFUN ("nk_color_hex_rgba" NK-COLOR-HEX-RGBA)
     :VOID
-  (OUTPUT (:POINTER :CHAR))
+  (OUTPUT :STRING)
   (ARG2 (:STRUCT NK-COLOR)))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:935:33"
 (CFFI:DEFCFUN ("nk_color_hex_rgb" NK-COLOR-HEX-RGB)
     :VOID
-  (OUTPUT (:POINTER :CHAR))
+  (OUTPUT :STRING)
   (ARG2 (:STRUCT NK-COLOR)))
 
 
@@ -3502,73 +3502,73 @@
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:981:33"
 (CFFI:DEFCFUN ("nk_strlen" NK-STRLEN)
     :INT
-  (STR (:POINTER :CHAR)))
+  (STR :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:982:33"
 (CFFI:DEFCFUN ("nk_stricmp" NK-STRICMP)
     :INT
-  (S1 (:POINTER :CHAR))
-  (S2 (:POINTER :CHAR)))
+  (S1 :STRING)
+  (S2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:983:33"
 (CFFI:DEFCFUN ("nk_stricmpn" NK-STRICMPN)
     :INT
-  (S1 (:POINTER :CHAR))
-  (S2 (:POINTER :CHAR))
+  (S1 :STRING)
+  (S2 :STRING)
   (N :INT))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:984:33"
 (CFFI:DEFCFUN ("nk_strtoi" NK-STRTOI)
     :INT
-  (STR (:POINTER :CHAR))
+  (STR :STRING)
   (ENDPTR (:POINTER (:POINTER :CHAR))))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:985:33"
 (CFFI:DEFCFUN ("nk_strtof" NK-STRTOF)
     :FLOAT
-  (STR (:POINTER :CHAR))
+  (STR :STRING)
   (ENDPTR (:POINTER (:POINTER :CHAR))))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:986:33"
 (CFFI:DEFCFUN ("nk_strtod" NK-STRTOD)
     :DOUBLE
-  (STR (:POINTER :CHAR))
+  (STR :STRING)
   (ENDPTR (:POINTER (:POINTER :CHAR))))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:987:33"
 (CFFI:DEFCFUN ("nk_strfilter" NK-STRFILTER)
     :INT
-  (TEXT (:POINTER :CHAR))
-  (REGEXP (:POINTER :CHAR)))
+  (TEXT :STRING)
+  (REGEXP :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:988:33"
 (CFFI:DEFCFUN ("nk_strmatch_fuzzy_string" NK-STRMATCH-FUZZY-STRING)
     :INT
-  (STR (:POINTER :CHAR))
-  (PATTERN (:POINTER :CHAR))
+  (STR :STRING)
+  (PATTERN :STRING)
   (OUT-SCORE (:POINTER :INT)))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:989:33"
 (CFFI:DEFCFUN ("nk_strmatch_fuzzy_text" NK-STRMATCH-FUZZY-TEXT)
     :INT
-  (TXT (:POINTER :CHAR))
+  (TXT :STRING)
   (TXT-LEN :INT)
-  (PATTERN (:POINTER :CHAR))
+  (PATTERN :STRING)
   (OUT-SCORE (:POINTER :INT)))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:995:33"
 (CFFI:DEFCFUN ("nk_utf_decode" NK-UTF-DECODE)
     :INT
-  (ARG1 (:POINTER :CHAR))
+  (ARG1 :STRING)
   (ARG2 (:POINTER NK-RUNE))
   (ARG3 :INT))
 
@@ -3577,21 +3577,21 @@
 (CFFI:DEFCFUN ("nk_utf_encode" NK-UTF-ENCODE)
     :INT
   (ARG1 NK-RUNE)
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:997:33"
 (CFFI:DEFCFUN ("nk_utf_len" NK-UTF-LEN)
     :INT
-  (ARG1 (:POINTER :CHAR))
+  (ARG1 :STRING)
   (BYTE-LEN :INT))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:998:33"
 (CFFI:DEFCFUN ("nk_utf_at" NK-UTF-AT)
-    (:POINTER :CHAR)
-  (BUFFER (:POINTER :CHAR))
+    :STRING
+  (BUFFER :STRING)
   (LENGTH :INT)
   (INDEX :INT)
   (UNICODE (:POINTER NK-RUNE))
@@ -3773,7 +3773,7 @@
 (CFFI:DEFCFUN ("nk_str_append_text_char" NK-STR-APPEND-TEXT-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT))
 
 
@@ -3781,14 +3781,14 @@
 (CFFI:DEFCFUN ("nk_str_append_str_char" NK-STR-APPEND-STR-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1118:12"
 (CFFI:DEFCFUN ("nk_str_append_text_utf8" NK-STR-APPEND-TEXT-UTF8)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (ARG3 :INT))
 
 
@@ -3796,7 +3796,7 @@
 (CFFI:DEFCFUN ("nk_str_append_str_utf8" NK-STR-APPEND-STR-UTF8)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
-  (ARG2 (:POINTER :CHAR)))
+  (ARG2 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1120:12"
@@ -3819,7 +3819,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT))
 
 
@@ -3828,7 +3828,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT))
 
 
@@ -3837,7 +3837,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT))
 
 
@@ -3846,7 +3846,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
-  (ARG3 (:POINTER :CHAR)))
+  (ARG3 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1128:12"
@@ -3854,7 +3854,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
-  (ARG3 (:POINTER :CHAR))
+  (ARG3 :STRING)
   (ARG4 :INT))
 
 
@@ -3863,7 +3863,7 @@
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
-  (ARG3 (:POINTER :CHAR)))
+  (ARG3 :STRING))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1130:12"
@@ -3915,14 +3915,14 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1138:14"
 (CFFI:DEFCFUN ("nk_str_at_char" NK-STR-AT-CHAR)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1139:14"
 (CFFI:DEFCFUN ("nk_str_at_rune" NK-STR-AT-RUNE)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
   (UNICODE (:POINTER NK-RUNE))
@@ -3938,14 +3938,14 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1141:20"
 (CFFI:DEFCFUN ("nk_str_at_char_const" NK-STR-AT-CHAR-CONST)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1142:20"
 (CFFI:DEFCFUN ("nk_str_at_const" NK-STR-AT-CONST)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT)
   (UNICODE (:POINTER NK-RUNE))
@@ -3954,13 +3954,13 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1144:14"
 (CFFI:DEFCFUN ("nk_str_get" NK-STR-GET)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1145:20"
 (CFFI:DEFCFUN ("nk_str_get_const" NK-STR-GET-CONST)
-    (:POINTER :CHAR)
+    :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
@@ -4119,7 +4119,7 @@
 (CFFI:DEFCFUN ("nk_textedit_text" NK-TEXTEDIT-TEXT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (TOTAL-LEN :INT))
 
 
@@ -4153,7 +4153,7 @@
 (CFFI:DEFCFUN ("nk_textedit_paste" NK-TEXTEDIT-PASTE)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
-  (ARG2 (:POINTER :CHAR))
+  (ARG2 :STRING)
   (LEN :INT))
 
 
@@ -4217,7 +4217,7 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1361:8"
 (CFFI:DEFCSTRUCT (NK-FONT-CONFIG :SIZE 72)
-  (NEXT (:POINTER :VOID) :OFFSET 0)
+  (NEXT (:POINTER (:STRUCT NK-FONT-CONFIG)) :OFFSET 0)
   (TTF-BLOB (:POINTER :VOID) :OFFSET 8)
   (TTF-SIZE NK-SIZE :OFFSET 16)
   (TTF-DATA-OWNED-BY-ATLAS :UNSIGNED-CHAR :OFFSET 24)
@@ -4252,7 +4252,7 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1402:8"
 (CFFI:DEFCSTRUCT (NK-FONT :SIZE 128)
-  (NEXT (:POINTER :VOID) :OFFSET 0)
+  (NEXT (:POINTER (:STRUCT NK-FONT)) :OFFSET 0)
   (HANDLE (:STRUCT NK-USER-FONT) :OFFSET 8)
   (INFO (:STRUCT NK-BAKED-FONT) :OFFSET 48)
   (SCALE :FLOAT :OFFSET 80)
@@ -4368,7 +4368,7 @@
 (CFFI:DEFCFUN ("nk_font_atlas_add_from_file" NK-FONT-ATLAS-ADD-FROM-FILE)
     (:POINTER (:STRUCT NK-FONT))
   (ATLAS (:POINTER (:STRUCT NK-FONT-ATLAS)))
-  (FILE-PATH (:POINTER :CHAR))
+  (FILE-PATH :STRING)
   (HEIGHT :FLOAT)
   (ARG4 (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
@@ -4388,7 +4388,7 @@
                NK-FONT-ATLAS-ADD-COMPRESSED-BASE85)
     (:POINTER (:STRUCT NK-FONT))
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
-  (DATA (:POINTER :CHAR))
+  (DATA :STRING)
   (HEIGHT :FLOAT)
   (CONFIG (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
@@ -4822,7 +4822,7 @@
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
   (ARG2 (:STRUCT NK-RECT))
-  (TEXT (:POINTER :CHAR))
+  (TEXT :STRING)
   (LEN :INT)
   (ARG5 (:POINTER (:STRUCT NK-USER-FONT)))
   (ARG6 (:STRUCT NK-COLOR))
@@ -5322,7 +5322,7 @@
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
   (ARG2 (:POINTER (:STRUCT NK-USER-FONT)))
   (ARG3 (:STRUCT NK-RECT))
-  (TEXT (:POINTER :CHAR))
+  (TEXT :STRING)
   (LEN :INT)
   (FONT-HEIGHT :FLOAT)
   (ARG7 (:STRUCT NK-COLOR)))
@@ -5974,14 +5974,14 @@
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2591:8"
 (CFFI:DEFCSTRUCT (NK-PAGE-ELEMENT :SIZE 440)
   (DATA (:UNION NK-PAGE-DATA) :OFFSET 0)
-  (NEXT (:POINTER :VOID) :OFFSET 424)
-  (PREV (:POINTER :VOID) :OFFSET 432))
+  (NEXT (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 424)
+  (PREV (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 432))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2597:8"
 (CFFI:DEFCSTRUCT (NK-PAGE :SIZE 456)
   (SIZE :UNSIGNED-INT :OFFSET 0)
-  (NEXT (:POINTER :VOID) :OFFSET 8)
+  (NEXT (:POINTER (:STRUCT NK-PAGE)) :OFFSET 8)
   (WIN (:ARRAY (:STRUCT NK-PAGE-ELEMENT) 1) :OFFSET 16))
 
 
@@ -6905,7 +6905,7 @@
    VERTEX-COUNT VERTEX-LAYOUT VERTEX-SIZE VERTICES VERTICES W W WCHAR-MAX
    WCHAR-MIN WHERE WHERE WIDGET-COUNT WIDTH WIDTH WIN WINDOW WINT-MAX WINT-MIN
    X X X0 X0 X1 X1 X2 XADVANCE XY XYWH Y Y Y0 Y0 Y1 Y1 Y2)
- "RAW-BINDINGS-NUKLEAR")
+ '#:RAW-BINDINGS-NUKLEAR)
 
 (COMMON-LISP:DEFPARAMETER +FUNCTION-NAMES+
   '(("NK-STYLE-ITEM-HIDE" . NK-STYLE-ITEM-HIDE)

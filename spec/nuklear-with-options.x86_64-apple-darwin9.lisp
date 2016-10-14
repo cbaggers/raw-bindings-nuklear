@@ -4208,7 +4208,7 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1361:8"
 (CFFI:DEFCSTRUCT (NK-FONT-CONFIG :SIZE 72)
-  (NEXT (:POINTER :VOID) :OFFSET 0)
+  (NEXT (:POINTER (:STRUCT NK-FONT-CONFIG)) :OFFSET 0)
   (TTF-BLOB (:POINTER :VOID) :OFFSET 8)
   (TTF-SIZE NK-SIZE :OFFSET 16)
   (TTF-DATA-OWNED-BY-ATLAS :UNSIGNED-CHAR :OFFSET 24)
@@ -4243,7 +4243,7 @@
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1402:8"
 (CFFI:DEFCSTRUCT (NK-FONT :SIZE 128)
-  (NEXT (:POINTER :VOID) :OFFSET 0)
+  (NEXT (:POINTER (:STRUCT NK-FONT)) :OFFSET 0)
   (HANDLE (:STRUCT NK-USER-FONT) :OFFSET 8)
   (INFO (:STRUCT NK-BAKED-FONT) :OFFSET 48)
   (SCALE :FLOAT :OFFSET 80)
@@ -5965,14 +5965,14 @@
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2591:8"
 (CFFI:DEFCSTRUCT (NK-PAGE-ELEMENT :SIZE 440)
   (DATA (:UNION NK-PAGE-DATA) :OFFSET 0)
-  (NEXT (:POINTER :VOID) :OFFSET 424)
-  (PREV (:POINTER :VOID) :OFFSET 432))
+  (NEXT (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 424)
+  (PREV (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 432))
 
 
 ;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2597:8"
 (CFFI:DEFCSTRUCT (NK-PAGE :SIZE 456)
   (SIZE :UNSIGNED-INT :OFFSET 0)
-  (NEXT (:POINTER :VOID) :OFFSET 8)
+  (NEXT (:POINTER (:STRUCT NK-PAGE)) :OFFSET 8)
   (WIN (:ARRAY (:STRUCT NK-PAGE-ELEMENT) 1) :OFFSET 16))
 
 

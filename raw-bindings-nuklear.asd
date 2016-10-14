@@ -2,16 +2,16 @@
 
 (eval-when (:load-toplevel :execute)
   (operate 'load-op 'trivial-features)
-  (operate 'load-op 'cffi-grovel))
+  (operate 'load-op 'grovel-locally))
 
-(use-package 'cffi-grovel)
+(use-package 'grovel-locally)
 
 (asdf:defsystem #:raw-bindings-nuklear
   :description "Absolute minimal bindings of Nuklear"
   :author "Chris Bagley (Baggers) <techsnuffle@gmail.com>"
   :license "BSD 2 Clause"
-  :defsystem-depends-on (:cffi/c2ffi cffi-grovel)
-  :depends-on (#:cffi #:cffi/c2ffi #:cffi-libffi)
+  :defsystem-depends-on (:cffi/c2ffi #:grovel-locally)
+  :depends-on (#:cffi #:cffi/c2ffi #:cffi-libffi #:grovel-locally)
   :serial t
   :components
   ((:file "package")
@@ -20,7 +20,7 @@
             :serial t
             :components
             ((:static-file "nuklear.h")
-             (:wrapper-file "libspec" :soname "libnuklear" :cache-dir "cache")))
+             (:caching-wrapper-file "libspec" :soname "libnuklear" :cache-dir "cache")))
    (:module "spec"
             :components
             ((:cffi/c2ffi-file

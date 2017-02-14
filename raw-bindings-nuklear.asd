@@ -31,4 +31,4 @@
                                 "/usr/include/arm-linux-gnueabihf"
                                 "/usr/include/X11/")
               :ffi-name-transformer "raw-bindings-nuklear.ffi::ffi-name-transformer"
-              :ffi-export-predicate "raw-bindings-nuklear.ffi::ffi-export-predicate")))))
+              :ffi-name-export-predicate "raw-bindings-nuklear.ffi::ffi-export-predicate")))))

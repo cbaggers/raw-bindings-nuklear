@@ -22,8 +22,8 @@
 (CFFI:DEFCTYPE INT32-T :INT)
 
 
-;; "/usr/include/stdint.h:40:19"
-(CFFI:DEFCTYPE INT64-T :LONG)
+;; "/usr/include/stdint.h:43:24"
+(CFFI:DEFCTYPE INT64-T :LONG-LONG)
 
 
 ;; "/usr/include/stdint.h:48:24"
@@ -38,8 +38,8 @@
 (CFFI:DEFCTYPE UINT32-T :UNSIGNED-INT)
 
 
-;; "/usr/include/stdint.h:55:27"
-(CFFI:DEFCTYPE UINT64-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:58:32"
+(CFFI:DEFCTYPE UINT64-T :UNSIGNED-LONG-LONG)
 
 
 ;; "/usr/include/stdint.h:65:22"
@@ -54,8 +54,8 @@
 (CFFI:DEFCTYPE INT-LEAST32-T :INT)
 
 
-;; "/usr/include/stdint.h:69:19"
-(CFFI:DEFCTYPE INT-LEAST64-T :LONG)
+;; "/usr/include/stdint.h:72:24"
+(CFFI:DEFCTYPE INT-LEAST64-T :LONG-LONG)
 
 
 ;; "/usr/include/stdint.h:76:24"
@@ -70,153 +70,153 @@
 (CFFI:DEFCTYPE UINT-LEAST32-T :UNSIGNED-INT)
 
 
-;; "/usr/include/stdint.h:80:27"
-(CFFI:DEFCTYPE UINT-LEAST64-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:83:32"
+(CFFI:DEFCTYPE UINT-LEAST64-T :UNSIGNED-LONG-LONG)
 
 
 ;; "/usr/include/stdint.h:90:22"
 (CFFI:DEFCTYPE INT-FAST8-T :CHAR)
 
 
-;; "/usr/include/stdint.h:92:19"
-(CFFI:DEFCTYPE INT-FAST16-T :LONG)
+;; "/usr/include/stdint.h:96:15"
+(CFFI:DEFCTYPE INT-FAST16-T :INT)
 
 
-;; "/usr/include/stdint.h:93:19"
-(CFFI:DEFCTYPE INT-FAST32-T :LONG)
+;; "/usr/include/stdint.h:97:15"
+(CFFI:DEFCTYPE INT-FAST32-T :INT)
 
 
-;; "/usr/include/stdint.h:94:19"
-(CFFI:DEFCTYPE INT-FAST64-T :LONG)
+;; "/usr/include/stdint.h:99:24"
+(CFFI:DEFCTYPE INT-FAST64-T :LONG-LONG)
 
 
 ;; "/usr/include/stdint.h:103:24"
 (CFFI:DEFCTYPE UINT-FAST8-T :UNSIGNED-CHAR)
 
 
-;; "/usr/include/stdint.h:105:27"
-(CFFI:DEFCTYPE UINT-FAST16-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:109:23"
+(CFFI:DEFCTYPE UINT-FAST16-T :UNSIGNED-INT)
 
 
-;; "/usr/include/stdint.h:106:27"
-(CFFI:DEFCTYPE UINT-FAST32-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:110:23"
+(CFFI:DEFCTYPE UINT-FAST32-T :UNSIGNED-INT)
 
 
-;; "/usr/include/stdint.h:107:27"
-(CFFI:DEFCTYPE UINT-FAST64-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:112:32"
+(CFFI:DEFCTYPE UINT-FAST64-T :UNSIGNED-LONG-LONG)
 
 
-;; "/usr/include/stdint.h:119:19"
-(CFFI:DEFCTYPE INTPTR-T :LONG)
+;; "/usr/include/stdint.h:125:15"
+(CFFI:DEFCTYPE INTPTR-T :INT)
 
 
-;; "/usr/include/stdint.h:122:27"
-(CFFI:DEFCTYPE UINTPTR-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:128:23"
+(CFFI:DEFCTYPE UINTPTR-T :UNSIGNED-INT)
 
 
-;; "/usr/include/stdint.h:134:19"
-(CFFI:DEFCTYPE INTMAX-T :LONG)
+;; "/usr/include/stdint.h:138:24"
+(CFFI:DEFCTYPE INTMAX-T :LONG-LONG)
 
 
-;; "/usr/include/stdint.h:135:27"
-(CFFI:DEFCTYPE UINTMAX-T :UNSIGNED-LONG)
+;; "/usr/include/stdint.h:140:32"
+(CFFI:DEFCTYPE UINTMAX-T :UNSIGNED-LONG-LONG)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:237:21"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:237:21"
 (CFFI:DEFCTYPE NK-BYTE UINT8-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:238:21"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:238:21"
 (CFFI:DEFCTYPE NK-SHORT INT16-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:239:22"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:239:22"
 (CFFI:DEFCTYPE NK-USHORT UINT16-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:240:21"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:240:21"
 (CFFI:DEFCTYPE NK-INT INT32-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:241:22"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:241:22"
 (CFFI:DEFCTYPE NK-UINT UINT32-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:242:23"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:242:23"
 (CFFI:DEFCTYPE NK-SIZE UINTPTR-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:243:23"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:243:23"
 (CFFI:DEFCTYPE NK-PTR UINTPTR-T)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:308:17"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:308:17"
 (CFFI:DEFCTYPE NK-HASH NK-UINT)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:309:17"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:309:17"
 (CFFI:DEFCTYPE NK-FLAGS NK-UINT)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:310:17"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:310:17"
 (CFFI:DEFCTYPE NK-RUNE NK-UINT)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:333:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:333:8"
 (CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:334:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:334:8"
 (CFFI:DEFCSTRUCT (NK-ALLOCATOR :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:335:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:335:8"
 (CFFI:DEFCSTRUCT (NK-COMMAND-BUFFER :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:336:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:336:8"
 (CFFI:DEFCSTRUCT (NK-DRAW-COMMAND :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:337:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:337:8"
 (CFFI:DEFCSTRUCT (NK-CONVERT-CONFIG :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:338:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:338:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-ITEM :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:339:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:339:8"
 (CFFI:DEFCSTRUCT (NK-TEXT-EDIT :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:340:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:340:8"
 (CFFI:DEFCSTRUCT (NK-DRAW-LIST :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:341:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:341:8"
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:342:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:342:8"
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:343:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:343:8"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:344:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:344:8"
 (CFFI:DEFCSTRUCT (NK-DRAW-VERTEX-LAYOUT-ELEMENT :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:346:1"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:346:1"
 (CFFI:DEFCENUM ANON-ENUM-1
   (NK-FALSE 0)
   (NK-TRUE 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:347:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:347:8"
 (CFFI:DEFCSTRUCT (NK-COLOR :SIZE 4)
   (R NK-BYTE :OFFSET 0)
   (G NK-BYTE :OFFSET 1)
@@ -224,7 +224,7 @@
   (A NK-BYTE :OFFSET 3))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:348:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:348:8"
 (CFFI:DEFCSTRUCT (NK-COLORF :SIZE 16)
   (R :FLOAT :OFFSET 0)
   (G :FLOAT :OFFSET 4)
@@ -232,19 +232,19 @@
   (A :FLOAT :OFFSET 12))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:349:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:349:8"
 (CFFI:DEFCSTRUCT (NK-VEC2 :SIZE 8)
   (X :FLOAT :OFFSET 0)
   (Y :FLOAT :OFFSET 4))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:350:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:350:8"
 (CFFI:DEFCSTRUCT (NK-VEC2I :SIZE 4)
   (X :SHORT :OFFSET 0)
   (Y :SHORT :OFFSET 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:351:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:351:8"
 (CFFI:DEFCSTRUCT (NK-RECT :SIZE 16)
   (X :FLOAT :OFFSET 0)
   (Y :FLOAT :OFFSET 4)
@@ -252,7 +252,7 @@
   (H :FLOAT :OFFSET 12))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:352:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:352:8"
 (CFFI:DEFCSTRUCT (NK-RECTI :SIZE 8)
   (X :SHORT :OFFSET 0)
   (Y :SHORT :OFFSET 2)
@@ -260,11 +260,11 @@
   (H :SHORT :OFFSET 6))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:353:14"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:353:14"
 (CFFI:DEFCTYPE NK-GLYPH (:ARRAY :CHAR 4))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:354:36"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:354:36"
 (CFFI:DEFCUNION (ANON-UNION-2 :SIZE 8)
   (PTR (:POINTER :VOID))
   (ID :INT))
@@ -272,7 +272,7 @@
 (CFFI:DEFCTYPE NK-HANDLE (:UNION ANON-UNION-2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:355:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:355:8"
 (CFFI:DEFCSTRUCT (NK-IMAGE :SIZE 24)
   (HANDLE NK-HANDLE :OFFSET 0)
   (W :UNSIGNED-SHORT :OFFSET 8)
@@ -280,20 +280,20 @@
   (REGION (:ARRAY :UNSIGNED-SHORT 4) :OFFSET 12))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:356:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:356:8"
 (CFFI:DEFCSTRUCT (NK-CURSOR :SIZE 40)
   (IMG (:STRUCT NK-IMAGE) :OFFSET 0)
   (SIZE (:STRUCT NK-VEC2) :OFFSET 24)
   (OFFSET (:STRUCT NK-VEC2) :OFFSET 32))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:357:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:357:8"
 (CFFI:DEFCSTRUCT (NK-SCROLL :SIZE 4)
   (X :UNSIGNED-SHORT :OFFSET 0)
   (Y :UNSIGNED-SHORT :OFFSET 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:358:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:358:6"
 (CFFI:DEFCENUM NK-HEADING
   (NK-UP 0)
   (NK-RIGHT 1)
@@ -301,116 +301,116 @@
   (NK-LEFT 3))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:360:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:360:6"
 (CFFI:DEFCENUM NK-BUTTON-BEHAVIOR
   (NK-BUTTON-DEFAULT 0)
   (NK-BUTTON-REPEATER 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:361:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:361:6"
 (CFFI:DEFCENUM NK-MODIFY
   (NK-FIXED 0)
   (NK-MODIFIABLE 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:362:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:362:6"
 (CFFI:DEFCENUM NK-ORIENTATION
   (NK-VERTICAL 0)
   (NK-HORIZONTAL 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:363:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:363:6"
 (CFFI:DEFCENUM NK-COLLAPSE-STATES
   (NK-MINIMIZED 0)
   (NK-MAXIMIZED 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:364:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:364:6"
 (CFFI:DEFCENUM NK-SHOW-STATES
   (NK-HIDDEN 0)
   (NK-SHOWN 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:365:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:365:6"
 (CFFI:DEFCENUM NK-CHART-TYPE
   (NK-CHART-LINES 0)
   (NK-CHART-COLUMN 1)
   (NK-CHART-MAX 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:366:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:366:6"
 (CFFI:DEFBITFIELD NK-CHART-EVENT
   (NK-CHART-HOVERING 1)
   (NK-CHART-CLICKED 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:367:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:367:6"
 (CFFI:DEFCENUM NK-COLOR-FORMAT
   (NK-RGB 0)
   (NK-RGBA 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:368:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:368:6"
 (CFFI:DEFCENUM NK-POPUP-TYPE
   (NK-POPUP-STATIC 0)
   (NK-POPUP-DYNAMIC 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:369:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:369:6"
 (CFFI:DEFCENUM NK-LAYOUT-FORMAT
   (NK-DYNAMIC 0)
   (NK-STATIC 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:370:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:370:6"
 (CFFI:DEFCENUM NK-TREE-TYPE
   (NK-TREE-NODE 0)
   (NK-TREE-TAB 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:371:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:371:6"
 (CFFI:DEFCENUM NK-ANTI-ALIASING
   (NK-ANTI-ALIASING-OFF 0)
   (NK-ANTI-ALIASING-ON 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:373:16"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:373:16"
 (CFFI:DEFCTYPE NK-PLUGIN-ALLOC FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:374:16"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:374:16"
 (CFFI:DEFCTYPE NK-PLUGIN-FREE FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:375:14"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:375:14"
 (CFFI:DEFCTYPE NK-PLUGIN-FILTER FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:376:15"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:376:15"
 (CFFI:DEFCTYPE NK-PLUGIN-PASTE FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:377:15"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:377:15"
 (CFFI:DEFCTYPE NK-PLUGIN-COPY FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:379:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:379:8"
 (CFFI:DEFCSTRUCT (NK-ALLOCATOR :SIZE 24)
   (USERDATA NK-HANDLE :OFFSET 0)
   (ALLOC NK-PLUGIN-ALLOC :OFFSET 8)
   (FREE NK-PLUGIN-FREE :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:385:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:385:8"
 (CFFI:DEFCSTRUCT (NK-DRAW-NULL-TEXTURE :SIZE 16)
   (TEXTURE NK-HANDLE :OFFSET 0)
   (UV (:STRUCT NK-VEC2) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:389:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:389:8"
 (CFFI:DEFCSTRUCT (NK-DRAW-VERTEX-LAYOUT-ELEMENT :SIZE 0))
 
-(CFFI:DEFCSTRUCT (NK-CONVERT-CONFIG :SIZE 64)
+(CFFI:DEFCSTRUCT (NK-CONVERT-CONFIG :SIZE 56)
   (GLOBAL-ALPHA :FLOAT :OFFSET 0)
   (LINE-AA NK-ANTI-ALIASING :OFFSET 4)
   (SHAPE-AA NK-ANTI-ALIASING :OFFSET 8)
@@ -420,10 +420,10 @@
   (NULL (:STRUCT NK-DRAW-NULL-TEXTURE) :OFFSET 24)
   (VERTEX-LAYOUT (:POINTER (:STRUCT NK-DRAW-VERTEX-LAYOUT-ELEMENT)) :OFFSET 40)
   (VERTEX-SIZE NK-SIZE :OFFSET 48)
-  (VERTEX-ALIGNMENT NK-SIZE :OFFSET 56))
+  (VERTEX-ALIGNMENT NK-SIZE :OFFSET 52))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:402:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:402:6"
 (CFFI:DEFCENUM NK-SYMBOL-TYPE
   (NK-SYMBOL-NONE 0)
   (NK-SYMBOL-X 1)
@@ -441,7 +441,7 @@
   (NK-SYMBOL-MAX 13))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:419:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:419:6"
 (CFFI:DEFCENUM NK-KEYS
   (NK-KEY-NONE 0)
   (NK-KEY-SHIFT 1)
@@ -475,7 +475,7 @@
   (NK-KEY-MAX 29))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:457:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:457:6"
 (CFFI:DEFCENUM NK-BUTTONS
   (NK-BUTTON-LEFT 0)
   (NK-BUTTON-MIDDLE 1)
@@ -483,7 +483,7 @@
   (NK-BUTTON-MAX 3))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:464:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:464:6"
 (CFFI:DEFCENUM NK-STYLE-COLORS
   (NK-COLOR-TEXT 0)
   (NK-COLOR-WINDOW 1)
@@ -516,7 +516,7 @@
   (NK-COLOR-COUNT 28))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:496:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:496:6"
 (CFFI:DEFCENUM NK-STYLE-CURSOR
   (NK-CURSOR-ARROW 0)
   (NK-CURSOR-TEXT 1)
@@ -528,14 +528,14 @@
   (NK-CURSOR-COUNT 7))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:507:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:507:6"
 (CFFI:DEFCENUM NK-WIDGET-LAYOUT-STATES
   (NK-WIDGET-INVALID 0)
   (NK-WIDGET-VALID 1)
   (NK-WIDGET-ROM 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:514:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:514:6"
 (CFFI:DEFCENUM NK-WIDGET-STATES
   (NK-WIDGET-STATE-MODIFIED 2)
   (NK-WIDGET-STATE-INACTIVE 4)
@@ -547,7 +547,7 @@
   (NK-WIDGET-STATE-ACTIVE 34))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:526:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:526:6"
 (CFFI:DEFBITFIELD NK-TEXT-ALIGN
   (NK-TEXT-ALIGN-LEFT 1)
   (NK-TEXT-ALIGN-CENTERED 2)
@@ -557,14 +557,14 @@
   (NK-TEXT-ALIGN-BOTTOM 32))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:534:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:534:6"
 (CFFI:DEFCENUM NK-TEXT-ALIGNMENT
   (NK-TEXT-LEFT 17)
   (NK-TEXT-CENTERED 18)
   (NK-TEXT-RIGHT 20))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:540:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:540:6"
 (CFFI:DEFBITFIELD NK-EDIT-FLAGS
   (NK-EDIT-DEFAULT 0)
   (NK-EDIT-READ-ONLY 1)
@@ -581,7 +581,7 @@
   (NK-EDIT-GOTO-END-ON-ACTIVATE 4096))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:555:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:555:6"
 (CFFI:DEFCENUM NK-EDIT-TYPES
   (NK-EDIT-SIMPLE 512)
   (NK-EDIT-FIELD 608)
@@ -589,7 +589,7 @@
   (NK-EDIT-EDITOR 2152))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:561:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:561:6"
 (CFFI:DEFBITFIELD NK-EDIT-EVENTS
   (NK-EDIT-ACTIVE 1)
   (NK-EDIT-INACTIVE 2)
@@ -598,7 +598,7 @@
   (NK-EDIT-COMMITED 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:569:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:569:6"
 (CFFI:DEFBITFIELD NK-PANEL-FLAGS
   (NK-WINDOW-BORDER 1)
   (NK-WINDOW-MOVABLE 2)
@@ -611,7 +611,7 @@
   (NK-WINDOW-BACKGROUND 256))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:583:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:583:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 0))
@@ -622,7 +622,7 @@
   (ARG2 (:POINTER (:STRUCT NK-USER-FONT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:585:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:585:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 0))
@@ -635,7 +635,7 @@
   (ARG4 (:POINTER (:STRUCT NK-USER-FONT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:586:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:586:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 0))
@@ -652,7 +652,7 @@
   (ARG4 (:POINTER (:STRUCT NK-USER-FONT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:587:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:587:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 0))
@@ -664,7 +664,7 @@
   (ARG3 (:POINTER (:STRUCT NK-USER-FONT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:588:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:588:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_clear" NK-CLEAR)
@@ -672,7 +672,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:589:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:589:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_free" NK-FREE)
@@ -680,7 +680,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:595:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:595:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -694,7 +694,7 @@
   (FLAGS NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:596:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:596:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -709,7 +709,7 @@
   (FLAGS NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:597:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:597:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_end" NK-END)
@@ -717,11 +717,11 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:599:15"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:599:15"
 (CFFI:DEFCSTRUCT (NK-WINDOW :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:599:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:599:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-WINDOW :SIZE 0))
@@ -732,7 +732,7 @@
   (NAME :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:600:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:600:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_bounds" NK-WINDOW-GET-BOUNDS)
@@ -740,7 +740,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:601:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:601:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_position" NK-WINDOW-GET-POSITION)
@@ -748,7 +748,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:602:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:602:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_size" NK-WINDOW-GET-SIZE)
@@ -756,7 +756,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:603:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:603:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_width" NK-WINDOW-GET-WIDTH)
@@ -764,7 +764,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:604:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:604:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_height" NK-WINDOW-GET-HEIGHT)
@@ -772,7 +772,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:605:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:605:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -782,7 +782,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:606:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:606:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_content_region" NK-WINDOW-GET-CONTENT-REGION)
@@ -790,7 +790,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:607:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:607:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_content_region_min"
@@ -799,7 +799,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:608:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:608:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_content_region_max"
@@ -808,7 +808,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:609:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:609:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_get_content_region_size"
@@ -817,7 +817,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:610:34"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:610:34"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-COMMAND-BUFFER :SIZE 0))
@@ -827,7 +827,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:612:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:612:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_has_focus" NK-WINDOW-HAS-FOCUS)
@@ -835,7 +835,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:613:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:613:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_is_collapsed" NK-WINDOW-IS-COLLAPSED)
@@ -844,7 +844,7 @@
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:614:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:614:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_is_closed" NK-WINDOW-IS-CLOSED)
@@ -853,7 +853,7 @@
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:615:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:615:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_is_hidden" NK-WINDOW-IS-HIDDEN)
@@ -862,7 +862,7 @@
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:616:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:616:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_is_active" NK-WINDOW-IS-ACTIVE)
@@ -871,7 +871,7 @@
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:617:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:617:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_is_hovered" NK-WINDOW-IS-HOVERED)
@@ -879,7 +879,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:618:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:618:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_is_any_hovered" NK-WINDOW-IS-ANY-HOVERED)
@@ -887,7 +887,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:619:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:619:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_item_is_any_active" NK-ITEM-IS-ANY-ACTIVE)
@@ -895,7 +895,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:621:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:621:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_set_bounds" NK-WINDOW-SET-BOUNDS)
@@ -904,7 +904,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:622:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:622:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_set_position" NK-WINDOW-SET-POSITION)
@@ -913,7 +913,7 @@
   (ARG2 (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:623:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:623:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_set_size" NK-WINDOW-SET-SIZE)
@@ -922,7 +922,7 @@
   (ARG2 (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:624:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:624:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_set_focus" NK-WINDOW-SET-FOCUS)
@@ -931,7 +931,7 @@
   (NAME :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:626:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:626:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_close" NK-WINDOW-CLOSE)
@@ -940,7 +940,7 @@
   (NAME :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:627:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:627:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_collapse" NK-WINDOW-COLLAPSE)
@@ -950,7 +950,7 @@
   (ARG3 NK-COLLAPSE-STATES))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:628:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:628:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_collapse_if" NK-WINDOW-COLLAPSE-IF)
@@ -961,7 +961,7 @@
   (COND :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:629:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:629:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_show" NK-WINDOW-SHOW)
@@ -971,7 +971,7 @@
   (ARG3 NK-SHOW-STATES))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:630:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:630:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_window_show_if" NK-WINDOW-SHOW-IF)
@@ -982,7 +982,7 @@
   (COND :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:633:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:633:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_row_dynamic" NK-LAYOUT-ROW-DYNAMIC)
@@ -992,7 +992,7 @@
   (COLS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:634:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:634:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_row_static" NK-LAYOUT-ROW-STATIC)
@@ -1003,7 +1003,7 @@
   (COLS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:636:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:636:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_row_begin" NK-LAYOUT-ROW-BEGIN)
@@ -1014,7 +1014,7 @@
   (COLS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:637:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:637:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_row_push" NK-LAYOUT-ROW-PUSH)
@@ -1023,7 +1023,7 @@
   (VALUE :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:638:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:638:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_row_end" NK-LAYOUT-ROW-END)
@@ -1031,7 +1031,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:639:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:639:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_row" NK-LAYOUT-ROW)
@@ -1043,7 +1043,7 @@
   (RATIO (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:641:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:641:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_begin" NK-LAYOUT-SPACE-BEGIN)
@@ -1054,7 +1054,7 @@
   (WIDGET-COUNT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:642:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:642:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_push" NK-LAYOUT-SPACE-PUSH)
@@ -1063,7 +1063,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:643:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:643:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_end" NK-LAYOUT-SPACE-END)
@@ -1071,7 +1071,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:645:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:645:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_bounds" NK-LAYOUT-SPACE-BOUNDS)
@@ -1079,7 +1079,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:646:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:646:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_to_screen" NK-LAYOUT-SPACE-TO-SCREEN)
@@ -1088,7 +1088,7 @@
   (ARG2 (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:647:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:647:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_to_local" NK-LAYOUT-SPACE-TO-LOCAL)
@@ -1097,7 +1097,7 @@
   (ARG2 (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:648:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:648:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_rect_to_screen" NK-LAYOUT-SPACE-RECT-TO-SCREEN)
@@ -1106,7 +1106,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:649:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:649:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_space_rect_to_local" NK-LAYOUT-SPACE-RECT-TO-LOCAL)
@@ -1115,7 +1115,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:650:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:650:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_layout_ratio_from_pixel" NK-LAYOUT-RATIO-FROM-PIXEL)
@@ -1124,7 +1124,7 @@
   (PIXEL-WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:653:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:653:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -1137,7 +1137,7 @@
   (ARG4 NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:654:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:654:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_group_end" NK-GROUP-END)
@@ -1145,7 +1145,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:659:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:659:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_tree_push_hashed" NK-TREE-PUSH-HASHED)
@@ -1159,7 +1159,7 @@
   (SEED :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:662:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:662:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_tree_image_push_hashed" NK-TREE-IMAGE-PUSH-HASHED)
@@ -1174,7 +1174,7 @@
   (SEED :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:663:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:663:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_tree_pop" NK-TREE-POP)
@@ -1182,7 +1182,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:666:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:666:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_text" NK-TEXT)
@@ -1193,7 +1193,7 @@
   (ARG4 NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:667:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:667:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_text_colored" NK-TEXT-COLORED)
@@ -1205,7 +1205,7 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:668:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:668:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_text_wrap" NK-TEXT-WRAP)
@@ -1215,7 +1215,7 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:669:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:669:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_text_wrap_colored" NK-TEXT-WRAP-COLORED)
@@ -1226,7 +1226,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:671:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:671:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_label" NK-LABEL)
@@ -1236,7 +1236,7 @@
   (ALIGN NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:672:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:672:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_label_colored" NK-LABEL-COLORED)
@@ -1247,7 +1247,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:673:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:673:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_label_wrap" NK-LABEL-WRAP)
@@ -1256,7 +1256,7 @@
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:674:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:674:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_label_colored_wrap" NK-LABEL-COLORED-WRAP)
@@ -1266,7 +1266,7 @@
   (ARG3 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:675:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:675:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_image" NK-IMAGE)
@@ -1275,7 +1275,7 @@
   (ARG2 (:STRUCT NK-IMAGE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:692:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:692:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_text" NK-BUTTON-TEXT)
@@ -1285,7 +1285,7 @@
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:693:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:693:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_label" NK-BUTTON-LABEL)
@@ -1294,7 +1294,7 @@
   (TITLE :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:694:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:694:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_color" NK-BUTTON-COLOR)
@@ -1303,7 +1303,7 @@
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:695:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:695:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_symbol" NK-BUTTON-SYMBOL)
@@ -1312,7 +1312,7 @@
   (ARG2 NK-SYMBOL-TYPE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:696:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:696:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_image" NK-BUTTON-IMAGE)
@@ -1321,7 +1321,7 @@
   (IMG (:STRUCT NK-IMAGE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:697:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:697:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_symbol_label" NK-BUTTON-SYMBOL-LABEL)
@@ -1332,7 +1332,7 @@
   (TEXT-ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:698:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:698:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_symbol_text" NK-BUTTON-SYMBOL-TEXT)
@@ -1344,7 +1344,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:699:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:699:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_image_label" NK-BUTTON-IMAGE-LABEL)
@@ -1355,7 +1355,7 @@
   (TEXT-ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:700:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:700:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_image_text" NK-BUTTON-IMAGE-TEXT)
@@ -1367,7 +1367,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:702:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:702:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_set_behavior" NK-BUTTON-SET-BEHAVIOR)
@@ -1376,7 +1376,7 @@
   (ARG2 NK-BUTTON-BEHAVIOR))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:703:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:703:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_push_behavior" NK-BUTTON-PUSH-BEHAVIOR)
@@ -1385,7 +1385,7 @@
   (ARG2 NK-BUTTON-BEHAVIOR))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:704:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:704:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_button_pop_behavior" NK-BUTTON-POP-BEHAVIOR)
@@ -1393,7 +1393,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:707:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:707:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_check_label" NK-CHECK-LABEL)
@@ -1403,7 +1403,7 @@
   (ACTIVE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:708:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:708:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_check_text" NK-CHECK-TEXT)
@@ -1414,7 +1414,7 @@
   (ACTIVE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:709:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:709:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_check_flags_label" NK-CHECK-FLAGS-LABEL)
@@ -1425,7 +1425,7 @@
   (VALUE :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:710:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:710:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_check_flags_text" NK-CHECK-FLAGS-TEXT)
@@ -1437,7 +1437,7 @@
   (VALUE :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:711:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:711:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_checkbox_label" NK-CHECKBOX-LABEL)
@@ -1447,7 +1447,7 @@
   (ACTIVE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:712:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:712:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_checkbox_text" NK-CHECKBOX-TEXT)
@@ -1458,7 +1458,7 @@
   (ACTIVE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:713:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:713:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_checkbox_flags_label" NK-CHECKBOX-FLAGS-LABEL)
@@ -1469,7 +1469,7 @@
   (VALUE :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:714:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:714:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_checkbox_flags_text" NK-CHECKBOX-FLAGS-TEXT)
@@ -1481,7 +1481,7 @@
   (VALUE :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:717:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:717:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_radio_label" NK-RADIO-LABEL)
@@ -1491,7 +1491,7 @@
   (ACTIVE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:718:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:718:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_radio_text" NK-RADIO-TEXT)
@@ -1502,7 +1502,7 @@
   (ACTIVE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:719:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:719:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_option_label" NK-OPTION-LABEL)
@@ -1512,7 +1512,7 @@
   (ACTIVE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:720:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:720:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_option_text" NK-OPTION-TEXT)
@@ -1523,7 +1523,7 @@
   (ACTIVE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:723:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:723:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_selectable_label" NK-SELECTABLE-LABEL)
@@ -1534,7 +1534,7 @@
   (VALUE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:724:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:724:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_selectable_text" NK-SELECTABLE-TEXT)
@@ -1546,7 +1546,7 @@
   (VALUE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:725:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:725:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_selectable_image_label" NK-SELECTABLE-IMAGE-LABEL)
@@ -1558,7 +1558,7 @@
   (VALUE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:726:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:726:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_selectable_image_text" NK-SELECTABLE-IMAGE-TEXT)
@@ -1571,7 +1571,7 @@
   (VALUE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:728:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:728:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_select_label" NK-SELECT-LABEL)
@@ -1582,7 +1582,7 @@
   (VALUE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:729:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:729:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_select_text" NK-SELECT-TEXT)
@@ -1594,7 +1594,7 @@
   (VALUE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:730:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:730:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_select_image_label" NK-SELECT-IMAGE-LABEL)
@@ -1606,7 +1606,7 @@
   (VALUE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:731:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:731:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_select_image_text" NK-SELECT-IMAGE-TEXT)
@@ -1619,7 +1619,7 @@
   (VALUE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:734:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:734:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_slide_float" NK-SLIDE-FLOAT)
@@ -1631,7 +1631,7 @@
   (STEP :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:735:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:735:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_slide_int" NK-SLIDE-INT)
@@ -1643,7 +1643,7 @@
   (STEP :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:736:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:736:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_slider_float" NK-SLIDER-FLOAT)
@@ -1655,7 +1655,7 @@
   (STEP :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:737:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:737:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_slider_int" NK-SLIDER-INT)
@@ -1667,7 +1667,7 @@
   (STEP :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:740:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:740:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_progress" NK-PROGRESS)
@@ -1678,7 +1678,7 @@
   (MODIFYABLE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:741:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:741:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_prog" NK-PROG)
@@ -1689,7 +1689,7 @@
   (MODIFYABLE :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:744:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:744:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_color_picker" NK-COLOR-PICKER)
@@ -1699,7 +1699,7 @@
   (ARG3 NK-COLOR-FORMAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:745:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:745:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_color_pick" NK-COLOR-PICK)
@@ -1709,7 +1709,7 @@
   (ARG3 NK-COLOR-FORMAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:748:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:748:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_property_int" NK-PROPERTY-INT)
@@ -1723,7 +1723,7 @@
   (INC-PER-PIXEL :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:749:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:749:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_property_float" NK-PROPERTY-FLOAT)
@@ -1737,7 +1737,7 @@
   (INC-PER-PIXEL :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:750:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:750:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_property_double" NK-PROPERTY-DOUBLE)
@@ -1751,7 +1751,7 @@
   (INC-PER-PIXEL :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:751:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:751:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_propertyi" NK-PROPERTYI)
@@ -1765,7 +1765,7 @@
   (INC-PER-PIXEL :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:752:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:752:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_propertyf" NK-PROPERTYF)
@@ -1779,7 +1779,7 @@
   (INC-PER-PIXEL :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:753:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:753:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_propertyd" NK-PROPERTYD)
@@ -1793,7 +1793,7 @@
   (INC-PER-PIXEL :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:756:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:756:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_edit_string" NK-EDIT-STRING)
@@ -1806,7 +1806,7 @@
   (ARG6 NK-PLUGIN-FILTER))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:757:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:757:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-TEXT-EDIT :SIZE 0))
@@ -1819,7 +1819,7 @@
   (ARG4 NK-PLUGIN-FILTER))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:758:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:758:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_edit_string_zero_terminated" NK-EDIT-STRING-ZERO-TERMINATED)
@@ -1831,7 +1831,7 @@
   (ARG5 NK-PLUGIN-FILTER))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:761:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:761:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_begin" NK-CHART-BEGIN)
@@ -1843,7 +1843,7 @@
   (MAX :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:762:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:762:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_begin_colored" NK-CHART-BEGIN-COLORED)
@@ -1857,7 +1857,7 @@
   (MAX :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:763:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:763:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_add_slot" NK-CHART-ADD-SLOT)
@@ -1869,7 +1869,7 @@
   (MAX-VALUE :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:764:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:764:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_add_slot_colored" NK-CHART-ADD-SLOT-COLORED)
@@ -1883,7 +1883,7 @@
   (MAX-VALUE :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:765:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:765:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_push" NK-CHART-PUSH)
@@ -1892,7 +1892,7 @@
   (ARG2 :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:766:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:766:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_push_slot" NK-CHART-PUSH-SLOT)
@@ -1902,7 +1902,7 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:767:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:767:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_chart_end" NK-CHART-END)
@@ -1910,7 +1910,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:768:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:768:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_plot" NK-PLOT)
@@ -1922,7 +1922,7 @@
   (OFFSET :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:769:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:769:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_plot_function" NK-PLOT-FUNCTION)
@@ -1935,7 +1935,7 @@
   (OFFSET :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:772:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:772:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -1950,7 +1950,7 @@
   (BOUNDS (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:773:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:773:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_popup_close" NK-POPUP-CLOSE)
@@ -1958,7 +1958,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:774:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:774:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_popup_end" NK-POPUP-END)
@@ -1966,7 +1966,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:777:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:777:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo" NK-COMBO)
@@ -1979,7 +1979,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:778:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:778:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_separator" NK-COMBO-SEPARATOR)
@@ -1993,7 +1993,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:779:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:779:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_string" NK-COMBO-STRING)
@@ -2006,7 +2006,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:780:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:780:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_callback" NK-COMBO-CALLBACK)
@@ -2020,7 +2020,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:781:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:781:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combobox" NK-COMBOBOX)
@@ -2033,7 +2033,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:782:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:782:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combobox_string" NK-COMBOBOX-STRING)
@@ -2046,7 +2046,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:783:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:783:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combobox_separator" NK-COMBOBOX-SEPARATOR)
@@ -2060,7 +2060,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:784:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:784:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combobox_callback" NK-COMBOBOX-CALLBACK)
@@ -2074,7 +2074,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:787:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:787:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2088,7 +2088,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:788:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:788:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2101,7 +2101,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:789:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:789:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2114,7 +2114,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:790:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:790:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2127,7 +2127,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:791:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:791:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2141,7 +2141,7 @@
   (HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:792:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:792:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2156,7 +2156,7 @@
   (HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:793:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:793:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2169,7 +2169,7 @@
   (MAX-HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:794:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:794:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2183,7 +2183,7 @@
   (HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:795:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:795:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2198,7 +2198,7 @@
   (HEIGHT :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:796:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:796:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_item_label" NK-COMBO-ITEM-LABEL)
@@ -2208,7 +2208,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:797:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:797:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_item_text" NK-COMBO-ITEM-TEXT)
@@ -2219,7 +2219,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:798:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:798:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_item_image_label" NK-COMBO-ITEM-IMAGE-LABEL)
@@ -2230,7 +2230,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:799:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:799:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_item_image_text" NK-COMBO-ITEM-IMAGE-TEXT)
@@ -2242,7 +2242,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:800:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:800:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_item_symbol_label" NK-COMBO-ITEM-SYMBOL-LABEL)
@@ -2253,7 +2253,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:801:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:801:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_item_symbol_text" NK-COMBO-ITEM-SYMBOL-TEXT)
@@ -2265,7 +2265,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:802:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:802:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_close" NK-COMBO-CLOSE)
@@ -2273,7 +2273,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:803:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:803:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_combo_end" NK-COMBO-END)
@@ -2281,7 +2281,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:806:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:806:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2295,7 +2295,7 @@
   (TRIGGER-BOUNDS (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:807:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:807:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_item_text" NK-CONTEXTUAL-ITEM-TEXT)
@@ -2306,7 +2306,7 @@
   (ALIGN NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:808:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:808:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_item_label" NK-CONTEXTUAL-ITEM-LABEL)
@@ -2316,7 +2316,7 @@
   (ALIGN NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:809:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:809:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_item_image_label" NK-CONTEXTUAL-ITEM-IMAGE-LABEL)
@@ -2327,7 +2327,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:810:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:810:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_item_image_text" NK-CONTEXTUAL-ITEM-IMAGE-TEXT)
@@ -2339,7 +2339,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:811:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:811:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_item_symbol_label"
@@ -2351,7 +2351,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:812:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:812:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_item_symbol_text" NK-CONTEXTUAL-ITEM-SYMBOL-TEXT)
@@ -2363,7 +2363,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:813:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:813:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_close" NK-CONTEXTUAL-CLOSE)
@@ -2371,7 +2371,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:814:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:814:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_contextual_end" NK-CONTEXTUAL-END)
@@ -2379,7 +2379,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:817:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:817:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_tooltip" NK-TOOLTIP)
@@ -2388,7 +2388,7 @@
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:818:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:818:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2400,7 +2400,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:819:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:819:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_tooltip_end" NK-TOOLTIP-END)
@@ -2408,7 +2408,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:822:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:822:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menubar_begin" NK-MENUBAR-BEGIN)
@@ -2416,7 +2416,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:823:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:823:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menubar_end" NK-MENUBAR-END)
@@ -2424,7 +2424,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:824:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:824:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2439,7 +2439,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:825:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:825:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2453,7 +2453,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:826:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:826:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2467,7 +2467,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:827:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:827:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2483,7 +2483,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:828:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:828:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2498,7 +2498,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:829:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:829:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2512,7 +2512,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:830:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:830:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2528,7 +2528,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:831:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:831:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-PANEL :SIZE 0))
@@ -2543,7 +2543,7 @@
   (WIDTH :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:832:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:832:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_item_text" NK-MENU-ITEM-TEXT)
@@ -2554,7 +2554,7 @@
   (ALIGN NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:833:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:833:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_item_label" NK-MENU-ITEM-LABEL)
@@ -2564,7 +2564,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:834:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:834:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_item_image_label" NK-MENU-ITEM-IMAGE-LABEL)
@@ -2575,7 +2575,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:835:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:835:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_item_image_text" NK-MENU-ITEM-IMAGE-TEXT)
@@ -2587,7 +2587,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:836:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:836:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_item_symbol_text" NK-MENU-ITEM-SYMBOL-TEXT)
@@ -2599,7 +2599,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:837:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:837:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_item_symbol_label" NK-MENU-ITEM-SYMBOL-LABEL)
@@ -2610,7 +2610,7 @@
   (ALIGNMENT NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:838:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:838:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_close" NK-MENU-CLOSE)
@@ -2618,7 +2618,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:839:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:839:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_menu_end" NK-MENU-END)
@@ -2626,7 +2626,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:844:41"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:844:41"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 0))
@@ -2644,7 +2644,7 @@
   (ARG5 (:POINTER (:STRUCT NK-CONVERT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:847:41"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:847:41"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 0))
@@ -2657,7 +2657,7 @@
   (ARG2 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:848:41"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:848:41"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 0))
@@ -2670,7 +2670,7 @@
   (ARG2 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:849:41"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:849:41"
 (CFFI:DEFCSTRUCT (NK-DRAW-COMMAND :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 0))
@@ -2686,7 +2686,7 @@
   (ARG3 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:853:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:853:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_begin" NK-INPUT-BEGIN)
@@ -2694,7 +2694,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:854:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:854:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_motion" NK-INPUT-MOTION)
@@ -2704,7 +2704,7 @@
   (Y :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:855:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:855:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_key" NK-INPUT-KEY)
@@ -2714,7 +2714,7 @@
   (DOWN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:856:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:856:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_button" NK-INPUT-BUTTON)
@@ -2726,7 +2726,7 @@
   (DOWN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:857:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:857:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_scroll" NK-INPUT-SCROLL)
@@ -2735,7 +2735,7 @@
   (Y :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:858:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:858:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_char" NK-INPUT-CHAR)
@@ -2744,7 +2744,7 @@
   (ARG2 :CHAR))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:859:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:859:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_glyph" NK-INPUT-GLYPH)
@@ -2753,7 +2753,7 @@
   (ARG2 NK-GLYPH))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:860:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:860:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_unicode" NK-INPUT-UNICODE)
@@ -2762,7 +2762,7 @@
   (ARG2 NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:861:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:861:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_input_end" NK-INPUT-END)
@@ -2770,7 +2770,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:864:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:864:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_default" NK-STYLE-DEFAULT)
@@ -2778,7 +2778,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:865:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:865:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_from_table" NK-STYLE-FROM-TABLE)
@@ -2787,7 +2787,7 @@
   (ARG2 (:POINTER (:STRUCT NK-COLOR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:866:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:866:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_load_cursor" NK-STYLE-LOAD-CURSOR)
@@ -2797,7 +2797,7 @@
   (ARG3 (:POINTER (:STRUCT NK-CURSOR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:867:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:867:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_load_all_cursors" NK-STYLE-LOAD-ALL-CURSORS)
@@ -2806,13 +2806,13 @@
   (ARG2 (:POINTER (:STRUCT NK-CURSOR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:868:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:868:33"
 (CFFI:DEFCFUN ("nk_style_get_color_by_name" NK-STYLE-GET-COLOR-BY-NAME)
     :STRING
   (ARG1 NK-STYLE-COLORS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:869:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:869:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 0))
@@ -2823,7 +2823,7 @@
   (ARG2 (:POINTER (:STRUCT NK-USER-FONT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:870:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:870:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_set_cursor" NK-STYLE-SET-CURSOR)
@@ -2832,7 +2832,7 @@
   (ARG2 NK-STYLE-CURSOR))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:871:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:871:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_show_cursor" NK-STYLE-SHOW-CURSOR)
@@ -2840,7 +2840,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:872:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:872:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_hide_cursor" NK-STYLE-HIDE-CURSOR)
@@ -2848,7 +2848,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:875:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:875:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 0))
@@ -2859,7 +2859,7 @@
   (ARG2 (:POINTER (:STRUCT NK-USER-FONT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:876:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:876:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_push_float" NK-STYLE-PUSH-FLOAT)
@@ -2869,7 +2869,7 @@
   (ARG3 :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:877:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:877:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_push_vec2" NK-STYLE-PUSH-VEC2)
@@ -2879,7 +2879,7 @@
   (ARG3 (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:878:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:878:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-STYLE-ITEM :SIZE 0))
@@ -2893,7 +2893,7 @@
   (ARG3 (:STRUCT NK-STYLE-ITEM)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:879:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:879:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_push_flags" NK-STYLE-PUSH-FLAGS)
@@ -2903,7 +2903,7 @@
   (ARG3 NK-FLAGS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:880:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:880:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_push_color" NK-STYLE-PUSH-COLOR)
@@ -2913,7 +2913,7 @@
   (ARG3 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:882:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:882:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_pop_font" NK-STYLE-POP-FONT)
@@ -2921,7 +2921,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:883:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:883:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_pop_float" NK-STYLE-POP-FLOAT)
@@ -2929,7 +2929,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:884:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:884:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_pop_vec2" NK-STYLE-POP-VEC2)
@@ -2937,7 +2937,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:885:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:885:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_pop_style_item" NK-STYLE-POP-STYLE-ITEM)
@@ -2945,7 +2945,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:886:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:886:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_pop_flags" NK-STYLE-POP-FLAGS)
@@ -2953,7 +2953,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:887:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:887:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_style_pop_color" NK-STYLE-POP-COLOR)
@@ -2961,7 +2961,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:890:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:890:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_bounds" NK-WIDGET-BOUNDS)
@@ -2969,7 +2969,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:891:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:891:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_position" NK-WIDGET-POSITION)
@@ -2977,7 +2977,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:892:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:892:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_size" NK-WIDGET-SIZE)
@@ -2985,7 +2985,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:893:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:893:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_is_hovered" NK-WIDGET-IS-HOVERED)
@@ -2993,7 +2993,7 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:894:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:894:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_is_mouse_clicked" NK-WIDGET-IS-MOUSE-CLICKED)
@@ -3002,7 +3002,7 @@
   (ARG2 NK-BUTTONS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:895:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:895:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_has_mouse_click_down" NK-WIDGET-HAS-MOUSE-CLICK-DOWN)
@@ -3012,7 +3012,7 @@
   (DOWN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:896:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:896:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_spacing" NK-SPACING)
@@ -3021,7 +3021,7 @@
   (COLS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:899:37"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:899:37"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget" NK-WIDGET)
@@ -3030,7 +3030,7 @@
   (ARG2 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:900:37"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:900:37"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk_widget_fitting" NK-WIDGET-FITTING)
@@ -3040,7 +3040,7 @@
   (ARG3 (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:903:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:903:33"
 (CFFI:DEFCFUN ("nk_rgb" NK-RGB)
     (:STRUCT NK-COLOR)
   (R :INT)
@@ -3048,19 +3048,19 @@
   (B :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:904:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:904:33"
 (CFFI:DEFCFUN ("nk_rgb_iv" NK-RGB-IV)
     (:STRUCT NK-COLOR)
   (RGB (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:905:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:905:33"
 (CFFI:DEFCFUN ("nk_rgb_bv" NK-RGB-BV)
     (:STRUCT NK-COLOR)
   (RGB (:POINTER NK-BYTE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:906:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:906:33"
 (CFFI:DEFCFUN ("nk_rgb_f" NK-RGB-F)
     (:STRUCT NK-COLOR)
   (R :FLOAT)
@@ -3068,19 +3068,19 @@
   (B :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:907:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:907:33"
 (CFFI:DEFCFUN ("nk_rgb_fv" NK-RGB-FV)
     (:STRUCT NK-COLOR)
   (RGB (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:908:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:908:33"
 (CFFI:DEFCFUN ("nk_rgb_hex" NK-RGB-HEX)
     (:STRUCT NK-COLOR)
   (RGB :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:910:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:910:33"
 (CFFI:DEFCFUN ("nk_rgba" NK-RGBA)
     (:STRUCT NK-COLOR)
   (R :INT)
@@ -3089,25 +3089,25 @@
   (A :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:911:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:911:33"
 (CFFI:DEFCFUN ("nk_rgba_u32" NK-RGBA-U32)
     (:STRUCT NK-COLOR)
   (ARG1 NK-UINT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:912:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:912:33"
 (CFFI:DEFCFUN ("nk_rgba_iv" NK-RGBA-IV)
     (:STRUCT NK-COLOR)
   (RGBA (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:913:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:913:33"
 (CFFI:DEFCFUN ("nk_rgba_bv" NK-RGBA-BV)
     (:STRUCT NK-COLOR)
   (RGBA (:POINTER NK-BYTE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:914:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:914:33"
 (CFFI:DEFCFUN ("nk_rgba_f" NK-RGBA-F)
     (:STRUCT NK-COLOR)
   (R :FLOAT)
@@ -3116,19 +3116,19 @@
   (A :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:915:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:915:33"
 (CFFI:DEFCFUN ("nk_rgba_fv" NK-RGBA-FV)
     (:STRUCT NK-COLOR)
   (RGBA (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:916:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:916:33"
 (CFFI:DEFCFUN ("nk_rgba_hex" NK-RGBA-HEX)
     (:STRUCT NK-COLOR)
   (RGB :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:918:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:918:33"
 (CFFI:DEFCFUN ("nk_hsv" NK-HSV)
     (:STRUCT NK-COLOR)
   (H :INT)
@@ -3136,19 +3136,19 @@
   (V :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:919:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:919:33"
 (CFFI:DEFCFUN ("nk_hsv_iv" NK-HSV-IV)
     (:STRUCT NK-COLOR)
   (HSV (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:920:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:920:33"
 (CFFI:DEFCFUN ("nk_hsv_bv" NK-HSV-BV)
     (:STRUCT NK-COLOR)
   (HSV (:POINTER NK-BYTE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:921:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:921:33"
 (CFFI:DEFCFUN ("nk_hsv_f" NK-HSV-F)
     (:STRUCT NK-COLOR)
   (H :FLOAT)
@@ -3156,13 +3156,13 @@
   (V :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:922:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:922:33"
 (CFFI:DEFCFUN ("nk_hsv_fv" NK-HSV-FV)
     (:STRUCT NK-COLOR)
   (HSV (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:924:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:924:33"
 (CFFI:DEFCFUN ("nk_hsva" NK-HSVA)
     (:STRUCT NK-COLOR)
   (H :INT)
@@ -3171,19 +3171,19 @@
   (A :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:925:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:925:33"
 (CFFI:DEFCFUN ("nk_hsva_iv" NK-HSVA-IV)
     (:STRUCT NK-COLOR)
   (HSVA (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:926:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:926:33"
 (CFFI:DEFCFUN ("nk_hsva_bv" NK-HSVA-BV)
     (:STRUCT NK-COLOR)
   (HSVA (:POINTER NK-BYTE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:927:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:927:33"
 (CFFI:DEFCFUN ("nk_hsva_f" NK-HSVA-F)
     (:STRUCT NK-COLOR)
   (H :FLOAT)
@@ -3192,13 +3192,13 @@
   (A :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:928:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:928:33"
 (CFFI:DEFCFUN ("nk_hsva_fv" NK-HSVA-FV)
     (:STRUCT NK-COLOR)
   (HSVA (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:931:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:931:33"
 (CFFI:DEFCFUN ("nk_color_f" NK-COLOR-F)
     :VOID
   (R (:POINTER :FLOAT))
@@ -3208,34 +3208,34 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:932:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:932:33"
 (CFFI:DEFCFUN ("nk_color_fv" NK-COLOR-FV)
     :VOID
   (RGBA-OUT (:POINTER :FLOAT))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:933:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:933:33"
 (CFFI:DEFCFUN ("nk_color_u32" NK-COLOR-U32)
     NK-UINT
   (ARG1 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:934:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:934:33"
 (CFFI:DEFCFUN ("nk_color_hex_rgba" NK-COLOR-HEX-RGBA)
     :VOID
   (OUTPUT :STRING)
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:935:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:935:33"
 (CFFI:DEFCFUN ("nk_color_hex_rgb" NK-COLOR-HEX-RGB)
     :VOID
   (OUTPUT :STRING)
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:937:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:937:33"
 (CFFI:DEFCFUN ("nk_color_hsv_i" NK-COLOR-HSV-I)
     :VOID
   (OUT-H (:POINTER :INT))
@@ -3244,7 +3244,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:938:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:938:33"
 (CFFI:DEFCFUN ("nk_color_hsv_b" NK-COLOR-HSV-B)
     :VOID
   (OUT-H (:POINTER NK-BYTE))
@@ -3253,21 +3253,21 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:939:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:939:33"
 (CFFI:DEFCFUN ("nk_color_hsv_iv" NK-COLOR-HSV-IV)
     :VOID
   (HSV-OUT (:POINTER :INT))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:940:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:940:33"
 (CFFI:DEFCFUN ("nk_color_hsv_bv" NK-COLOR-HSV-BV)
     :VOID
   (HSV-OUT (:POINTER NK-BYTE))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:941:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:941:33"
 (CFFI:DEFCFUN ("nk_color_hsv_f" NK-COLOR-HSV-F)
     :VOID
   (OUT-H (:POINTER :FLOAT))
@@ -3276,14 +3276,14 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:942:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:942:33"
 (CFFI:DEFCFUN ("nk_color_hsv_fv" NK-COLOR-HSV-FV)
     :VOID
   (HSV-OUT (:POINTER :FLOAT))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:944:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:944:33"
 (CFFI:DEFCFUN ("nk_color_hsva_i" NK-COLOR-HSVA-I)
     :VOID
   (H (:POINTER :INT))
@@ -3293,7 +3293,7 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:945:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:945:33"
 (CFFI:DEFCFUN ("nk_color_hsva_b" NK-COLOR-HSVA-B)
     :VOID
   (H (:POINTER NK-BYTE))
@@ -3303,21 +3303,21 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:946:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:946:33"
 (CFFI:DEFCFUN ("nk_color_hsva_iv" NK-COLOR-HSVA-IV)
     :VOID
   (HSVA-OUT (:POINTER :INT))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:947:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:947:33"
 (CFFI:DEFCFUN ("nk_color_hsva_bv" NK-COLOR-HSVA-BV)
     :VOID
   (HSVA-OUT (:POINTER NK-BYTE))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:948:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:948:33"
 (CFFI:DEFCFUN ("nk_color_hsva_f" NK-COLOR-HSVA-F)
     :VOID
   (OUT-H (:POINTER :FLOAT))
@@ -3327,50 +3327,50 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:949:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:949:33"
 (CFFI:DEFCFUN ("nk_color_hsva_fv" NK-COLOR-HSVA-FV)
     :VOID
   (HSVA-OUT (:POINTER :FLOAT))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:952:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:952:33"
 (CFFI:DEFCFUN ("nk_handle_ptr" NK-HANDLE-PTR)
     NK-HANDLE
   (ARG1 (:POINTER :VOID)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:953:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:953:33"
 (CFFI:DEFCFUN ("nk_handle_id" NK-HANDLE-ID)
     NK-HANDLE
   (ARG1 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:954:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:954:33"
 (CFFI:DEFCFUN ("nk_image_handle" NK-IMAGE-HANDLE)
     (:STRUCT NK-IMAGE)
   (ARG1 NK-HANDLE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:955:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:955:33"
 (CFFI:DEFCFUN ("nk_image_ptr" NK-IMAGE-PTR)
     (:STRUCT NK-IMAGE)
   (ARG1 (:POINTER :VOID)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:956:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:956:33"
 (CFFI:DEFCFUN ("nk_image_id" NK-IMAGE-ID)
     (:STRUCT NK-IMAGE)
   (ARG1 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:957:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:957:33"
 (CFFI:DEFCFUN ("nk_image_is_subimage" NK-IMAGE-IS-SUBIMAGE)
     :INT
   (IMG (:POINTER (:STRUCT NK-IMAGE))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:958:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:958:33"
 (CFFI:DEFCFUN ("nk_subimage_ptr" NK-SUBIMAGE-PTR)
     (:STRUCT NK-IMAGE)
   (ARG1 (:POINTER :VOID))
@@ -3379,7 +3379,7 @@
   (SUB-REGION (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:959:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:959:33"
 (CFFI:DEFCFUN ("nk_subimage_id" NK-SUBIMAGE-ID)
     (:STRUCT NK-IMAGE)
   (ARG1 :INT)
@@ -3388,7 +3388,7 @@
   (SUB-REGION (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:960:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:960:33"
 (CFFI:DEFCFUN ("nk_subimage_handle" NK-SUBIMAGE-HANDLE)
     (:STRUCT NK-IMAGE)
   (ARG1 NK-HANDLE)
@@ -3397,7 +3397,7 @@
   (SUB-REGION (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:963:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:963:33"
 (CFFI:DEFCFUN ("nk_murmur_hash" NK-MURMUR-HASH)
     NK-HASH
   (KEY (:POINTER :VOID))
@@ -3405,7 +3405,7 @@
   (SEED NK-HASH))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:964:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:964:33"
 (CFFI:DEFCFUN ("nk_triangle_from_direction" NK-TRIANGLE-FROM-DIRECTION)
     :VOID
   (RESULT (:POINTER (:STRUCT NK-VEC2)))
@@ -3415,38 +3415,38 @@
   (ARG5 NK-HEADING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:966:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:966:33"
 (CFFI:DEFCFUN ("nk_vec2" NK-VEC2)
     (:STRUCT NK-VEC2)
   (X :FLOAT)
   (Y :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:967:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:967:33"
 (CFFI:DEFCFUN ("nk_vec2i" NK-VEC2I)
     (:STRUCT NK-VEC2)
   (X :INT)
   (Y :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:968:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:968:33"
 (CFFI:DEFCFUN ("nk_vec2v" NK-VEC2V)
     (:STRUCT NK-VEC2)
   (XY (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:969:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:969:33"
 (CFFI:DEFCFUN ("nk_vec2iv" NK-VEC2IV)
     (:STRUCT NK-VEC2)
   (XY (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:971:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:971:33"
 (CFFI:DEFCFUN ("nk_get_null_rect" NK-GET-NULL-RECT)
     (:STRUCT NK-RECT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:972:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:972:33"
 (CFFI:DEFCFUN ("nk_rect" NK-RECT)
     (:STRUCT NK-RECT)
   (X :FLOAT)
@@ -3455,7 +3455,7 @@
   (H :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:973:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:973:33"
 (CFFI:DEFCFUN ("nk_recti" NK-RECTI)
     (:STRUCT NK-RECT)
   (X :INT)
@@ -3464,51 +3464,51 @@
   (H :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:974:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:974:33"
 (CFFI:DEFCFUN ("nk_recta" NK-RECTA)
     (:STRUCT NK-RECT)
   (POS (:STRUCT NK-VEC2))
   (SIZE (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:975:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:975:33"
 (CFFI:DEFCFUN ("nk_rectv" NK-RECTV)
     (:STRUCT NK-RECT)
   (XYWH (:POINTER :FLOAT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:976:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:976:33"
 (CFFI:DEFCFUN ("nk_rectiv" NK-RECTIV)
     (:STRUCT NK-RECT)
   (XYWH (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:977:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:977:33"
 (CFFI:DEFCFUN ("nk_rect_pos" NK-RECT-POS)
     (:STRUCT NK-VEC2)
   (ARG1 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:978:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:978:33"
 (CFFI:DEFCFUN ("nk_rect_size" NK-RECT-SIZE)
     (:STRUCT NK-VEC2)
   (ARG1 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:981:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:981:33"
 (CFFI:DEFCFUN ("nk_strlen" NK-STRLEN)
     :INT
   (STR :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:982:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:982:33"
 (CFFI:DEFCFUN ("nk_stricmp" NK-STRICMP)
     :INT
   (S1 :STRING)
   (S2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:983:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:983:33"
 (CFFI:DEFCFUN ("nk_stricmpn" NK-STRICMPN)
     :INT
   (S1 :STRING)
@@ -3516,35 +3516,35 @@
   (N :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:984:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:984:33"
 (CFFI:DEFCFUN ("nk_strtoi" NK-STRTOI)
     :INT
   (STR :STRING)
   (ENDPTR (:POINTER (:POINTER :CHAR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:985:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:985:33"
 (CFFI:DEFCFUN ("nk_strtof" NK-STRTOF)
     :FLOAT
   (STR :STRING)
   (ENDPTR (:POINTER (:POINTER :CHAR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:986:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:986:33"
 (CFFI:DEFCFUN ("nk_strtod" NK-STRTOD)
     :DOUBLE
   (STR :STRING)
   (ENDPTR (:POINTER (:POINTER :CHAR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:987:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:987:33"
 (CFFI:DEFCFUN ("nk_strfilter" NK-STRFILTER)
     :INT
   (TEXT :STRING)
   (REGEXP :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:988:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:988:33"
 (CFFI:DEFCFUN ("nk_strmatch_fuzzy_string" NK-STRMATCH-FUZZY-STRING)
     :INT
   (STR :STRING)
@@ -3552,7 +3552,7 @@
   (OUT-SCORE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:989:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:989:33"
 (CFFI:DEFCFUN ("nk_strmatch_fuzzy_text" NK-STRMATCH-FUZZY-TEXT)
     :INT
   (TXT :STRING)
@@ -3561,7 +3561,7 @@
   (OUT-SCORE (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:995:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:995:33"
 (CFFI:DEFCFUN ("nk_utf_decode" NK-UTF-DECODE)
     :INT
   (ARG1 :STRING)
@@ -3569,7 +3569,7 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:996:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:996:33"
 (CFFI:DEFCFUN ("nk_utf_encode" NK-UTF-ENCODE)
     :INT
   (ARG1 NK-RUNE)
@@ -3577,14 +3577,14 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:997:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:997:33"
 (CFFI:DEFCFUN ("nk_utf_len" NK-UTF-LEN)
     :INT
   (ARG1 :STRING)
   (BYTE-LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:998:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:998:33"
 (CFFI:DEFCFUN ("nk_utf_at" NK-UTF-AT)
     :STRING
   (BUFFER :STRING)
@@ -3594,61 +3594,61 @@
   (LEN (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1033:8"
-(CFFI:DEFCSTRUCT (NK-MEMORY-STATUS :SIZE 48)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1033:8"
+(CFFI:DEFCSTRUCT (NK-MEMORY-STATUS :SIZE 32)
   (MEMORY (:POINTER :VOID) :OFFSET 0)
   (TYPE :UNSIGNED-INT :OFFSET 8)
-  (SIZE NK-SIZE :OFFSET 16)
-  (ALLOCATED NK-SIZE :OFFSET 24)
-  (NEEDED NK-SIZE :OFFSET 32)
-  (CALLS NK-SIZE :OFFSET 40))
+  (SIZE NK-SIZE :OFFSET 12)
+  (ALLOCATED NK-SIZE :OFFSET 16)
+  (NEEDED NK-SIZE :OFFSET 20)
+  (CALLS NK-SIZE :OFFSET 24))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1042:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1042:6"
 (CFFI:DEFCENUM NK-ALLOCATION-TYPE
   (NK-BUFFER-FIXED 0)
   (NK-BUFFER-DYNAMIC 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1047:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1047:6"
 (CFFI:DEFCENUM NK-BUFFER-ALLOCATION-TYPE
   (NK-BUFFER-FRONT 0)
   (NK-BUFFER-BACK 1)
   (NK-BUFFER-MAX 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1053:8"
-(CFFI:DEFCSTRUCT (NK-BUFFER-MARKER :SIZE 16)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1053:8"
+(CFFI:DEFCSTRUCT (NK-BUFFER-MARKER :SIZE 8)
   (ACTIVE :INT :OFFSET 0)
-  (OFFSET NK-SIZE :OFFSET 8))
+  (OFFSET NK-SIZE :OFFSET 4))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1058:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1058:8"
 (CFFI:DEFCSTRUCT (NK-MEMORY :SIZE 16)
   (PTR (:POINTER :VOID) :OFFSET 0)
   (SIZE NK-SIZE :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1059:8"
-(CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 120)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1059:8"
+(CFFI:DEFCSTRUCT (NK-BUFFER :SIZE 88)
   (MARKER (:ARRAY (:STRUCT NK-BUFFER-MARKER) 2) :OFFSET 0)
-  (POOL (:STRUCT NK-ALLOCATOR) :OFFSET 32)
-  (TYPE NK-ALLOCATION-TYPE :OFFSET 56)
-  (MEMORY (:STRUCT NK-MEMORY) :OFFSET 64)
-  (GROW-FACTOR :FLOAT :OFFSET 80)
-  (ALLOCATED NK-SIZE :OFFSET 88)
-  (NEEDED NK-SIZE :OFFSET 96)
-  (CALLS NK-SIZE :OFFSET 104)
-  (SIZE NK-SIZE :OFFSET 112))
+  (POOL (:STRUCT NK-ALLOCATOR) :OFFSET 16)
+  (TYPE NK-ALLOCATION-TYPE :OFFSET 40)
+  (MEMORY (:STRUCT NK-MEMORY) :OFFSET 48)
+  (GROW-FACTOR :FLOAT :OFFSET 64)
+  (ALLOCATED NK-SIZE :OFFSET 68)
+  (NEEDED NK-SIZE :OFFSET 72)
+  (CALLS NK-SIZE :OFFSET 76)
+  (SIZE NK-SIZE :OFFSET 80))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1081:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1081:13"
 (CFFI:DEFCFUN ("nk_buffer_init_default" NK-BUFFER-INIT-DEFAULT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1083:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1083:13"
 (CFFI:DEFCFUN ("nk_buffer_init" NK-BUFFER-INIT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER)))
@@ -3656,7 +3656,7 @@
   (SIZE NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1084:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1084:13"
 (CFFI:DEFCFUN ("nk_buffer_init_fixed" NK-BUFFER-INIT-FIXED)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER)))
@@ -3664,14 +3664,14 @@
   (SIZE NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1085:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1085:13"
 (CFFI:DEFCFUN ("nk_buffer_info" NK-BUFFER-INFO)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-MEMORY-STATUS)))
   (ARG2 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1086:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1086:13"
 (CFFI:DEFCFUN ("nk_buffer_push" NK-BUFFER-PUSH)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER)))
@@ -3681,63 +3681,63 @@
   (ALIGN NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1087:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1087:13"
 (CFFI:DEFCFUN ("nk_buffer_mark" NK-BUFFER-MARK)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER)))
   (TYPE NK-BUFFER-ALLOCATION-TYPE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1088:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1088:13"
 (CFFI:DEFCFUN ("nk_buffer_reset" NK-BUFFER-RESET)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER)))
   (TYPE NK-BUFFER-ALLOCATION-TYPE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1089:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1089:13"
 (CFFI:DEFCFUN ("nk_buffer_clear" NK-BUFFER-CLEAR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1090:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1090:13"
 (CFFI:DEFCFUN ("nk_buffer_free" NK-BUFFER-FREE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1091:14"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1091:14"
 (CFFI:DEFCFUN ("nk_buffer_memory" NK-BUFFER-MEMORY)
     (:POINTER :VOID)
   (ARG1 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1092:20"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1092:20"
 (CFFI:DEFCFUN ("nk_buffer_memory_const" NK-BUFFER-MEMORY-CONST)
     (:POINTER :VOID)
   (ARG1 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1093:16"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1093:16"
 (CFFI:DEFCFUN ("nk_buffer_total" NK-BUFFER-TOTAL)
     NK-SIZE
   (ARG1 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1103:8"
-(CFFI:DEFCSTRUCT (NK-STR :SIZE 128)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1103:8"
+(CFFI:DEFCSTRUCT (NK-STR :SIZE 96)
   (BUFFER (:STRUCT NK-BUFFER) :OFFSET 0)
-  (LEN :INT :OFFSET 120))
+  (LEN :INT :OFFSET 88))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1109:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1109:13"
 (CFFI:DEFCFUN ("nk_str_init_default" NK-STR-INIT-DEFAULT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1111:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1111:13"
 (CFFI:DEFCFUN ("nk_str_init" NK-STR-INIT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3745,7 +3745,7 @@
   (SIZE NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1112:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1112:13"
 (CFFI:DEFCFUN ("nk_str_init_fixed" NK-STR-INIT-FIXED)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3753,19 +3753,19 @@
   (SIZE NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1113:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1113:13"
 (CFFI:DEFCFUN ("nk_str_clear" NK-STR-CLEAR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1114:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1114:13"
 (CFFI:DEFCFUN ("nk_str_free" NK-STR-FREE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1116:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1116:12"
 (CFFI:DEFCFUN ("nk_str_append_text_char" NK-STR-APPEND-TEXT-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3773,14 +3773,14 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1117:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1117:12"
 (CFFI:DEFCFUN ("nk_str_append_str_char" NK-STR-APPEND-STR-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1118:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1118:12"
 (CFFI:DEFCFUN ("nk_str_append_text_utf8" NK-STR-APPEND-TEXT-UTF8)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3788,14 +3788,14 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1119:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1119:12"
 (CFFI:DEFCFUN ("nk_str_append_str_utf8" NK-STR-APPEND-STR-UTF8)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (ARG2 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1120:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1120:12"
 (CFFI:DEFCFUN ("nk_str_append_text_runes" NK-STR-APPEND-TEXT-RUNES)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3803,14 +3803,14 @@
   (ARG3 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1121:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1121:12"
 (CFFI:DEFCFUN ("nk_str_append_str_runes" NK-STR-APPEND-STR-RUNES)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (ARG2 (:POINTER NK-RUNE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1123:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1123:12"
 (CFFI:DEFCFUN ("nk_str_insert_at_char" NK-STR-INSERT-AT-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3819,7 +3819,7 @@
   (ARG4 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1124:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1124:12"
 (CFFI:DEFCFUN ("nk_str_insert_at_rune" NK-STR-INSERT-AT-RUNE)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3828,7 +3828,7 @@
   (ARG4 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1126:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1126:12"
 (CFFI:DEFCFUN ("nk_str_insert_text_char" NK-STR-INSERT-TEXT-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3837,7 +3837,7 @@
   (ARG4 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1127:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1127:12"
 (CFFI:DEFCFUN ("nk_str_insert_str_char" NK-STR-INSERT-STR-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3845,7 +3845,7 @@
   (ARG3 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1128:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1128:12"
 (CFFI:DEFCFUN ("nk_str_insert_text_utf8" NK-STR-INSERT-TEXT-UTF8)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3854,7 +3854,7 @@
   (ARG4 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1129:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1129:12"
 (CFFI:DEFCFUN ("nk_str_insert_str_utf8" NK-STR-INSERT-STR-UTF8)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3862,7 +3862,7 @@
   (ARG3 :STRING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1130:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1130:12"
 (CFFI:DEFCFUN ("nk_str_insert_text_runes" NK-STR-INSERT-TEXT-RUNES)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3871,7 +3871,7 @@
   (ARG4 :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1131:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1131:12"
 (CFFI:DEFCFUN ("nk_str_insert_str_runes" NK-STR-INSERT-STR-RUNES)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3879,21 +3879,21 @@
   (ARG3 (:POINTER NK-RUNE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1133:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1133:13"
 (CFFI:DEFCFUN ("nk_str_remove_chars" NK-STR-REMOVE-CHARS)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1134:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1134:13"
 (CFFI:DEFCFUN ("nk_str_remove_runes" NK-STR-REMOVE-RUNES)
     :VOID
   (STR (:POINTER (:STRUCT NK-STR)))
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1135:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1135:13"
 (CFFI:DEFCFUN ("nk_str_delete_chars" NK-STR-DELETE-CHARS)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3901,7 +3901,7 @@
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1136:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1136:13"
 (CFFI:DEFCFUN ("nk_str_delete_runes" NK-STR-DELETE-RUNES)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3909,14 +3909,14 @@
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1138:14"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1138:14"
 (CFFI:DEFCFUN ("nk_str_at_char" NK-STR-AT-CHAR)
     :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1139:14"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1139:14"
 (CFFI:DEFCFUN ("nk_str_at_rune" NK-STR-AT-RUNE)
     :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3925,21 +3925,21 @@
   (LEN (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1140:16"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1140:16"
 (CFFI:DEFCFUN ("nk_str_rune_at" NK-STR-RUNE-AT)
     NK-RUNE
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1141:20"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1141:20"
 (CFFI:DEFCFUN ("nk_str_at_char_const" NK-STR-AT-CHAR-CONST)
     :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
   (POS :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1142:20"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1142:20"
 (CFFI:DEFCFUN ("nk_str_at_const" NK-STR-AT-CONST)
     :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR)))
@@ -3948,42 +3948,42 @@
   (LEN (:POINTER :INT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1144:14"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1144:14"
 (CFFI:DEFCFUN ("nk_str_get" NK-STR-GET)
     :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1145:20"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1145:20"
 (CFFI:DEFCFUN ("nk_str_get_const" NK-STR-GET-CONST)
     :STRING
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1146:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1146:12"
 (CFFI:DEFCFUN ("nk_str_len" NK-STR-LEN)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1147:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1147:12"
 (CFFI:DEFCFUN ("nk_str_len_char" NK-STR-LEN-CHAR)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-STR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1185:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1185:8"
 (CFFI:DEFCSTRUCT (NK-TEXT-EDIT :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1186:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1186:8"
 (CFFI:DEFCSTRUCT (NK-CLIPBOARD :SIZE 24)
   (USERDATA NK-HANDLE :OFFSET 0)
   (PASTE NK-PLUGIN-PASTE :OFFSET 8)
   (COPY NK-PLUGIN-COPY :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1192:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1192:8"
 (CFFI:DEFCSTRUCT (NK-TEXT-UNDO-RECORD :SIZE 12)
   (WHERE :INT :OFFSET 0)
   (INSERT-LENGTH :SHORT :OFFSET 4)
@@ -3991,7 +3991,7 @@
   (CHAR-STORAGE :SHORT :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1199:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1199:8"
 (CFFI:DEFCSTRUCT (NK-TEXT-UNDO-STATE :SIZE 5192)
   (UNDO-REC (:ARRAY (:STRUCT NK-TEXT-UNDO-RECORD) 99) :OFFSET 0)
   (UNDO-CHAR (:ARRAY NK-RUNE 999) :OFFSET 1188)
@@ -4001,95 +4001,95 @@
   (REDO-CHAR-POINT :SHORT :OFFSET 5190))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1208:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1208:6"
 (CFFI:DEFCENUM NK-TEXT-EDIT-TYPE
   (NK-TEXT-EDIT-SINGLE-LINE 0)
   (NK-TEXT-EDIT-MULTI-LINE 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1213:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1213:6"
 (CFFI:DEFCENUM NK-TEXT-EDIT-MODE
   (NK-TEXT-EDIT-MODE-VIEW 0)
   (NK-TEXT-EDIT-MODE-INSERT 1)
   (NK-TEXT-EDIT-MODE-REPLACE 2))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1219:8"
-(CFFI:DEFCSTRUCT (NK-TEXT-EDIT :SIZE 5384)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1219:8"
+(CFFI:DEFCSTRUCT (NK-TEXT-EDIT :SIZE 5352)
   (CLIP (:STRUCT NK-CLIPBOARD) :OFFSET 0)
   (STRING (:STRUCT NK-STR) :OFFSET 24)
-  (FILTER NK-PLUGIN-FILTER :OFFSET 152)
-  (SCROLLBAR (:STRUCT NK-VEC2) :OFFSET 160)
-  (CURSOR :INT :OFFSET 168)
-  (SELECT-START :INT :OFFSET 172)
-  (SELECT-END :INT :OFFSET 176)
-  (MODE :UNSIGNED-CHAR :OFFSET 180)
-  (CURSOR-AT-END-OF-LINE :UNSIGNED-CHAR :OFFSET 181)
-  (INITIALIZED :UNSIGNED-CHAR :OFFSET 182)
-  (HAS-PREFERRED-X :UNSIGNED-CHAR :OFFSET 183)
-  (SINGLE-LINE :UNSIGNED-CHAR :OFFSET 184)
-  (ACTIVE :UNSIGNED-CHAR :OFFSET 185)
-  (PADDING1 :UNSIGNED-CHAR :OFFSET 186)
-  (PREFERRED-X :FLOAT :OFFSET 188)
-  (UNDO (:STRUCT NK-TEXT-UNDO-STATE) :OFFSET 192))
+  (FILTER NK-PLUGIN-FILTER :OFFSET 120)
+  (SCROLLBAR (:STRUCT NK-VEC2) :OFFSET 128)
+  (CURSOR :INT :OFFSET 136)
+  (SELECT-START :INT :OFFSET 140)
+  (SELECT-END :INT :OFFSET 144)
+  (MODE :UNSIGNED-CHAR :OFFSET 148)
+  (CURSOR-AT-END-OF-LINE :UNSIGNED-CHAR :OFFSET 149)
+  (INITIALIZED :UNSIGNED-CHAR :OFFSET 150)
+  (HAS-PREFERRED-X :UNSIGNED-CHAR :OFFSET 151)
+  (SINGLE-LINE :UNSIGNED-CHAR :OFFSET 152)
+  (ACTIVE :UNSIGNED-CHAR :OFFSET 153)
+  (PADDING1 :UNSIGNED-CHAR :OFFSET 154)
+  (PREFERRED-X :FLOAT :OFFSET 156)
+  (UNDO (:STRUCT NK-TEXT-UNDO-STATE) :OFFSET 160))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1240:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1240:12"
 (CFFI:DEFCFUN ("nk_filter_default" NK-FILTER-DEFAULT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1241:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1241:12"
 (CFFI:DEFCFUN ("nk_filter_ascii" NK-FILTER-ASCII)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1242:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1242:12"
 (CFFI:DEFCFUN ("nk_filter_float" NK-FILTER-FLOAT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1243:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1243:12"
 (CFFI:DEFCFUN ("nk_filter_decimal" NK-FILTER-DECIMAL)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1244:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1244:12"
 (CFFI:DEFCFUN ("nk_filter_hex" NK-FILTER-HEX)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1245:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1245:12"
 (CFFI:DEFCFUN ("nk_filter_oct" NK-FILTER-OCT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1246:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1246:12"
 (CFFI:DEFCFUN ("nk_filter_binary" NK-FILTER-BINARY)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1250:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1250:13"
 (CFFI:DEFCFUN ("nk_textedit_init_default" NK-TEXTEDIT-INIT-DEFAULT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1252:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1252:13"
 (CFFI:DEFCFUN ("nk_textedit_init" NK-TEXTEDIT-INIT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
@@ -4097,7 +4097,7 @@
   (SIZE NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1253:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1253:13"
 (CFFI:DEFCFUN ("nk_textedit_init_fixed" NK-TEXTEDIT-INIT-FIXED)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
@@ -4105,13 +4105,13 @@
   (SIZE NK-SIZE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1254:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1254:13"
 (CFFI:DEFCFUN ("nk_textedit_free" NK-TEXTEDIT-FREE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1255:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1255:13"
 (CFFI:DEFCFUN ("nk_textedit_text" NK-TEXTEDIT-TEXT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
@@ -4119,7 +4119,7 @@
   (TOTAL-LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1256:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1256:13"
 (CFFI:DEFCFUN ("nk_textedit_delete" NK-TEXTEDIT-DELETE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
@@ -4127,25 +4127,25 @@
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1257:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1257:13"
 (CFFI:DEFCFUN ("nk_textedit_delete_selection" NK-TEXTEDIT-DELETE-SELECTION)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1258:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1258:13"
 (CFFI:DEFCFUN ("nk_textedit_select_all" NK-TEXTEDIT-SELECT-ALL)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1259:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1259:12"
 (CFFI:DEFCFUN ("nk_textedit_cut" NK-TEXTEDIT-CUT)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1260:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1260:12"
 (CFFI:DEFCFUN ("nk_textedit_paste" NK-TEXTEDIT-PASTE)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT)))
@@ -4153,31 +4153,31 @@
   (LEN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1261:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1261:13"
 (CFFI:DEFCFUN ("nk_textedit_undo" NK-TEXTEDIT-UNDO)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1262:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1262:13"
 (CFFI:DEFCFUN ("nk_textedit_redo" NK-TEXTEDIT-REDO)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-TEXT-EDIT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1306:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1306:8"
 (CFFI:DEFCSTRUCT (NK-USER-FONT-GLYPH :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1307:16"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1307:16"
 (CFFI:DEFCTYPE NK-TEXT-WIDTH-F FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1308:15"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1308:15"
 (CFFI:DEFCTYPE NK-QUERY-FONT-GLYPH-F FUNCTION-POINTER)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1313:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1313:8"
 (CFFI:DEFCSTRUCT (NK-USER-FONT-GLYPH :SIZE 36)
   (UV (:ARRAY (:STRUCT NK-VEC2) 2) :OFFSET 0)
   (OFFSET (:STRUCT NK-VEC2) :OFFSET 16)
@@ -4186,7 +4186,7 @@
   (XADVANCE :FLOAT :OFFSET 32))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1325:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1325:8"
 (CFFI:DEFCSTRUCT (NK-USER-FONT :SIZE 40)
   (USERDATA NK-HANDLE :OFFSET 0)
   (HEIGHT :FLOAT :OFFSET 8)
@@ -4195,13 +4195,13 @@
   (TEXTURE NK-HANDLE :OFFSET 32))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1341:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1341:6"
 (CFFI:DEFCENUM NK-FONT-COORD-TYPE
   (NK-COORD-UV 0)
   (NK-COORD-PIXEL 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1348:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1348:8"
 (CFFI:DEFCSTRUCT (NK-BAKED-FONT :SIZE 32)
   (HEIGHT :FLOAT :OFFSET 0)
   (ASCENT :FLOAT :OFFSET 4)
@@ -4211,26 +4211,26 @@
   (RANGES (:POINTER NK-RUNE) :OFFSET 24))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1361:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1361:8"
 (CFFI:DEFCSTRUCT (NK-FONT-CONFIG :SIZE 72)
   (NEXT (:POINTER :VOID) :OFFSET 0)
   (TTF-BLOB (:POINTER :VOID) :OFFSET 8)
   (TTF-SIZE NK-SIZE :OFFSET 16)
-  (TTF-DATA-OWNED-BY-ATLAS :UNSIGNED-CHAR :OFFSET 24)
-  (MERGE-MODE :UNSIGNED-CHAR :OFFSET 25)
-  (PIXEL-SNAP :UNSIGNED-CHAR :OFFSET 26)
-  (OVERSAMPLE-V :UNSIGNED-CHAR :OFFSET 27)
-  (OVERSAMPLE-H :UNSIGNED-CHAR :OFFSET 28)
-  (PADDING (:ARRAY :UNSIGNED-CHAR 3) :OFFSET 29)
-  (SIZE :FLOAT :OFFSET 32)
-  (COORD-TYPE NK-FONT-COORD-TYPE :OFFSET 36)
-  (SPACING (:STRUCT NK-VEC2) :OFFSET 40)
+  (TTF-DATA-OWNED-BY-ATLAS :UNSIGNED-CHAR :OFFSET 20)
+  (MERGE-MODE :UNSIGNED-CHAR :OFFSET 21)
+  (PIXEL-SNAP :UNSIGNED-CHAR :OFFSET 22)
+  (OVERSAMPLE-V :UNSIGNED-CHAR :OFFSET 23)
+  (OVERSAMPLE-H :UNSIGNED-CHAR :OFFSET 24)
+  (PADDING (:ARRAY :UNSIGNED-CHAR 3) :OFFSET 25)
+  (SIZE :FLOAT :OFFSET 28)
+  (COORD-TYPE NK-FONT-COORD-TYPE :OFFSET 32)
+  (SPACING (:STRUCT NK-VEC2) :OFFSET 36)
   (RANGE (:POINTER NK-RUNE) :OFFSET 48)
   (FONT (:POINTER (:STRUCT NK-BAKED-FONT)) :OFFSET 56)
   (FALLBACK-GLYPH NK-RUNE :OFFSET 64))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1395:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1395:8"
 (CFFI:DEFCSTRUCT (NK-FONT-GLYPH :SIZE 48)
   (CODEPOINT NK-RUNE :OFFSET 0)
   (XADVANCE :FLOAT :OFFSET 4)
@@ -4246,7 +4246,7 @@
   (V1 :FLOAT :OFFSET 44))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1402:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1402:8"
 (CFFI:DEFCSTRUCT (NK-FONT :SIZE 128)
   (NEXT (:POINTER :VOID) :OFFSET 0)
   (HANDLE (:STRUCT NK-USER-FONT) :OFFSET 8)
@@ -4259,13 +4259,13 @@
   (CONFIG (:POINTER (:STRUCT NK-FONT-CONFIG)) :OFFSET 120))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1414:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1414:6"
 (CFFI:DEFCENUM NK-FONT-ATLAS-FORMAT
   (NK-FONT-ATLAS-ALPHA8 0)
   (NK-FONT-ATLAS-RGBA32 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1419:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1419:8"
 (CFFI:DEFCSTRUCT (NK-FONT-ATLAS :SIZE 400)
   (PIXEL (:POINTER :VOID) :OFFSET 0)
   (TEX-WIDTH :INT :OFFSET 8)
@@ -4282,40 +4282,40 @@
   (FONT-NUM :INT :OFFSET 392))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1437:23"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1437:23"
 (CFFI:DEFCFUN ("nk_font_default_glyph_ranges" NK-FONT-DEFAULT-GLYPH-RANGES)
     (:POINTER NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1438:23"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1438:23"
 (CFFI:DEFCFUN ("nk_font_chinese_glyph_ranges" NK-FONT-CHINESE-GLYPH-RANGES)
     (:POINTER NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1439:23"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1439:23"
 (CFFI:DEFCFUN ("nk_font_cyrillic_glyph_ranges" NK-FONT-CYRILLIC-GLYPH-RANGES)
     (:POINTER NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1440:23"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1440:23"
 (CFFI:DEFCFUN ("nk_font_korean_glyph_ranges" NK-FONT-KOREAN-GLYPH-RANGES)
     (:POINTER NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1443:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1443:13"
 (CFFI:DEFCFUN ("nk_font_atlas_init_default" NK-FONT-ATLAS-INIT-DEFAULT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1445:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1445:13"
 (CFFI:DEFCFUN ("nk_font_atlas_init" NK-FONT-ATLAS-INIT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
   (ARG2 (:POINTER (:STRUCT NK-ALLOCATOR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1446:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1446:13"
 (CFFI:DEFCFUN ("nk_font_atlas_init_custom" NK-FONT-ATLAS-INIT-CUSTOM)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4323,26 +4323,26 @@
   (TRANSIENT (:POINTER (:STRUCT NK-ALLOCATOR))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1447:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1447:13"
 (CFFI:DEFCFUN ("nk_font_atlas_begin" NK-FONT-ATLAS-BEGIN)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1448:30"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1448:30"
 (CFFI:DEFCFUN ("nk_font_config" NK-FONT-CONFIG)
     (:STRUCT NK-FONT-CONFIG)
   (PIXEL-HEIGHT :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1449:24"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1449:24"
 (CFFI:DEFCFUN ("nk_font_atlas_add" NK-FONT-ATLAS-ADD)
     (:POINTER (:STRUCT NK-FONT))
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
   (ARG2 (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1451:24"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1451:24"
 (CFFI:DEFCFUN ("nk_font_atlas_add_default" NK-FONT-ATLAS-ADD-DEFAULT)
     (:POINTER (:STRUCT NK-FONT))
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4350,7 +4350,7 @@
   (ARG3 (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1453:24"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1453:24"
 (CFFI:DEFCFUN ("nk_font_atlas_add_from_memory" NK-FONT-ATLAS-ADD-FROM-MEMORY)
     (:POINTER (:STRUCT NK-FONT))
   (ATLAS (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4360,7 +4360,7 @@
   (CONFIG (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1455:24"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1455:24"
 (CFFI:DEFCFUN ("nk_font_atlas_add_from_file" NK-FONT-ATLAS-ADD-FROM-FILE)
     (:POINTER (:STRUCT NK-FONT))
   (ATLAS (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4369,7 +4369,7 @@
   (ARG4 (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1457:24"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1457:24"
 (CFFI:DEFCFUN ("nk_font_atlas_add_compressed" NK-FONT-ATLAS-ADD-COMPRESSED)
     (:POINTER (:STRUCT NK-FONT))
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4379,7 +4379,7 @@
   (ARG5 (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1458:24"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1458:24"
 (CFFI:DEFCFUN ("nk_font_atlas_add_compressed_base85"
                NK-FONT-ATLAS-ADD-COMPRESSED-BASE85)
     (:POINTER (:STRUCT NK-FONT))
@@ -4389,7 +4389,7 @@
   (CONFIG (:POINTER (:STRUCT NK-FONT-CONFIG))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1459:20"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1459:20"
 (CFFI:DEFCFUN ("nk_font_atlas_bake" NK-FONT-ATLAS-BAKE)
     (:POINTER :VOID)
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4398,7 +4398,7 @@
   (ARG4 NK-FONT-ATLAS-FORMAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1460:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1460:13"
 (CFFI:DEFCFUN ("nk_font_atlas_end" NK-FONT-ATLAS-END)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS)))
@@ -4406,20 +4406,20 @@
   (ARG3 (:POINTER (:STRUCT NK-DRAW-NULL-TEXTURE))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1461:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1461:13"
 (CFFI:DEFCFUN ("nk_font_atlas_clear" NK-FONT-ATLAS-CLEAR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-FONT-ATLAS))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1462:36"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1462:36"
 (CFFI:DEFCFUN ("nk_font_find_glyph" NK-FONT-FIND-GLYPH)
     (:POINTER (:STRUCT NK-FONT-GLYPH))
   (ARG1 (:POINTER (:STRUCT NK-FONT)))
   (UNICODE NK-RUNE))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1487:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1487:6"
 (CFFI:DEFCENUM NK-COMMAND-TYPE
   (NK-COMMAND-NOP 0)
   (NK-COMMAND-SCISSOR 1)
@@ -4441,207 +4441,207 @@
   (NK-COMMAND-IMAGE 17))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1509:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND :SIZE 16)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1509:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND :SIZE 8)
   (TYPE NK-COMMAND-TYPE :OFFSET 0)
-  (NEXT NK-SIZE :OFFSET 8))
+  (NEXT NK-SIZE :OFFSET 4))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1517:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-SCISSOR :SIZE 24)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1517:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-SCISSOR :SIZE 16)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (X :SHORT :OFFSET 16)
-  (Y :SHORT :OFFSET 18)
-  (W :UNSIGNED-SHORT :OFFSET 20)
-  (H :UNSIGNED-SHORT :OFFSET 22))
+  (X :SHORT :OFFSET 8)
+  (Y :SHORT :OFFSET 10)
+  (W :UNSIGNED-SHORT :OFFSET 12)
+  (H :UNSIGNED-SHORT :OFFSET 14))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1523:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-LINE :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1523:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-LINE :SIZE 24)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 16)
-  (BEGIN (:STRUCT NK-VEC2I) :OFFSET 18)
-  (END (:STRUCT NK-VEC2I) :OFFSET 22)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 8)
+  (BEGIN (:STRUCT NK-VEC2I) :OFFSET 10)
+  (END (:STRUCT NK-VEC2I) :OFFSET 14)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 18))
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1531:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-CURVE :SIZE 32)
+  (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 8)
+  (BEGIN (:STRUCT NK-VEC2I) :OFFSET 10)
+  (END (:STRUCT NK-VEC2I) :OFFSET 14)
+  (CTRL (:ARRAY (:STRUCT NK-VEC2I) 2) :OFFSET 18)
   (COLOR (:STRUCT NK-COLOR) :OFFSET 26))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1531:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-CURVE :SIZE 40)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1540:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-RECT :SIZE 24)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 16)
-  (BEGIN (:STRUCT NK-VEC2I) :OFFSET 18)
-  (END (:STRUCT NK-VEC2I) :OFFSET 22)
-  (CTRL (:ARRAY (:STRUCT NK-VEC2I) 2) :OFFSET 26)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 34))
+  (ROUNDING :UNSIGNED-SHORT :OFFSET 8)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 10)
+  (X :SHORT :OFFSET 12)
+  (Y :SHORT :OFFSET 14)
+  (W :UNSIGNED-SHORT :OFFSET 16)
+  (H :UNSIGNED-SHORT :OFFSET 18)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 20))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1540:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-RECT :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1549:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-RECT-FILLED :SIZE 24)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (ROUNDING :UNSIGNED-SHORT :OFFSET 16)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 18)
-  (X :SHORT :OFFSET 20)
-  (Y :SHORT :OFFSET 22)
-  (W :UNSIGNED-SHORT :OFFSET 24)
-  (H :UNSIGNED-SHORT :OFFSET 26)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 28))
+  (ROUNDING :UNSIGNED-SHORT :OFFSET 8)
+  (X :SHORT :OFFSET 10)
+  (Y :SHORT :OFFSET 12)
+  (W :UNSIGNED-SHORT :OFFSET 14)
+  (H :UNSIGNED-SHORT :OFFSET 16)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 18))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1549:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-RECT-FILLED :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1557:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-RECT-MULTI-COLOR :SIZE 32)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (ROUNDING :UNSIGNED-SHORT :OFFSET 16)
-  (X :SHORT :OFFSET 18)
-  (Y :SHORT :OFFSET 20)
-  (W :UNSIGNED-SHORT :OFFSET 22)
-  (H :UNSIGNED-SHORT :OFFSET 24)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 26))
+  (X :SHORT :OFFSET 8)
+  (Y :SHORT :OFFSET 10)
+  (W :UNSIGNED-SHORT :OFFSET 12)
+  (H :UNSIGNED-SHORT :OFFSET 14)
+  (LEFT (:STRUCT NK-COLOR) :OFFSET 16)
+  (TOP (:STRUCT NK-COLOR) :OFFSET 20)
+  (BOTTOM (:STRUCT NK-COLOR) :OFFSET 24)
+  (RIGHT (:STRUCT NK-COLOR) :OFFSET 28))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1557:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-RECT-MULTI-COLOR :SIZE 40)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1567:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-TRIANGLE :SIZE 28)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (X :SHORT :OFFSET 16)
-  (Y :SHORT :OFFSET 18)
-  (W :UNSIGNED-SHORT :OFFSET 20)
-  (H :UNSIGNED-SHORT :OFFSET 22)
-  (LEFT (:STRUCT NK-COLOR) :OFFSET 24)
-  (TOP (:STRUCT NK-COLOR) :OFFSET 28)
-  (BOTTOM (:STRUCT NK-COLOR) :OFFSET 32)
-  (RIGHT (:STRUCT NK-COLOR) :OFFSET 36))
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 8)
+  (A (:STRUCT NK-VEC2I) :OFFSET 10)
+  (B (:STRUCT NK-VEC2I) :OFFSET 14)
+  (C (:STRUCT NK-VEC2I) :OFFSET 18)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 22))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1567:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-TRIANGLE :SIZE 40)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1576:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-TRIANGLE-FILLED :SIZE 24)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 16)
-  (A (:STRUCT NK-VEC2I) :OFFSET 18)
-  (B (:STRUCT NK-VEC2I) :OFFSET 22)
-  (C (:STRUCT NK-VEC2I) :OFFSET 26)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 30))
+  (A (:STRUCT NK-VEC2I) :OFFSET 8)
+  (B (:STRUCT NK-VEC2I) :OFFSET 12)
+  (C (:STRUCT NK-VEC2I) :OFFSET 16)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 20))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1576:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-TRIANGLE-FILLED :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1584:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-CIRCLE :SIZE 24)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (A (:STRUCT NK-VEC2I) :OFFSET 16)
-  (B (:STRUCT NK-VEC2I) :OFFSET 20)
-  (C (:STRUCT NK-VEC2I) :OFFSET 24)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 28))
+  (X :SHORT :OFFSET 8)
+  (Y :SHORT :OFFSET 10)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 12)
+  (W :UNSIGNED-SHORT :OFFSET 14)
+  (H :UNSIGNED-SHORT :OFFSET 16)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 18))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1584:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-CIRCLE :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1592:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-CIRCLE-FILLED :SIZE 20)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (X :SHORT :OFFSET 16)
-  (Y :SHORT :OFFSET 18)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 20)
-  (W :UNSIGNED-SHORT :OFFSET 22)
-  (H :UNSIGNED-SHORT :OFFSET 24)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 26))
+  (X :SHORT :OFFSET 8)
+  (Y :SHORT :OFFSET 10)
+  (W :UNSIGNED-SHORT :OFFSET 12)
+  (H :UNSIGNED-SHORT :OFFSET 14)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1592:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-CIRCLE-FILLED :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1599:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-ARC :SIZE 28)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (X :SHORT :OFFSET 16)
-  (Y :SHORT :OFFSET 18)
-  (W :UNSIGNED-SHORT :OFFSET 20)
-  (H :UNSIGNED-SHORT :OFFSET 22)
+  (CX :SHORT :OFFSET 8)
+  (CY :SHORT :OFFSET 10)
+  (R :UNSIGNED-SHORT :OFFSET 12)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 14)
+  (A (:ARRAY :FLOAT 2) :OFFSET 16)
   (COLOR (:STRUCT NK-COLOR) :OFFSET 24))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1599:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-ARC :SIZE 40)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1608:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-ARC-FILLED :SIZE 28)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (CX :SHORT :OFFSET 16)
-  (CY :SHORT :OFFSET 18)
-  (R :UNSIGNED-SHORT :OFFSET 20)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 22)
-  (A (:ARRAY :FLOAT 2) :OFFSET 24)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 32))
+  (CX :SHORT :OFFSET 8)
+  (CY :SHORT :OFFSET 10)
+  (R :UNSIGNED-SHORT :OFFSET 12)
+  (A (:ARRAY :FLOAT 2) :OFFSET 16)
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 24))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1608:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-ARC-FILLED :SIZE 40)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1616:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-POLYGON :SIZE 20)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (CX :SHORT :OFFSET 16)
-  (CY :SHORT :OFFSET 18)
-  (R :UNSIGNED-SHORT :OFFSET 20)
-  (A (:ARRAY :FLOAT 2) :OFFSET 24)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 32))
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 8)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 12)
+  (POINT-COUNT :UNSIGNED-SHORT :OFFSET 14)
+  (POINTS (:ARRAY (:STRUCT NK-VEC2I) 1) :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1616:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-POLYGON :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1624:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-POLYGON-FILLED :SIZE 20)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 16)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 20)
-  (POINT-COUNT :UNSIGNED-SHORT :OFFSET 22)
-  (POINTS (:ARRAY (:STRUCT NK-VEC2I) 1) :OFFSET 24))
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 8)
+  (POINT-COUNT :UNSIGNED-SHORT :OFFSET 12)
+  (POINTS (:ARRAY (:STRUCT NK-VEC2I) 1) :OFFSET 14))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1624:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-POLYGON-FILLED :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1631:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-POLYLINE :SIZE 20)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 16)
-  (POINT-COUNT :UNSIGNED-SHORT :OFFSET 20)
-  (POINTS (:ARRAY (:STRUCT NK-VEC2I) 1) :OFFSET 22))
+  (COLOR (:STRUCT NK-COLOR) :OFFSET 8)
+  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 12)
+  (POINT-COUNT :UNSIGNED-SHORT :OFFSET 14)
+  (POINTS (:ARRAY (:STRUCT NK-VEC2I) 1) :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1631:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-POLYLINE :SIZE 32)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1639:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-IMAGE :SIZE 48)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (COLOR (:STRUCT NK-COLOR) :OFFSET 16)
-  (LINE-THICKNESS :UNSIGNED-SHORT :OFFSET 20)
-  (POINT-COUNT :UNSIGNED-SHORT :OFFSET 22)
-  (POINTS (:ARRAY (:STRUCT NK-VEC2I) 1) :OFFSET 24))
+  (X :SHORT :OFFSET 8)
+  (Y :SHORT :OFFSET 10)
+  (W :UNSIGNED-SHORT :OFFSET 12)
+  (H :UNSIGNED-SHORT :OFFSET 14)
+  (IMG (:STRUCT NK-IMAGE) :OFFSET 16)
+  (COL (:STRUCT NK-COLOR) :OFFSET 40))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1639:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-IMAGE :SIZE 56)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1647:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-TEXT :SIZE 48)
   (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (X :SHORT :OFFSET 16)
-  (Y :SHORT :OFFSET 18)
-  (W :UNSIGNED-SHORT :OFFSET 20)
-  (H :UNSIGNED-SHORT :OFFSET 22)
-  (IMG (:STRUCT NK-IMAGE) :OFFSET 24)
-  (COL (:STRUCT NK-COLOR) :OFFSET 48))
+  (FONT (:POINTER (:STRUCT NK-USER-FONT)) :OFFSET 8)
+  (BACKGROUND (:STRUCT NK-COLOR) :OFFSET 16)
+  (FOREGROUND (:STRUCT NK-COLOR) :OFFSET 20)
+  (X :SHORT :OFFSET 24)
+  (Y :SHORT :OFFSET 26)
+  (W :UNSIGNED-SHORT :OFFSET 28)
+  (H :UNSIGNED-SHORT :OFFSET 30)
+  (HEIGHT :FLOAT :OFFSET 32)
+  (LENGTH :INT :OFFSET 36)
+  (STRING (:ARRAY :CHAR 1) :OFFSET 40))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1647:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-TEXT :SIZE 56)
-  (HEADER (:STRUCT NK-COMMAND) :OFFSET 0)
-  (FONT (:POINTER (:STRUCT NK-USER-FONT)) :OFFSET 16)
-  (BACKGROUND (:STRUCT NK-COLOR) :OFFSET 24)
-  (FOREGROUND (:STRUCT NK-COLOR) :OFFSET 28)
-  (X :SHORT :OFFSET 32)
-  (Y :SHORT :OFFSET 34)
-  (W :UNSIGNED-SHORT :OFFSET 36)
-  (H :UNSIGNED-SHORT :OFFSET 38)
-  (HEIGHT :FLOAT :OFFSET 40)
-  (LENGTH :INT :OFFSET 44)
-  (STRING (:ARRAY :CHAR 1) :OFFSET 48))
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1659:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1659:6"
 (CFFI:DEFCENUM NK-COMMAND-CLIPPING
   (NK-CLIPPING-OFF 0)
   (NK-CLIPPING-ON 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1664:8"
-(CFFI:DEFCSTRUCT (NK-COMMAND-BUFFER :SIZE 64)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1664:8"
+(CFFI:DEFCSTRUCT (NK-COMMAND-BUFFER :SIZE 56)
   (BASE (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 0)
   (CLIP (:STRUCT NK-RECT) :OFFSET 8)
   (USE-CLIPPING :INT :OFFSET 24)
   (USERDATA NK-HANDLE :OFFSET 32)
   (BEGIN NK-SIZE :OFFSET 40)
-  (END NK-SIZE :OFFSET 48)
-  (LAST NK-SIZE :OFFSET 56))
+  (END NK-SIZE :OFFSET 44)
+  (LAST NK-SIZE :OFFSET 48))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1673:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1673:13"
 (CFFI:DEFCFUN ("nk_stroke_line" NK-STROKE-LINE)
     :VOID
   (B (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4653,7 +4653,7 @@
   (ARG7 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1674:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1674:13"
 (CFFI:DEFCFUN ("nk_stroke_curve" NK-STROKE-CURVE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4669,7 +4669,7 @@
   (ARG11 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1675:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1675:13"
 (CFFI:DEFCFUN ("nk_stroke_rect" NK-STROKE-RECT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4679,7 +4679,7 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1676:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1676:13"
 (CFFI:DEFCFUN ("nk_stroke_circle" NK-STROKE-CIRCLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4688,7 +4688,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1677:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1677:13"
 (CFFI:DEFCFUN ("nk_stroke_arc" NK-STROKE-ARC)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4701,7 +4701,7 @@
   (ARG8 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1678:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1678:13"
 (CFFI:DEFCFUN ("nk_stroke_triangle" NK-STROKE-TRIANGLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4715,7 +4715,7 @@
   (ARG9 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1679:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1679:13"
 (CFFI:DEFCFUN ("nk_stroke_polyline" NK-STROKE-POLYLINE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4725,7 +4725,7 @@
   (COL (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1680:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1680:13"
 (CFFI:DEFCFUN ("nk_stroke_polygon" NK-STROKE-POLYGON)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4735,7 +4735,7 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1683:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1683:13"
 (CFFI:DEFCFUN ("nk_fill_rect" NK-FILL-RECT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4744,7 +4744,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1684:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1684:13"
 (CFFI:DEFCFUN ("nk_fill_rect_multi_color" NK-FILL-RECT-MULTI-COLOR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4755,7 +4755,7 @@
   (BOTTOM (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1685:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1685:13"
 (CFFI:DEFCFUN ("nk_fill_circle" NK-FILL-CIRCLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4763,7 +4763,7 @@
   (ARG3 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1686:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1686:13"
 (CFFI:DEFCFUN ("nk_fill_arc" NK-FILL-ARC)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4775,7 +4775,7 @@
   (ARG7 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1687:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1687:13"
 (CFFI:DEFCFUN ("nk_fill_triangle" NK-FILL-TRIANGLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4788,7 +4788,7 @@
   (ARG8 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1688:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1688:13"
 (CFFI:DEFCFUN ("nk_fill_polygon" NK-FILL-POLYGON)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4797,14 +4797,14 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1691:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1691:13"
 (CFFI:DEFCFUN ("nk_push_scissor" NK-PUSH-SCISSOR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1692:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1692:13"
 (CFFI:DEFCFUN ("nk_draw_image" NK-DRAW-IMAGE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4813,7 +4813,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1693:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1693:13"
 (CFFI:DEFCFUN ("nk_draw_text" NK-DRAW-TEXT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-COMMAND-BUFFER)))
@@ -4825,7 +4825,7 @@
   (ARG7 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1694:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1694:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk__next" NK--NEXT)
@@ -4834,7 +4834,7 @@
   (ARG2 (:POINTER (:STRUCT NK-COMMAND))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1695:33"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1695:33"
 (CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 0))
 
 (CFFI:DEFCFUN ("nk__begin" NK--BEGIN)
@@ -4842,14 +4842,14 @@
   (ARG1 (:POINTER (:STRUCT NK-CONTEXT))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1702:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1702:8"
 (CFFI:DEFCSTRUCT (NK-MOUSE-BUTTON :SIZE 16)
   (DOWN :INT :OFFSET 0)
   (CLICKED :UNSIGNED-INT :OFFSET 4)
   (CLICKED-POS (:STRUCT NK-VEC2) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1708:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1708:8"
 (CFFI:DEFCSTRUCT (NK-MOUSE :SIZE 80)
   (BUTTONS (:ARRAY (:STRUCT NK-MOUSE-BUTTON) 3) :OFFSET 0)
   (POS (:STRUCT NK-VEC2) :OFFSET 48)
@@ -4861,33 +4861,33 @@
   (UNGRAB :UNSIGNED-CHAR :OFFSET 78))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1719:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1719:8"
 (CFFI:DEFCSTRUCT (NK-KEY :SIZE 8)
   (DOWN :INT :OFFSET 0)
   (CLICKED :UNSIGNED-INT :OFFSET 4))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1724:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1724:8"
 (CFFI:DEFCSTRUCT (NK-KEYBOARD :SIZE 252)
   (KEYS (:ARRAY (:STRUCT NK-KEY) 29) :OFFSET 0)
   (TEXT (:ARRAY :CHAR 16) :OFFSET 232)
   (TEXT-LEN :INT :OFFSET 248))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1730:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1730:8"
 (CFFI:DEFCSTRUCT (NK-INPUT :SIZE 332)
   (KEYBOARD (:STRUCT NK-KEYBOARD) :OFFSET 0)
   (MOUSE (:STRUCT NK-MOUSE) :OFFSET 252))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1735:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1735:12"
 (CFFI:DEFCFUN ("nk_input_has_mouse_click" NK-INPUT-HAS-MOUSE-CLICK)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-BUTTONS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1736:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1736:12"
 (CFFI:DEFCFUN ("nk_input_has_mouse_click_in_rect"
                NK-INPUT-HAS-MOUSE-CLICK-IN-RECT)
     :INT
@@ -4896,7 +4896,7 @@
   (ARG3 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1737:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1737:12"
 (CFFI:DEFCFUN ("nk_input_has_mouse_click_down_in_rect"
                NK-INPUT-HAS-MOUSE-CLICK-DOWN-IN-RECT)
     :INT
@@ -4906,7 +4906,7 @@
   (DOWN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1738:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1738:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_click_in_rect"
                NK-INPUT-IS-MOUSE-CLICK-IN-RECT)
     :INT
@@ -4915,7 +4915,7 @@
   (ARG3 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1739:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1739:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_click_down_in_rect"
                NK-INPUT-IS-MOUSE-CLICK-DOWN-IN-RECT)
     :INT
@@ -4925,7 +4925,7 @@
   (DOWN :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1740:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1740:12"
 (CFFI:DEFCFUN ("nk_input_any_mouse_click_in_rect"
                NK-INPUT-ANY-MOUSE-CLICK-IN-RECT)
     :INT
@@ -4933,7 +4933,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1741:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1741:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_prev_hovering_rect"
                NK-INPUT-IS-MOUSE-PREV-HOVERING-RECT)
     :INT
@@ -4941,7 +4941,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1742:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1742:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_hovering_rect"
                NK-INPUT-IS-MOUSE-HOVERING-RECT)
     :INT
@@ -4949,7 +4949,7 @@
   (ARG2 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1743:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1743:12"
 (CFFI:DEFCFUN ("nk_input_mouse_clicked" NK-INPUT-MOUSE-CLICKED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
@@ -4957,59 +4957,59 @@
   (ARG3 (:STRUCT NK-RECT)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1744:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1744:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_down" NK-INPUT-IS-MOUSE-DOWN)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-BUTTONS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1745:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1745:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_pressed" NK-INPUT-IS-MOUSE-PRESSED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-BUTTONS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1746:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1746:12"
 (CFFI:DEFCFUN ("nk_input_is_mouse_released" NK-INPUT-IS-MOUSE-RELEASED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-BUTTONS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1747:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1747:12"
 (CFFI:DEFCFUN ("nk_input_is_key_pressed" NK-INPUT-IS-KEY-PRESSED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-KEYS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1748:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1748:12"
 (CFFI:DEFCFUN ("nk_input_is_key_released" NK-INPUT-IS-KEY-RELEASED)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-KEYS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1749:12"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1749:12"
 (CFFI:DEFCFUN ("nk_input_is_key_down" NK-INPUT-IS-KEY-DOWN)
     :INT
   (ARG1 (:POINTER (:STRUCT NK-INPUT)))
   (ARG2 NK-KEYS))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1771:19"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1771:19"
 (CFFI:DEFCTYPE NK-DRAW-INDEX NK-USHORT)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1772:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1772:6"
 (CFFI:DEFCENUM NK-DRAW-LIST-STROKE
   (NK-STROKE-OPEN 0)
   (NK-STROKE-CLOSED 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1779:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1779:6"
 (CFFI:DEFCENUM NK-DRAW-VERTEX-LAYOUT-ATTRIBUTE
   (NK-VERTEX-POSITION 0)
   (NK-VERTEX-COLOR 1)
@@ -5017,7 +5017,7 @@
   (NK-VERTEX-ATTRIBUTE-COUNT 3))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1786:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1786:6"
 (CFFI:DEFCENUM NK-DRAW-VERTEX-LAYOUT-FORMAT
   (NK-FORMAT-SCHAR 0)
   (NK-FORMAT-SSHORT 1)
@@ -5042,43 +5042,43 @@
   (NK-FORMAT-COUNT 18))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1814:8"
-(CFFI:DEFCSTRUCT (NK-DRAW-VERTEX-LAYOUT-ELEMENT :SIZE 16)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1814:8"
+(CFFI:DEFCSTRUCT (NK-DRAW-VERTEX-LAYOUT-ELEMENT :SIZE 12)
   (ATTRIBUTE NK-DRAW-VERTEX-LAYOUT-ATTRIBUTE :OFFSET 0)
   (FORMAT NK-DRAW-VERTEX-LAYOUT-FORMAT :OFFSET 4)
   (OFFSET NK-SIZE :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1820:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1820:8"
 (CFFI:DEFCSTRUCT (NK-DRAW-COMMAND :SIZE 32)
   (ELEM-COUNT :UNSIGNED-INT :OFFSET 0)
   (CLIP-RECT (:STRUCT NK-RECT) :OFFSET 4)
   (TEXTURE NK-HANDLE :OFFSET 24))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1832:8"
-(CFFI:DEFCSTRUCT (NK-DRAW-LIST :SIZE 232)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1832:8"
+(CFFI:DEFCSTRUCT (NK-DRAW-LIST :SIZE 216)
   (CONFIG (:STRUCT NK-CONVERT-CONFIG) :OFFSET 0)
-  (CLIP-RECT (:STRUCT NK-RECT) :OFFSET 64)
-  (BUFFER (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 80)
-  (VERTICES (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 88)
-  (ELEMENTS (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 96)
-  (ELEMENT-COUNT :UNSIGNED-INT :OFFSET 104)
-  (VERTEX-COUNT :UNSIGNED-INT :OFFSET 108)
-  (CMD-OFFSET NK-SIZE :OFFSET 112)
-  (CMD-COUNT :UNSIGNED-INT :OFFSET 120)
-  (PATH-COUNT :UNSIGNED-INT :OFFSET 124)
-  (PATH-OFFSET :UNSIGNED-INT :OFFSET 128)
-  (CIRCLE-VTX (:ARRAY (:STRUCT NK-VEC2) 12) :OFFSET 132))
+  (CLIP-RECT (:STRUCT NK-RECT) :OFFSET 56)
+  (BUFFER (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 72)
+  (VERTICES (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 80)
+  (ELEMENTS (:POINTER (:STRUCT NK-BUFFER)) :OFFSET 88)
+  (ELEMENT-COUNT :UNSIGNED-INT :OFFSET 96)
+  (VERTEX-COUNT :UNSIGNED-INT :OFFSET 100)
+  (CMD-OFFSET NK-SIZE :OFFSET 104)
+  (CMD-COUNT :UNSIGNED-INT :OFFSET 108)
+  (PATH-COUNT :UNSIGNED-INT :OFFSET 112)
+  (PATH-OFFSET :UNSIGNED-INT :OFFSET 116)
+  (CIRCLE-VTX (:ARRAY (:STRUCT NK-VEC2) 12) :OFFSET 120))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1851:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1851:13"
 (CFFI:DEFCFUN ("nk_draw_list_init" NK-DRAW-LIST-INIT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1852:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1852:13"
 (CFFI:DEFCFUN ("nk_draw_list_setup" NK-DRAW-LIST-SETUP)
     :VOID
   (CANVAS (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5088,20 +5088,20 @@
   (ELEMENTS (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1853:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1853:13"
 (CFFI:DEFCFUN ("nk_draw_list_clear" NK-DRAW-LIST-CLEAR)
     :VOID
   (LIST (:POINTER (:STRUCT NK-DRAW-LIST))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1857:38"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1857:38"
 (CFFI:DEFCFUN ("nk__draw_list_begin" NK--DRAW-LIST-BEGIN)
     (:POINTER (:STRUCT NK-DRAW-COMMAND))
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
   (ARG2 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1858:38"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1858:38"
 (CFFI:DEFCFUN ("nk__draw_list_next" NK--DRAW-LIST-NEXT)
     (:POINTER (:STRUCT NK-DRAW-COMMAND))
   (ARG1 (:POINTER (:STRUCT NK-DRAW-COMMAND)))
@@ -5109,27 +5109,27 @@
   (ARG3 (:POINTER (:STRUCT NK-DRAW-LIST))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1859:38"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1859:38"
 (CFFI:DEFCFUN ("nk__draw_list_end" NK--DRAW-LIST-END)
     (:POINTER (:STRUCT NK-DRAW-COMMAND))
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
   (ARG2 (:POINTER (:STRUCT NK-BUFFER))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1863:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1863:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_clear" NK-DRAW-LIST-PATH-CLEAR)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST))))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1864:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1864:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_line_to" NK-DRAW-LIST-PATH-LINE-TO)
     :VOID
   (LIST (:POINTER (:STRUCT NK-DRAW-LIST)))
   (POS (:STRUCT NK-VEC2)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1865:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1865:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_arc_to_fast" NK-DRAW-LIST-PATH-ARC-TO-FAST)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5139,7 +5139,7 @@
   (A-MAX :INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1866:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1866:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_arc_to" NK-DRAW-LIST-PATH-ARC-TO)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5150,7 +5150,7 @@
   (SEGMENTS :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1867:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1867:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_rect_to" NK-DRAW-LIST-PATH-RECT-TO)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5159,7 +5159,7 @@
   (ROUNDING :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1868:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1868:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_curve_to" NK-DRAW-LIST-PATH-CURVE-TO)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5169,14 +5169,14 @@
   (NUM-SEGMENTS :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1869:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1869:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_fill" NK-DRAW-LIST-PATH-FILL)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
   (ARG2 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1870:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1870:13"
 (CFFI:DEFCFUN ("nk_draw_list_path_stroke" NK-DRAW-LIST-PATH-STROKE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5185,7 +5185,7 @@
   (THICKNESS :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1873:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1873:13"
 (CFFI:DEFCFUN ("nk_draw_list_stroke_line" NK-DRAW-LIST-STROKE-LINE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5195,7 +5195,7 @@
   (THICKNESS :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1874:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1874:13"
 (CFFI:DEFCFUN ("nk_draw_list_stroke_rect" NK-DRAW-LIST-STROKE-RECT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5205,7 +5205,7 @@
   (THICKNESS :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1875:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1875:13"
 (CFFI:DEFCFUN ("nk_draw_list_stroke_triangle" NK-DRAW-LIST-STROKE-TRIANGLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5216,7 +5216,7 @@
   (THICKNESS :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1876:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1876:13"
 (CFFI:DEFCFUN ("nk_draw_list_stroke_circle" NK-DRAW-LIST-STROKE-CIRCLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5227,7 +5227,7 @@
   (THICKNESS :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1877:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1877:13"
 (CFFI:DEFCFUN ("nk_draw_list_stroke_curve" NK-DRAW-LIST-STROKE-CURVE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5240,7 +5240,7 @@
   (THICKNESS :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1878:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1878:13"
 (CFFI:DEFCFUN ("nk_draw_list_stroke_poly_line" NK-DRAW-LIST-STROKE-POLY-LINE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5252,7 +5252,7 @@
   (ARG7 NK-ANTI-ALIASING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1881:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1881:13"
 (CFFI:DEFCFUN ("nk_draw_list_fill_rect" NK-DRAW-LIST-FILL-RECT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5261,7 +5261,7 @@
   (ROUNDING :FLOAT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1882:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1882:13"
 (CFFI:DEFCFUN ("nk_draw_list_fill_rect_multi_color"
                NK-DRAW-LIST-FILL-RECT-MULTI-COLOR)
     :VOID
@@ -5273,7 +5273,7 @@
   (BOTTOM (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1883:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1883:13"
 (CFFI:DEFCFUN ("nk_draw_list_fill_triangle" NK-DRAW-LIST-FILL-TRIANGLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5283,7 +5283,7 @@
   (ARG5 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1884:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1884:13"
 (CFFI:DEFCFUN ("nk_draw_list_fill_circle" NK-DRAW-LIST-FILL-CIRCLE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5293,7 +5293,7 @@
   (SEGS :UNSIGNED-INT))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1885:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1885:13"
 (CFFI:DEFCFUN ("nk_draw_list_fill_poly_convex" NK-DRAW-LIST-FILL-POLY-CONVEX)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5303,7 +5303,7 @@
   (ARG5 NK-ANTI-ALIASING))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1888:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1888:13"
 (CFFI:DEFCFUN ("nk_draw_list_add_image" NK-DRAW-LIST-ADD-IMAGE)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5312,7 +5312,7 @@
   (ARG4 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1889:13"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1889:13"
 (CFFI:DEFCFUN ("nk_draw_list_add_text" NK-DRAW-LIST-ADD-TEXT)
     :VOID
   (ARG1 (:POINTER (:STRUCT NK-DRAW-LIST)))
@@ -5324,31 +5324,31 @@
   (ARG7 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1901:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1901:6"
 (CFFI:DEFCENUM NK-STYLE-ITEM-TYPE
   (NK-STYLE-ITEM-COLOR 0)
   (NK-STYLE-ITEM-IMAGE 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1906:7"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1906:7"
 (CFFI:DEFCUNION (NK-STYLE-ITEM-DATA :SIZE 24)
   (IMAGE (:STRUCT NK-IMAGE))
   (COLOR (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1911:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1911:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-ITEM :SIZE 32)
   (TYPE NK-STYLE-ITEM-TYPE :OFFSET 0)
   (DATA (:UNION NK-STYLE-ITEM-DATA) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1916:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1916:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-TEXT :SIZE 12)
   (COLOR (:STRUCT NK-COLOR) :OFFSET 0)
   (PADDING (:STRUCT NK-VEC2) :OFFSET 4))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1921:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1921:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-BUTTON :SIZE 176)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5369,7 +5369,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 168))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1948:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1948:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-TOGGLE :SIZE 240)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5391,7 +5391,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 232))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1978:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1978:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-SELECTABLE :SIZE 280)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5416,7 +5416,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 272))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2013:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2013:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-SLIDER :SIZE 640)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5445,7 +5445,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 632))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2052:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2052:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-PROGRESS :SIZE 256)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5465,7 +5465,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 248))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2078:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2078:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-SCROLLBAR :SIZE 616)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5490,7 +5490,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 608))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2111:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2111:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-EDIT :SIZE 800)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5516,7 +5516,7 @@
   (ROW-PADDING :FLOAT :OFFSET 792))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2145:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2145:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-PROPERTY :SIZE 1312)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5538,7 +5538,7 @@
   (DRAW-END FUNCTION-POINTER :OFFSET 1304))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2176:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2176:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-CHART :SIZE 64)
   (BACKGROUND (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (BORDER-COLOR (:STRUCT NK-COLOR) :OFFSET 32)
@@ -5549,7 +5549,7 @@
   (PADDING (:STRUCT NK-VEC2) :OFFSET 52))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2189:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2189:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-COMBO :SIZE 352)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5572,7 +5572,7 @@
   (SPACING (:STRUCT NK-VEC2) :OFFSET 340))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2220:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2220:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-TAB :SIZE 784)
   (BACKGROUND (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (BORDER-COLOR (:STRUCT NK-COLOR) :OFFSET 32)
@@ -5590,13 +5590,13 @@
   (SPACING (:STRUCT NK-VEC2) :OFFSET 772))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2242:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2242:6"
 (CFFI:DEFCENUM NK-STYLE-HEADER-ALIGN
   (NK-HEADER-LEFT 0)
   (NK-HEADER-RIGHT 1))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2247:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2247:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-WINDOW-HEADER :SIZE 504)
   (NORMAL (:STRUCT NK-STYLE-ITEM) :OFFSET 0)
   (HOVER (:STRUCT NK-STYLE-ITEM) :OFFSET 32)
@@ -5615,7 +5615,7 @@
   (SPACING (:STRUCT NK-VEC2) :OFFSET 492))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2272:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2272:8"
 (CFFI:DEFCSTRUCT (NK-STYLE-WINDOW :SIZE 712)
   (HEADER (:STRUCT NK-STYLE-WINDOW-HEADER) :OFFSET 0)
   (FIXED-BACKGROUND (:STRUCT NK-STYLE-ITEM) :OFFSET 504)
@@ -5646,7 +5646,7 @@
   (TOOLTIP-PADDING (:STRUCT NK-VEC2) :OFFSET 700))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2306:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2306:8"
 (CFFI:DEFCSTRUCT (NK-STYLE :SIZE 7536)
   (FONT (:POINTER (:STRUCT NK-USER-FONT)) :OFFSET 0)
   (CURSORS (:ARRAY (:POINTER (:STRUCT NK-CURSOR)) 7) :OFFSET 8)
@@ -5672,24 +5672,24 @@
   (WINDOW (:STRUCT NK-STYLE-WINDOW) :OFFSET 6824))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2332:29"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2332:29"
 (CFFI:DEFCFUN ("nk_style_item_image" NK-STYLE-ITEM-IMAGE)
     (:STRUCT NK-STYLE-ITEM)
   (IMG (:STRUCT NK-IMAGE)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2333:29"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2333:29"
 (CFFI:DEFCFUN ("nk_style_item_color" NK-STYLE-ITEM-COLOR)
     (:STRUCT NK-STYLE-ITEM)
   (ARG1 (:STRUCT NK-COLOR)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2334:29"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2334:29"
 (CFFI:DEFCFUN ("nk_style_item_hide" NK-STYLE-ITEM-HIDE)
     (:STRUCT NK-STYLE-ITEM))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2343:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2343:8"
 (CFFI:DEFCSTRUCT (NK-CHART-SLOT :SIZE 40)
   (TYPE NK-CHART-TYPE :OFFSET 0)
   (COLOR (:STRUCT NK-COLOR) :OFFSET 4)
@@ -5702,7 +5702,7 @@
   (INDEX :INT :OFFSET 36))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2353:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2353:8"
 (CFFI:DEFCSTRUCT (NK-CHART :SIZE 180)
   (SLOTS (:ARRAY (:STRUCT NK-CHART-SLOT) 4) :OFFSET 0)
   (SLOT :INT :OFFSET 160)
@@ -5712,7 +5712,7 @@
   (H :FLOAT :OFFSET 176))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2359:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2359:8"
 (CFFI:DEFCSTRUCT (NK-ROW-LAYOUT :SIZE 64)
   (TYPE :INT :OFFSET 0)
   (INDEX :INT :OFFSET 4)
@@ -5727,16 +5727,16 @@
   (TREE-DEPTH :INT :OFFSET 56))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2372:8"
-(CFFI:DEFCSTRUCT (NK-POPUP-BUFFER :SIZE 40)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2372:8"
+(CFFI:DEFCSTRUCT (NK-POPUP-BUFFER :SIZE 20)
   (BEGIN NK-SIZE :OFFSET 0)
-  (PARENT NK-SIZE :OFFSET 8)
-  (LAST NK-SIZE :OFFSET 16)
-  (END NK-SIZE :OFFSET 24)
-  (ACTIVE :INT :OFFSET 32))
+  (PARENT NK-SIZE :OFFSET 4)
+  (LAST NK-SIZE :OFFSET 8)
+  (END NK-SIZE :OFFSET 12)
+  (ACTIVE :INT :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2380:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2380:8"
 (CFFI:DEFCSTRUCT (NK-MENU-STATE :SIZE 20)
   (X :FLOAT :OFFSET 0)
   (Y :FLOAT :OFFSET 4)
@@ -5745,8 +5745,8 @@
   (OFFSET (:STRUCT NK-SCROLL) :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2385:8"
-(CFFI:DEFCSTRUCT (NK-PANEL :SIZE 400)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2385:8"
+(CFFI:DEFCSTRUCT (NK-PANEL :SIZE 376)
   (FLAGS NK-FLAGS :OFFSET 0)
   (BOUNDS (:STRUCT NK-RECT) :OFFSET 4)
   (OFFSET (:POINTER (:STRUCT NK-SCROLL)) :OFFSET 24)
@@ -5761,16 +5761,16 @@
   (MENU (:STRUCT NK-MENU-STATE) :OFFSET 76)
   (ROW (:STRUCT NK-ROW-LAYOUT) :OFFSET 96)
   (CHART (:STRUCT NK-CHART) :OFFSET 160)
-  (POPUP-BUFFER (:STRUCT NK-POPUP-BUFFER) :OFFSET 344)
-  (BUFFER (:POINTER (:STRUCT NK-COMMAND-BUFFER)) :OFFSET 384)
-  (PARENT (:POINTER (:STRUCT NK-PANEL)) :OFFSET 392))
+  (POPUP-BUFFER (:STRUCT NK-POPUP-BUFFER) :OFFSET 340)
+  (BUFFER (:POINTER (:STRUCT NK-COMMAND-BUFFER)) :OFFSET 360)
+  (PARENT (:POINTER (:STRUCT NK-PANEL)) :OFFSET 368))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2410:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2410:8"
 (CFFI:DEFCSTRUCT (NK-TABLE :SIZE 0))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2411:6"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2411:6"
 (CFFI:DEFBITFIELD NK-WINDOW-FLAGS
   (NK-WINDOW-PRIVATE 512)
   (NK-WINDOW-DYNAMIC 1024)
@@ -5789,7 +5789,7 @@
   (NK-WINDOW-REMOVE-ROM 8388608))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2444:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2444:8"
 (CFFI:DEFCSTRUCT (NK-WINDOW :SIZE 0))
 
 (CFFI:DEFCSTRUCT (NK-POPUP-STATE :SIZE 40)
@@ -5803,7 +5803,7 @@
   (ACTIVE-CON :UNSIGNED-INT :OFFSET 32))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2454:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2454:8"
 (CFFI:DEFCSTRUCT (NK-EDIT-STATE :SIZE 40)
   (NAME NK-HASH :OFFSET 0)
   (SEQ :UNSIGNED-INT :OFFSET 4)
@@ -5818,7 +5818,7 @@
   (SINGLE-LINE :UNSIGNED-CHAR :OFFSET 37))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2467:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2467:8"
 (CFFI:DEFCSTRUCT (NK-PROPERTY-STATE :SIZE 96)
   (ACTIVE :INT :OFFSET 0)
   (PREV :INT :OFFSET 4)
@@ -5831,10 +5831,10 @@
   (STATE :INT :OFFSET 92))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2478:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2478:8"
 (CFFI:DEFCSTRUCT (NK-TABLE :SIZE 0))
 
-(CFFI:DEFCSTRUCT (NK-WINDOW :SIZE 400)
+(CFFI:DEFCSTRUCT (NK-WINDOW :SIZE 392)
   (SEQ :UNSIGNED-INT :OFFSET 0)
   (NAME NK-HASH :OFFSET 4)
   (NAME-STRING (:ARRAY :CHAR 64) :OFFSET 8)
@@ -5842,106 +5842,106 @@
   (BOUNDS (:STRUCT NK-RECT) :OFFSET 76)
   (SCROLLBAR (:STRUCT NK-SCROLL) :OFFSET 92)
   (BUFFER (:STRUCT NK-COMMAND-BUFFER) :OFFSET 96)
-  (LAYOUT (:POINTER (:STRUCT NK-PANEL)) :OFFSET 160)
-  (SCROLLBAR-HIDING-TIMER :FLOAT :OFFSET 168)
-  (PROPERTY (:STRUCT NK-PROPERTY-STATE) :OFFSET 172)
-  (POPUP (:STRUCT NK-POPUP-STATE) :OFFSET 272)
-  (EDIT (:STRUCT NK-EDIT-STATE) :OFFSET 312)
-  (SCROLLED :UNSIGNED-INT :OFFSET 352)
-  (TABLES (:POINTER (:STRUCT NK-TABLE)) :OFFSET 360)
-  (TABLE-COUNT :UNSIGNED-SHORT :OFFSET 368)
-  (TABLE-SIZE :UNSIGNED-SHORT :OFFSET 370)
-  (NEXT (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 376)
-  (PREV (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 384)
-  (PARENT (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 392))
+  (LAYOUT (:POINTER (:STRUCT NK-PANEL)) :OFFSET 152)
+  (SCROLLBAR-HIDING-TIMER :FLOAT :OFFSET 160)
+  (PROPERTY (:STRUCT NK-PROPERTY-STATE) :OFFSET 164)
+  (POPUP (:STRUCT NK-POPUP-STATE) :OFFSET 264)
+  (EDIT (:STRUCT NK-EDIT-STATE) :OFFSET 304)
+  (SCROLLED :UNSIGNED-INT :OFFSET 344)
+  (TABLES (:POINTER (:STRUCT NK-TABLE)) :OFFSET 352)
+  (TABLE-COUNT :UNSIGNED-SHORT :OFFSET 360)
+  (TABLE-SIZE :UNSIGNED-SHORT :OFFSET 362)
+  (NEXT (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 368)
+  (PREV (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 376)
+  (PARENT (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 384))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2548:1 <Spelling=<scratch space>:4:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2548:1 <Spelling=<scratch space>:5:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-STYLE-ITEM-ELEMENT :SIZE 40)
   (ADDRESS (:POINTER (:STRUCT NK-STYLE-ITEM)) :OFFSET 0)
   (OLD-VALUE (:STRUCT NK-STYLE-ITEM) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2549:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2549:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-FLOAT-ELEMENT :SIZE 16)
   (ADDRESS (:POINTER :FLOAT) :OFFSET 0)
   (OLD-VALUE :FLOAT :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2550:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2550:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-VEC2-ELEMENT :SIZE 16)
   (ADDRESS (:POINTER (:STRUCT NK-VEC2)) :OFFSET 0)
   (OLD-VALUE (:STRUCT NK-VEC2) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2551:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2551:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-FLAGS-ELEMENT :SIZE 16)
   (ADDRESS (:POINTER NK-FLAGS) :OFFSET 0)
   (OLD-VALUE NK-FLAGS :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2552:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2552:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-COLOR-ELEMENT :SIZE 16)
   (ADDRESS (:POINTER (:STRUCT NK-COLOR)) :OFFSET 0)
   (OLD-VALUE (:STRUCT NK-COLOR) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2553:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2553:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-USER-FONT-ELEMENT :SIZE 16)
   (ADDRESS (:POINTER (:POINTER (:STRUCT NK-USER-FONT))) :OFFSET 0)
   (OLD-VALUE (:POINTER (:STRUCT NK-USER-FONT)) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2554:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2554:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-BUTTON-BEHAVIOR-ELEMENT :SIZE 16)
   (ADDRESS (:POINTER NK-BUTTON-BEHAVIOR) :OFFSET 0)
   (OLD-VALUE NK-BUTTON-BEHAVIOR :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2556:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2556:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-STYLE-ITEM :SIZE 648)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-STYLE-ITEM-ELEMENT) 16) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2557:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2557:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-FLOAT :SIZE 520)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-FLOAT-ELEMENT) 32) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2558:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2558:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-VEC2 :SIZE 264)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-VEC2-ELEMENT) 16) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2559:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2559:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-FLAGS :SIZE 520)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-FLAGS-ELEMENT) 32) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2560:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2560:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-COLOR :SIZE 520)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-COLOR-ELEMENT) 32) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2561:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2561:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-USER-FONT :SIZE 136)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-USER-FONT-ELEMENT) 8) :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2562:1 <Spelling=<scratch space>:8:1>"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2562:1 <Spelling=<scratch space>:9:1>"
 (CFFI:DEFCSTRUCT (NK-CONFIG-STACK-BUTTON-BEHAVIOR :SIZE 136)
   (HEAD :INT :OFFSET 0)
   (ELEMENTS (:ARRAY (:STRUCT NK-CONFIG-STACK-BUTTON-BEHAVIOR-ELEMENT) 8)
    :OFFSET 8))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2564:8"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2564:8"
 (CFFI:DEFCSTRUCT (NK-CONFIGURATION-STACKS :SIZE 2744)
   (STYLE-ITEMS (:STRUCT NK-CONFIG-STACK-STYLE-ITEM) :OFFSET 0)
   (FLOATS (:STRUCT NK-CONFIG-STACK-FLOAT) :OFFSET 648)
@@ -5952,132 +5952,127 @@
   (BUTTON-BEHAVIORS (:STRUCT NK-CONFIG-STACK-BUTTON-BEHAVIOR) :OFFSET 2608))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2579:8"
-(CFFI:DEFCSTRUCT (NK-TABLE :SIZE 424)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2579:8"
+(CFFI:DEFCSTRUCT (NK-TABLE :SIZE 416)
   (SEQ :UNSIGNED-INT :OFFSET 0)
-  (KEYS (:ARRAY NK-HASH 50) :OFFSET 4)
-  (VALUES (:ARRAY NK-UINT 50) :OFFSET 204)
-  (NEXT (:POINTER (:STRUCT NK-TABLE)) :OFFSET 408)
-  (PREV (:POINTER (:STRUCT NK-TABLE)) :OFFSET 416))
+  (KEYS (:ARRAY NK-HASH 49) :OFFSET 4)
+  (VALUES (:ARRAY NK-UINT 49) :OFFSET 200)
+  (NEXT (:POINTER (:STRUCT NK-TABLE)) :OFFSET 400)
+  (PREV (:POINTER (:STRUCT NK-TABLE)) :OFFSET 408))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2586:7"
-(CFFI:DEFCUNION (NK-PAGE-DATA :SIZE 424)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2586:7"
+(CFFI:DEFCUNION (NK-PAGE-DATA :SIZE 416)
   (TBL (:STRUCT NK-TABLE))
   (WIN (:STRUCT NK-WINDOW)))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2591:8"
-(CFFI:DEFCSTRUCT (NK-PAGE-ELEMENT :SIZE 440)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2591:8"
+(CFFI:DEFCSTRUCT (NK-PAGE-ELEMENT :SIZE 432)
   (DATA (:UNION NK-PAGE-DATA) :OFFSET 0)
-  (NEXT (:POINTER :VOID) :OFFSET 424)
-  (PREV (:POINTER :VOID) :OFFSET 432))
+  (NEXT (:POINTER :VOID) :OFFSET 416)
+  (PREV (:POINTER :VOID) :OFFSET 424))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2597:8"
-(CFFI:DEFCSTRUCT (NK-PAGE :SIZE 456)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2597:8"
+(CFFI:DEFCSTRUCT (NK-PAGE :SIZE 448)
   (SIZE :UNSIGNED-INT :OFFSET 0)
   (NEXT (:POINTER :VOID) :OFFSET 8)
   (WIN (:ARRAY (:STRUCT NK-PAGE-ELEMENT) 1) :OFFSET 16))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2603:8"
-(CFFI:DEFCSTRUCT (NK-POOL :SIZE 72)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2603:8"
+(CFFI:DEFCSTRUCT (NK-POOL :SIZE 64)
   (ALLOC (:STRUCT NK-ALLOCATOR) :OFFSET 0)
   (TYPE NK-ALLOCATION-TYPE :OFFSET 24)
   (PAGE-COUNT :UNSIGNED-INT :OFFSET 28)
   (PAGES (:POINTER (:STRUCT NK-PAGE)) :OFFSET 32)
   (FREELIST (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 40)
   (CAPACITY :UNSIGNED-INT :OFFSET 48)
-  (SIZE NK-SIZE :OFFSET 56)
-  (CAP NK-SIZE :OFFSET 64))
+  (SIZE NK-SIZE :OFFSET 52)
+  (CAP NK-SIZE :OFFSET 56))
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2614:8"
-(CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 16584)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2614:8"
+(CFFI:DEFCSTRUCT (NK-CONTEXT :SIZE 16488)
   (INPUT (:STRUCT NK-INPUT) :OFFSET 0)
   (STYLE (:STRUCT NK-STYLE) :OFFSET 336)
   (MEMORY (:STRUCT NK-BUFFER) :OFFSET 7872)
-  (CLIP (:STRUCT NK-CLIPBOARD) :OFFSET 7992)
-  (LAST-WIDGET-STATE NK-FLAGS :OFFSET 8016)
-  (DELTA-TIME-SECONDS :FLOAT :OFFSET 8020)
-  (BUTTON-BEHAVIOR NK-BUTTON-BEHAVIOR :OFFSET 8024)
-  (STACKS (:STRUCT NK-CONFIGURATION-STACKS) :OFFSET 8032)
-  (DRAW-LIST (:STRUCT NK-DRAW-LIST) :OFFSET 10776)
-  (TEXT-EDIT (:STRUCT NK-TEXT-EDIT) :OFFSET 11008)
-  (OVERLAY (:STRUCT NK-COMMAND-BUFFER) :OFFSET 16392)
-  (BUILD :INT :OFFSET 16456)
-  (USE-POOL :INT :OFFSET 16460)
-  (POOL (:STRUCT NK-POOL) :OFFSET 16464)
-  (BEGIN (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16536)
-  (END (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16544)
-  (ACTIVE (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16552)
-  (CURRENT (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16560)
-  (FREELIST (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 16568)
-  (COUNT :UNSIGNED-INT :OFFSET 16576)
-  (SEQ :UNSIGNED-INT :OFFSET 16580))
+  (CLIP (:STRUCT NK-CLIPBOARD) :OFFSET 7960)
+  (LAST-WIDGET-STATE NK-FLAGS :OFFSET 7984)
+  (DELTA-TIME-SECONDS :FLOAT :OFFSET 7988)
+  (BUTTON-BEHAVIOR NK-BUTTON-BEHAVIOR :OFFSET 7992)
+  (STACKS (:STRUCT NK-CONFIGURATION-STACKS) :OFFSET 8000)
+  (DRAW-LIST (:STRUCT NK-DRAW-LIST) :OFFSET 10744)
+  (TEXT-EDIT (:STRUCT NK-TEXT-EDIT) :OFFSET 10960)
+  (OVERLAY (:STRUCT NK-COMMAND-BUFFER) :OFFSET 16312)
+  (BUILD :INT :OFFSET 16368)
+  (USE-POOL :INT :OFFSET 16372)
+  (POOL (:STRUCT NK-POOL) :OFFSET 16376)
+  (BEGIN (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16440)
+  (END (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16448)
+  (ACTIVE (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16456)
+  (CURRENT (:POINTER (:STRUCT NK-WINDOW)) :OFFSET 16464)
+  (FREELIST (:POINTER (:STRUCT NK-PAGE-ELEMENT)) :OFFSET 16472)
+  (COUNT :UNSIGNED-INT :OFFSET 16480)
+  (SEQ :UNSIGNED-INT :OFFSET 16484))
 
 
-;; "/usr/include/sys/cdefs.h:212:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:320:9"
-
-;; "/usr/include/features.h:272:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-XOPEN2K8 1)
+;; "/usr/include/stdint.h:179:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST16-MAX 32767)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:318:9"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/nuklear-with-options.h:4:9"
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:319:9"
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/nuklear-with-options.h:7:9"
 
-;; "/usr/include/bits/wordsize.h:4:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --WORDSIZE 64)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/nuklear-with-options.h:5:9"
 
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/nuklear-with-options.h:6:9"
 
-;; "/usr/include/features.h:264:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-XOPEN2K 1)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:205:9"
 
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/nuklear-with-options.h:9:9"
 
-;; "/usr/include/sys/cdefs.h:247:10"
+;; "/usr/include/stdint.h:126:11"
 
-;; "/usr/include/bits/wordsize.h:12:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --SYSCALL-WORDSIZE 64)
-
-
-;; "/usr/include/bits/wordsize.h:10:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --WORDSIZE-TIME64-COMPAT32 1)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:218:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-UTF-SIZE 4)
 
 
-;; "/usr/include/features.h:256:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX199309 1)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/nuklear-with-options.h:8:9"
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:220:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-INPUT-MAX 16)
 
 
-;; "/usr/include/features.h:260:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX199506 1)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2663:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-UTF-INVALID 65533)
 
 
-;; "/usr/include/features.h:248:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX 1)
+;; "/usr/include/stdint.h:23:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -STDINT-H 1)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:331:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FILE-LINE "/tmp/tmp5GEXGEG5.tmp:14" :TEST
-                                  'COMMON-LISP:EQUAL)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:226:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-SCROLLBAR-HIDING-TIMEOUT 4.0)
 
 
-;; "/usr/include/features.h:252:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX2 1)
+;; "/usr/include/features.h:125:10"
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:223:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-MAX-NUMBER-BUFFER 64)
+
+
+;; "/usr/include/features.h:185:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -DEFAULT-SOURCE 1)
 
 
 ;; "/usr/include/features.h:266:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-ISOC95 1)
-
-
-;; "/usr/include/features.h:268:10"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-ISOC99 1)
 
 
-;; "/usr/include/features.h:196:10"
+;; "/usr/include/features.h:191:10"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-ISOC11 1)
 
 
@@ -6085,553 +6080,424 @@
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT -FEATURES-H 1)
 
 
-;; "/usr/include/stdint.h:23:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -STDINT-H 1)
+;; "/usr/include/features.h:254:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX199309 1)
 
-;; Skipped "__CLANG_STDINT_H" due to filters
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:223:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-MAX-NUMBER-BUFFER 64)
+;; "/usr/include/features.h:250:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX2 1)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:226:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-SCROLLBAR-HIDING-TIMEOUT 4.0)
+;; "/usr/include/features.h:246:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX 1)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:218:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-UTF-SIZE 4)
+;; "/usr/include/features.h:264:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-ISOC95 1)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:220:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-INPUT-MAX 16)
-
-
-;; "/usr/include/sys/cdefs.h:294:10"
-
-;; "/usr/include/sys/cdefs.h:303:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2663:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-UTF-INVALID 65533)
-
-
-;; "/usr/include/sys/cdefs.h:308:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:205:9"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear-with-options.h:6:9"
-
-;; "/usr/include/sys/cdefs.h:327:11"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear-with-options.h:4:9"
-
-;; "/usr/include/sys/cdefs.h:363:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear-with-options.h:5:9"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2509:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-BUTTON-BEHAVIOR-STACK-SIZE 8)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2513:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FONT-STACK-SIZE 8)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2664:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-MAX-FLOAT-PRECISION 2)
-
-
-;; "/usr/include/gnu/stubs-64.h:10:9"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2662:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-PI 3.141593)
-
-
-;; "/usr/include/sys/cdefs.h:125:10"
-
-;; "/usr/include/sys/cdefs.h:126:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1813:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-VERTEX-LAYOUT-END 3)
-
-
-;; "/usr/include/features.h:328:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-ATFILE 1)
-
-
-;; "/usr/include/features.h:316:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-MISC 1)
-
-
-;; "/usr/include/features.h:324:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-SVID 1)
-
-
-;; "/usr/include/features.h:320:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-BSD 1)
-
-
-;; "/usr/include/stdint.h:52:10"
-
-;; "/usr/include/sys/cdefs.h:92:9"
-
-;; "/usr/include/sys/cdefs.h:56:11"
-
-;; "/usr/include/sys/cdefs.h:123:10"
-
-;; "/usr/include/bits/wchar.h:46:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --WCHAR-MIN -2147483648)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2407:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-WINDOW-MAX-NAME 64)
-
-
-;; "/usr/include/sys/cdefs.h:122:10"
-
-;; "/usr/include/bits/wchar.h:20:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -BITS-WCHAR-H 1)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2577:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-VALUE-PAGE-CAPACITY 50)
-
-
-;; "/usr/include/bits/wchar.h:34:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --WCHAR-MAX 2147483647)
-
-
-;; "/usr/include/sys/cdefs.h:101:10"
-
-;; "/usr/include/sys/cdefs.h:93:9"
-
-;; "/usr/include/stdint.h:35:10"
-
-;; "/usr/include/sys/cdefs.h:102:10"
-
-;; "/usr/include/gnu/stubs-64.h:17:9"
-
-;; "/usr/include/gnu/stubs-64.h:18:9"
-
-;; "/usr/include/stdc-predef.h:57:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-NO-THREADS-- 1)
-
-
-;; "/usr/include/gnu/stubs-64.h:19:9"
-
-;; "/usr/include/stdc-predef.h:54:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-ISO-10646-- 201103)
-
-
-;; "/usr/include/gnu/stubs-64.h:15:9"
-
-;; "/usr/include/features.h:365:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --GLIBC-- 2)
-
-
-;; "/usr/include/gnu/stubs-64.h:16:9"
-
-;; "/usr/include/features.h:361:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --GNU-LIBRARY-- 6)
-
-
-;; "/usr/include/stdc-predef.h:41:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-IEC-559-- 1)
-
-
-;; "/usr/include/gnu/stubs-64.h:22:9"
-
-;; "/usr/include/gnu/stubs-64.h:23:9"
-
-;; "/usr/include/stdc-predef.h:49:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-IEC-559-COMPLEX-- 1)
-
-
-;; "/usr/include/gnu/stubs-64.h:20:9"
-
-;; "/usr/include/gnu/stubs-64.h:21:9"
-
-;; "/usr/include/sys/cdefs.h:55:11"
-
-;; "/usr/include/sys/cdefs.h:45:11"
-
-;; "/usr/include/sys/cdefs.h:46:11"
-
-;; "/usr/include/gnu/stubs-64.h:13:9"
-
-;; "/usr/include/features.h:366:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --GLIBC-MINOR-- 19)
-
-
-;; "/usr/include/gnu/stubs-64.h:14:9"
-
-;; "/usr/include/sys/cdefs.h:19:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -SYS-CDEFS-H 1)
-
-
-;; "/usr/include/gnu/stubs-64.h:11:9"
-
-;; "/usr/include/gnu/stubs-64.h:12:9"
-
-;; "/usr/include/features.h:190:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -SVID-SOURCE 1)
-
-
-;; "/usr/include/stdint.h:168:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT32-MAX 4294967295)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear-with-options.h:1:9"
-
-;; "/usr/include/stdint.h:167:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT16-MAX 65535)
-
-
-;; "/usr/include/stdint.h:166:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT8-MAX 255)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear-with-options.h:3:9"
-
-;; "/usr/include/features.h:225:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX-IMPLICITLY 1)
-
-
-;; "/usr/include/stdint.h:163:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT64-MAX 9223372036854775807)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear-with-options.h:2:9"
-
-;; "/usr/include/stdint.h:176:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST64-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:175:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST32-MIN -2147483648)
-
-
-;; "/usr/include/features.h:230:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -POSIX-C-SOURCE 200809)
-
-
-;; "/usr/include/features.h:228:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -POSIX-SOURCE 1)
-
-
-;; "/usr/include/stdint.h:174:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST16-MIN -32768)
-
-
-;; "/usr/include/features.h:188:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -BSD-SOURCE 1)
-
-
-;; "/usr/include/stdint.h:169:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT64-MAX -1)
-
-
-;; "/usr/include/stdint.h:156:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT16-MIN -32768)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2533:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-COLOR-STACK-SIZE 32)
-
-
-;; "/usr/include/stdint.h:155:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT8-MIN -128)
-
-
-;; "/usr/include/stdc-predef.h:19:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -STDC-PREDEF-H 1)
-
-
-;; "/usr/include/features.h:274:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -ATFILE-SOURCE 1)
-
-
-;; "/usr/include/stdint.h:162:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT32-MAX 2147483647)
-
-
-;; "/usr/include/stdint.h:161:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT16-MAX 32767)
-
-
-;; "/usr/include/stdint.h:160:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT8-MAX 127)
-
-
-;; "/usr/include/stdint.h:158:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT64-MIN -9223372036854775808)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2525:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-VECTOR-STACK-SIZE 16)
-
-
-;; "/usr/include/stdint.h:157:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT32-MIN -2147483648)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2517:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-STYLE-ITEM-STACK-SIZE 16)
-
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2521:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FLOAT-STACK-SIZE 32)
-
-
-;; "/usr/include/features.h:347:10"
+;; "/usr/include/features.h:337:10"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-FORTIFY-LEVEL 0)
 
 
-;; "/usr/include/stdint.h:120:11"
-
-;; "/usr/include/features.h:186:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -DEFAULT-SOURCE 1)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1182:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-TEXTEDIT-UNDOCHARCOUNT 999)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2529:9"
+;; "/usr/include/features.h:318:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-ATFILE 1)
+
+
+;; "/usr/include/features.h:314:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-MISC 1)
+
+
+;; "/usr/include/features.h:258:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX199506 1)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1178:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-TEXTEDIT-UNDOSTATECOUNT 99)
+
+
+;; "/usr/include/features.h:270:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-XOPEN2K8 1)
+
+
+;; "/usr/include/features.h:262:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-XOPEN2K 1)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2662:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-PI 3.141593)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2664:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-MAX-FLOAT-PRECISION 2)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2407:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-WINDOW-MAX-NAME 64)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:1813:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-VERTEX-LAYOUT-END 3)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2547:9"
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2521:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FLOAT-STACK-SIZE 32)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2525:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-VECTOR-STACK-SIZE 16)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2529:9"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FLAGS-STACK-SIZE 32)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2340:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-CHART-MAX-SLOT 4)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2533:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-COLOR-STACK-SIZE 32)
 
 
-;; "/usr/include/features.h:131:10"
-
-;; "/usr/include/stdint.h:173:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST8-MIN -128)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2509:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-BUTTON-BEHAVIOR-STACK-SIZE 8)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:2547:9"
-
-;; "/usr/include/stdint.h:185:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST16-MAX 65535)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2513:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FONT-STACK-SIZE 8)
 
 
-;; "/usr/include/stdint.h:184:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST8-MAX 255)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2517:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-STYLE-ITEM-STACK-SIZE 16)
 
 
-;; "/usr/include/stdint.h:187:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST64-MAX -1)
-
-
-;; "/usr/include/stdint.h:186:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST32-MAX 4294967295)
-
-
-;; "/usr/include/stdint.h:204:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST32-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:203:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST16-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:212:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST8-MAX 255)
-
-
-;; "/usr/include/stdint.h:209:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST64-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:191:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST8-MIN -128)
-
-
-;; "/usr/include/stdint.h:199:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST64-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:236:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTMAX-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:193:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST16-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:201:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST8-MAX 127)
-
-
-;; "/usr/include/stdint.h:241:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINTMAX-MAX -1)
-
-
-;; "/usr/include/stdint.h:215:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST32-MAX 18446744073709551615)
-
-
-;; "/usr/include/stdint.h:194:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST32-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:214:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST16-MAX 18446744073709551615)
-
-
-;; "/usr/include/stdint.h:225:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTPTR-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:220:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST64-MAX -1)
-
-
-;; "/usr/include/stdint.h:238:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTMAX-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:226:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTPTR-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:249:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT PTRDIFF-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:178:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST8-MAX 127)
-
-
-;; "/usr/include/stdint.h:248:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT PTRDIFF-MIN -9223372036854775808)
-
-
-;; "/usr/include/stdint.h:179:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST16-MAX 32767)
-
-
-;; "/usr/include/stdint.h:180:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST32-MAX 2147483647)
-
-
-;; "/usr/include/stdint.h:181:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST64-MAX 9223372036854775807)
-
-
-;; "/usr/include/stdint.h:275:10"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT WINT-MAX 4294967295)
-
-
-;; "/usr/include/stdint.h:269:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT WCHAR-MIN -2147483648)
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2577:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-VALUE-PAGE-CAPACITY 49)
 
 
 ;; "/usr/include/stdint.h:257:10"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT SIG-ATOMIC-MAX 2147483647)
 
 
-;; "/usr/include/stdint.h:261:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT SIZE-MAX 18446744073709551615)
+;; "/usr/include/stdint.h:35:10"
+
+;; "/usr/include/stdint.h:273:11"
+
+;; "/usr/include/stdint.h:266:12"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT SIZE-MAX 4294967295)
+
+
+;; "/usr/include/stdint.h:251:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT PTRDIFF-MIN -2147483648)
+
+
+;; "/usr/include/features.h:356:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --GLIBC-MINOR-- 24)
+
+
+;; "/usr/include/stdint.h:241:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINTMAX-MAX -1)
 
 
 ;; "/usr/include/stdint.h:256:10"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT SIG-ATOMIC-MIN -2147483648)
 
 
-;; "/usr/include/stdint.h:227:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINTPTR-MAX 18446744073709551615)
+;; "/usr/include/stdint.h:252:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT PTRDIFF-MAX 2147483647)
 
 
-;; "/usr/include/stdint.h:274:10"
+;; "/usr/include/stdint.h:230:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTPTR-MAX 2147483647)
+
+
+;; "/usr/include/stdc-predef.h:49:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-IEC-559-COMPLEX-- 1)
+
+
+;; "/usr/include/stdint.h:229:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTPTR-MIN -2147483648)
+
+
+;; "/usr/include/stdc-predef.h:57:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-ISO-10646-- 201605)
+
+
+;; "/usr/include/features.h:351:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --GNU-LIBRARY-- 6)
+
+
+;; "/usr/include/stdc-predef.h:60:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-NO-THREADS-- 1)
+
+
+;; "/usr/include/stdint.h:236:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTMAX-MIN -9223372036854775808)
+
+
+;; "/usr/include/features.h:355:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --GLIBC-- 2)
+
+
+;; "/usr/include/stdint.h:238:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INTMAX-MAX 9223372036854775807)
+
+
+;; "/usr/include/stdc-predef.h:19:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -STDC-PREDEF-H 1)
+
+
+;; "/usr/include/stdint.h:217:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST16-MAX 4294967295)
+
+
+;; "/usr/include/stdc-predef.h:41:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --STDC-IEC-559-- 1)
+
+
+;; "/usr/include/stdint.h:209:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST64-MAX 9223372036854775807)
+
+
+;; "/usr/include/stdint.h:220:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST64-MAX -1)
+
+
+;; "/usr/include/stdint.h:212:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST8-MAX 255)
+
+
+;; "/usr/include/stdint.h:218:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-FAST32-MAX 4294967295)
+
+
+;; "/usr/include/stdint.h:231:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINTPTR-MAX 4294967295)
+
+
+;; "/usr/include/features.h:272:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -ATFILE-SOURCE 1)
+
+
+;; "/usr/include/features.h:220:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT --USE-POSIX-IMPLICITLY 1)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:331:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-FILE-LINE "/tmp/tmp5GEXGEG5.tmp:74" :TEST
+                                  'COMMON-LISP:EQUAL)
+
+
+;; "/usr/include/stdint.h:274:11"
+
+;; "/usr/include/features.h:223:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -POSIX-SOURCE 1)
+
+
+;; "/usr/include/features.h:225:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT -POSIX-C-SOURCE 200809)
+
+
+;; "/usr/include/stdint.h:167:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT16-MAX 65535)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:320:9"
+
+;; "/usr/include/stdint.h:168:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT32-MAX 4294967295)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:327:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-UNDEFINED -1.0)
+
+
+;; "/usr/include/stdint.h:169:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT64-MAX -1)
+
+
+;; "/usr/include/stdint.h:173:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST8-MIN -128)
+
+
+;; "/usr/include/stdint.h:174:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST16-MIN -32768)
+
+
+;; "/usr/include/stdint.h:160:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT8-MAX 127)
+
+
+;; "/usr/include/stdint.h:161:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT16-MAX 32767)
+
+
+;; "/usr/include/stdint.h:162:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT32-MAX 2147483647)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:315:9"
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:318:9"
+
+;; "/usr/include/stdint.h:163:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT64-MAX 9223372036854775807)
+
+
+;; "/usr/include/stdint.h:166:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT8-MAX 255)
+
+
+;; "/usr/include/stdint.h:155:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT8-MIN -128)
+
+
+;; "/usr/include/stdint.h:156:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT16-MIN -32768)
+
+
+;; "/usr/include/stdint.h:157:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT32-MIN -2147483648)
+
+
+;; "/usr/include/stdint.h:158:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT64-MIN -9223372036854775808)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:319:9"
+
+;; "/usr/include/stdint.h:199:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST64-MIN -9223372036854775808)
+
+
+;; "/usr/include/stdint.h:201:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST8-MAX 127)
+
+
+;; "/usr/include/stdint.h:206:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST16-MAX 2147483647)
+
+
+;; "/usr/include/stdint.h:207:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST32-MAX 2147483647)
+
+
+;; "/usr/include/stdint.h:186:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST32-MAX 4294967295)
+
+
+;; "/usr/include/stdint.h:191:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST8-MIN -128)
+
+
+;; "/usr/include/stdint.h:187:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST64-MAX -1)
+
+
+;; "/usr/include/stdint.h:196:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST16-MIN -2147483648)
+
+
+;; "/usr/include/stdint.h:197:11"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-FAST32-MIN -2147483648)
+
+
+;; "/usr/include/stdint.h:278:10"
 (ALEXANDRIA.0.DEV:DEFINE-CONSTANT WINT-MIN 0)
 
 
-;; "/usr/include/stdint.h:270:11"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT WCHAR-MAX 2147483647)
+;; "/usr/include/stdint.h:180:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST32-MAX 2147483647)
 
 
-;; "/usr/include/sys/cdefs.h:151:10"
-
-;; "/usr/include/sys/cdefs.h:318:10"
-
-;; "/usr/include/sys/cdefs.h:328:11"
-
-;; "/usr/include/sys/cdefs.h:255:10"
-
-;; "/usr/include/sys/cdefs.h:134:9"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:315:9"
-
-;; "/usr/include/sys/cdefs.h:246:10"
-
-;; "/usr/include/sys/cdefs.h:237:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1178:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-TEXTEDIT-UNDOSTATECOUNT 99)
+;; "/usr/include/stdint.h:279:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT WINT-MAX 4294967295)
 
 
-;; "/usr/include/sys/cdefs.h:230:10"
-
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:1182:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-TEXTEDIT-UNDOCHARCOUNT 999)
+;; "/usr/include/stdint.h:181:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST64-MAX 9223372036854775807)
 
 
-;; "/home/baggers/quicklisp/local-projects/raw-bindings-nuklear/spec/nuklear.h:327:9"
-(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-UNDEFINED -1.0)
+;; "/usr/include/stdint.h:52:10"
+
+;; "/usr/include/stdint.h:184:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST8-MAX 255)
+
+
+;; "/usr/include/stdint.h:185:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT UINT-LEAST16-MAX 65535)
+
+
+;; "/usr/include/stdint.h:175:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST32-MIN -2147483648)
+
+
+;; "/usr/include/stdint.h:176:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST64-MIN -9223372036854775808)
+
+
+;; "/usr/include/stdint.h:178:10"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT INT-LEAST8-MAX 127)
+
+
+;; "/home/baggers/quicklisp/local-projects/the-works/raw-bindings-nuklear/spec/../lib/nuklear.h:2340:9"
+(ALEXANDRIA.0.DEV:DEFINE-CONSTANT NK-CHART-MAX-SLOT 4)
 
 (COMMON-LISP:EXPORT
  '(--GLIBC-- --GLIBC-MINOR-- --GNU-LIBRARY-- --STDC-IEC-559--
-   --STDC-IEC-559-COMPLEX-- --STDC-ISO-10646-- --STDC-NO-THREADS--
-   --SYSCALL-WORDSIZE --USE-ATFILE --USE-BSD --USE-FORTIFY-LEVEL --USE-ISOC11
-   --USE-ISOC95 --USE-ISOC99 --USE-MISC --USE-POSIX --USE-POSIX-IMPLICITLY
-   --USE-POSIX199309 --USE-POSIX199506 --USE-POSIX2 --USE-SVID --USE-XOPEN2K
-   --USE-XOPEN2K8 --WCHAR-MAX --WCHAR-MIN --WORDSIZE --WORDSIZE-TIME64-COMPAT32
-   -ATFILE-SOURCE -BITS-WCHAR-H -BSD-SOURCE -DEFAULT-SOURCE -FEATURES-H
-   -POSIX-C-SOURCE -POSIX-SOURCE -STDC-PREDEF-H -STDINT-H -SVID-SOURCE
-   -SYS-CDEFS-H A A A-MAX A-MIN ACTIVE ACTIVE ACTIVE-CON ADDRESS ALIGN ALIGN
-   ALIGNMENT ALLOC ALLOCATED ARC-SEGMENT-COUNT ASCENT AT-X AT-Y ATLAS ATTRIBUTE
-   B B BACKGROUND BAR-ACTIVE BAR-FILLED BAR-HEIGHT BAR-HOVER BAR-NORMAL BASE
-   BEGIN BORDER BORDER-COLOR BORDER-CURSOR BOTTOM BOTTOM BOUNDS BOUNDS BUFFER
-   BUFFER BUILD BUTTON BUTTON-BEHAVIOR BUTTON-BEHAVIORS BUTTON-PADDING BUTTONS
-   BYTE-LEN C C CALLS CANVAS CAP CAPACITY CENTER CHAR-STORAGE CHART CHECKBOX
-   CIRCLE-SEGMENT-COUNT CIRCLE-VTX CLICKED CLICKED-POS CLIP CLIP-RECT
-   CLOSE-BUTTON CLOSE-SYMBOL CLOSED CMD-COUNT CMD-OFFSET CMDS CNT CODEPOINT COL
-   COL COLOR COLOR COLORS COLS COLUMNS COMBO COMBO-BORDER COMBO-BORDER-COLOR
-   COMBO-COUNT COMBO-PADDING CON-COUNT CON-OLD CONFIG CONFIG CONTENT-PADDING
-   CONTEXTUAL-BORDER CONTEXTUAL-BORDER-COLOR CONTEXTUAL-BUTTON
-   CONTEXTUAL-PADDING COORD-TYPE COPY CP0 CP1 CTRL CTX CUR CURRENT CURSOR
-   CURSOR-ACTIVE CURSOR-AT-END-OF-LINE CURSOR-BORDER CURSOR-BORDER-COLOR
-   CURSOR-HOVER CURSOR-LAST CURSOR-NORMAL CURSOR-ROUNDING CURSOR-SIZE
-   CURSOR-TEXT-HOVER CURSOR-TEXT-NORMAL CURSOR-VISIBLE CURSORS
-   CURVE-SEGMENT-COUNT CUSTOM CX CX CY CY DATA DATA DEC-BUTTON DEC-SYMBOL
-   DEFAULT-FONT DELETE-LENGTH DELTA DELTA-TIME-SECONDS DESCENT DOWN DOWN
-   DRAW-BEGIN DRAW-END DRAW-LIST EDIT ELEM-COUNT ELEMENT-COUNT ELEMENTS
-   ELEMENTS END ENDPTR FALLBACK FALLBACK-CODEPOINT FALLBACK-GLYPH FILE-PATH
-   FILLED FILTER FIXED-BACKGROUND FLAGS FLAGS FLOATS FONT FONT-HEIGHT FONT-NUM
-   FONTS FOOTER-HEIGHT FOREGROUND FREE FREELIST G G GLOBAL-ALPHA GLYPH-COUNT
-   GLYPH-OFFSET GLYPHS GRAB GRABBED GROUP-BORDER GROUP-BORDER-COLOR
-   GROUP-PADDING GROW-FACTOR H H HANDLE HAS-PREFERRED-X HAS-SCROLLING HASH HEAD
-   HEADER HEADER-HEIGHT HEIGHT HEIGHT HIGHLIGHT HOVER HOVER-ACTIVE HSV HSV-OUT
-   HSVA HSVA-OUT I ID ID IMAGE IMAGE-PADDING IMG IMG INC-BUTTON INC-PER-PIXEL
-   INC-SYMBOL INDENT INDEX INDEX INFO INITIAL-STATE INITIALIZED INPUT
-   INSERT-LENGTH INT-FAST16-MAX INT-FAST16-MIN INT-FAST16-T INT-FAST32-MAX
-   INT-FAST32-MIN INT-FAST32-T INT-FAST64-MAX INT-FAST64-MIN INT-FAST64-T
-   INT-FAST8-MAX INT-FAST8-MIN INT-FAST8-T INT-LEAST16-MAX INT-LEAST16-MIN
-   INT-LEAST16-T INT-LEAST32-MAX INT-LEAST32-MIN INT-LEAST32-T INT-LEAST64-MAX
-   INT-LEAST64-MIN INT-LEAST64-T INT-LEAST8-MAX INT-LEAST8-MIN INT-LEAST8-T
-   INT16-MAX INT16-MIN INT16-T INT32-MAX INT32-MIN INT32-T INT64-MAX INT64-MIN
-   INT64-T INT8-MAX INT8-MIN INT8-T INTMAX-MAX INTMAX-MIN INTMAX-T INTPTR-MAX
-   INTPTR-MIN INTPTR-T ITEM ITEM-GETTER ITEM-HEIGHT ITEM-HEIGHT ITEM-OFFSET
-   ITEM-WIDTH ITEM-WIDTH ITEMS ITEMS-SEPARATED-BY-SEPARATOR
-   ITEMS-SEPARATED-BY-ZEROS KEY KEYBOARD KEYS LABEL-ACTIVE LABEL-HOVER
-   LABEL-NORMAL LABEL-PADDING LAST-WIDGET-STATE LAYOUT LAYOUT LEFT LEFT LEN LEN
-   LINE-AA LINE-THICHNESS LINE-THICKNESS LINE-THICKNESS MARKER MAX-HEIGHT
-   MAX-VALUE MAX-X MAXIMIZE-SYMBOL MEMORY MEMORY MENU MENU-BORDER
-   MENU-BORDER-COLOR MENU-BUTTON MENU-PADDING MERGE-MODE MIN-SIZE MIN-VALUE
-   MINIMIZE-BUTTON MINIMIZE-SYMBOL MODE MODIFYABLE MOUSE N NAME NAME
-   NAME-STRING NEEDED NEXT NK--BEGIN NK--DRAW-BEGIN NK--DRAW-END
-   NK--DRAW-LIST-BEGIN NK--DRAW-LIST-END NK--DRAW-LIST-NEXT NK--DRAW-NEXT
-   NK--NEXT NK-ALLOCATION-TYPE NK-ALLOCATOR NK-ANTI-ALIASING
-   NK-ANTI-ALIASING-OFF NK-ANTI-ALIASING-ON NK-BAKED-FONT NK-BEGIN
-   NK-BEGIN-TITLED NK-BUFFER NK-BUFFER-ALLOCATION-TYPE NK-BUFFER-BACK
+   --STDC-IEC-559-COMPLEX-- --STDC-ISO-10646-- --STDC-NO-THREADS-- --USE-ATFILE
+   --USE-FORTIFY-LEVEL --USE-ISOC11 --USE-ISOC95 --USE-ISOC99 --USE-MISC
+   --USE-POSIX --USE-POSIX-IMPLICITLY --USE-POSIX199309 --USE-POSIX199506
+   --USE-POSIX2 --USE-XOPEN2K --USE-XOPEN2K8 -ATFILE-SOURCE -DEFAULT-SOURCE
+   -FEATURES-H -POSIX-C-SOURCE -POSIX-SOURCE -STDC-PREDEF-H -STDINT-H A A A-MAX
+   A-MIN ACTIVE ACTIVE ACTIVE-CON ADDRESS ALIGN ALIGN ALIGNMENT ALLOC ALLOCATED
+   ARC-SEGMENT-COUNT ASCENT AT-X AT-Y ATLAS ATTRIBUTE B B BACKGROUND BAR-ACTIVE
+   BAR-FILLED BAR-HEIGHT BAR-HOVER BAR-NORMAL BASE BEGIN BORDER BORDER-COLOR
+   BORDER-CURSOR BOTTOM BOTTOM BOUNDS BOUNDS BUFFER BUFFER BUILD BUTTON
+   BUTTON-BEHAVIOR BUTTON-BEHAVIORS BUTTON-PADDING BUTTONS BYTE-LEN C C CALLS
+   CANVAS CAP CAPACITY CENTER CHAR-STORAGE CHART CHECKBOX CIRCLE-SEGMENT-COUNT
+   CIRCLE-VTX CLICKED CLICKED-POS CLIP CLIP-RECT CLOSE-BUTTON CLOSE-SYMBOL
+   CLOSED CMD-COUNT CMD-OFFSET CMDS CNT CODEPOINT COL COL COLOR COLOR COLORS
+   COLS COLUMNS COMBO COMBO-BORDER COMBO-BORDER-COLOR COMBO-COUNT COMBO-PADDING
+   CON-COUNT CON-OLD CONFIG CONFIG CONTENT-PADDING CONTEXTUAL-BORDER
+   CONTEXTUAL-BORDER-COLOR CONTEXTUAL-BUTTON CONTEXTUAL-PADDING COORD-TYPE COPY
+   CP0 CP1 CTRL CTX CUR CURRENT CURSOR CURSOR-ACTIVE CURSOR-AT-END-OF-LINE
+   CURSOR-BORDER CURSOR-BORDER-COLOR CURSOR-HOVER CURSOR-LAST CURSOR-NORMAL
+   CURSOR-ROUNDING CURSOR-SIZE CURSOR-TEXT-HOVER CURSOR-TEXT-NORMAL
+   CURSOR-VISIBLE CURSORS CURVE-SEGMENT-COUNT CUSTOM CX CX CY CY DATA DATA
+   DEC-BUTTON DEC-SYMBOL DEFAULT-FONT DELETE-LENGTH DELTA DELTA-TIME-SECONDS
+   DESCENT DOWN DOWN DRAW-BEGIN DRAW-END DRAW-LIST EDIT ELEM-COUNT
+   ELEMENT-COUNT ELEMENTS ELEMENTS END ENDPTR FALLBACK FALLBACK-CODEPOINT
+   FALLBACK-GLYPH FILE-PATH FILLED FILTER FIXED-BACKGROUND FLAGS FLAGS FLOATS
+   FONT FONT-HEIGHT FONT-NUM FONTS FOOTER-HEIGHT FOREGROUND FREE FREELIST G G
+   GLOBAL-ALPHA GLYPH-COUNT GLYPH-OFFSET GLYPHS GRAB GRABBED GROUP-BORDER
+   GROUP-BORDER-COLOR GROUP-PADDING GROW-FACTOR H H HANDLE HAS-PREFERRED-X
+   HAS-SCROLLING HASH HEAD HEADER HEADER-HEIGHT HEIGHT HEIGHT HIGHLIGHT HOVER
+   HOVER-ACTIVE HSV HSV-OUT HSVA HSVA-OUT I ID ID IMAGE IMAGE-PADDING IMG IMG
+   INC-BUTTON INC-PER-PIXEL INC-SYMBOL INDENT INDEX INDEX INFO INITIAL-STATE
+   INITIALIZED INPUT INSERT-LENGTH INT-FAST16-MAX INT-FAST16-MIN INT-FAST16-T
+   INT-FAST32-MAX INT-FAST32-MIN INT-FAST32-T INT-FAST64-MAX INT-FAST64-MIN
+   INT-FAST64-T INT-FAST8-MAX INT-FAST8-MIN INT-FAST8-T INT-LEAST16-MAX
+   INT-LEAST16-MIN INT-LEAST16-T INT-LEAST32-MAX INT-LEAST32-MIN INT-LEAST32-T
+   INT-LEAST64-MAX INT-LEAST64-MIN INT-LEAST64-T INT-LEAST8-MAX INT-LEAST8-MIN
+   INT-LEAST8-T INT16-MAX INT16-MIN INT16-T INT32-MAX INT32-MIN INT32-T
+   INT64-MAX INT64-MIN INT64-T INT8-MAX INT8-MIN INT8-T INTMAX-MAX INTMAX-MIN
+   INTMAX-T INTPTR-MAX INTPTR-MIN INTPTR-T ITEM ITEM-GETTER ITEM-HEIGHT
+   ITEM-HEIGHT ITEM-OFFSET ITEM-WIDTH ITEM-WIDTH ITEMS
+   ITEMS-SEPARATED-BY-SEPARATOR ITEMS-SEPARATED-BY-ZEROS KEY KEYBOARD KEYS
+   LABEL-ACTIVE LABEL-HOVER LABEL-NORMAL LABEL-PADDING LAST-WIDGET-STATE LAYOUT
+   LAYOUT LEFT LEFT LEN LEN LINE-AA LINE-THICHNESS LINE-THICKNESS
+   LINE-THICKNESS MARKER MAX-HEIGHT MAX-VALUE MAX-X MAXIMIZE-SYMBOL MEMORY
+   MEMORY MENU MENU-BORDER MENU-BORDER-COLOR MENU-BUTTON MENU-PADDING
+   MERGE-MODE MIN-SIZE MIN-VALUE MINIMIZE-BUTTON MINIMIZE-SYMBOL MODE
+   MODIFYABLE MOUSE N NAME NAME NAME-STRING NEEDED NEXT NK--BEGIN
+   NK--DRAW-BEGIN NK--DRAW-END NK--DRAW-LIST-BEGIN NK--DRAW-LIST-END
+   NK--DRAW-LIST-NEXT NK--DRAW-NEXT NK--NEXT NK-ALLOCATION-TYPE NK-ALLOCATOR
+   NK-ANTI-ALIASING NK-ANTI-ALIASING-OFF NK-ANTI-ALIASING-ON NK-BAKED-FONT
+   NK-BEGIN NK-BEGIN-TITLED NK-BUFFER NK-BUFFER-ALLOCATION-TYPE NK-BUFFER-BACK
    NK-BUFFER-CLEAR NK-BUFFER-DYNAMIC NK-BUFFER-FIXED NK-BUFFER-FREE
    NK-BUFFER-FRONT NK-BUFFER-INFO NK-BUFFER-INIT NK-BUFFER-INIT-DEFAULT
    NK-BUFFER-INIT-FIXED NK-BUFFER-MARK NK-BUFFER-MARKER NK-BUFFER-MAX
@@ -6898,9 +6764,9 @@
    UINT8-T UINTMAX-MAX UINTMAX-T UINTPTR-MAX UINTPTR-T UNDO UNDO-CHAR
    UNDO-CHAR-POINT UNDO-POINT UNDO-REC UNGRAB UNICODE USE-CLIPPING USE-POOL
    USERDATA USERDATA UV V V0 V1 VAL VALUE VALUE-GETTER VECTORS VERTEX-ALIGNMENT
-   VERTEX-COUNT VERTEX-LAYOUT VERTEX-SIZE VERTICES VERTICES W W WCHAR-MAX
-   WCHAR-MIN WHERE WHERE WIDGET-COUNT WIDTH WIDTH WIN WINDOW WINT-MAX WINT-MIN
-   X X X0 X0 X1 X1 X2 XADVANCE XY XYWH Y Y Y0 Y0 Y1 Y1 Y2)
+   VERTEX-COUNT VERTEX-LAYOUT VERTEX-SIZE VERTICES VERTICES W W WHERE WHERE
+   WIDGET-COUNT WIDTH WIDTH WIN WINDOW WINT-MAX WINT-MIN X X X0 X0 X1 X1 X2
+   XADVANCE XY XYWH Y Y Y0 Y0 Y1 Y1 Y2)
  '#:RAW-BINDINGS-NUKLEAR)
 
 (COMMON-LISP:DEFPARAMETER +FUNCTION-NAMES+
@@ -7367,74 +7233,67 @@
     ("INT16-T" . INT16-T) ("INT8-T" . INT8-T)))
 
 (COMMON-LISP:DEFPARAMETER +CONSTANT-NAMES+
-  '(("NK-UNDEFINED" . NK-UNDEFINED)
-    ("NK-TEXTEDIT-UNDOCHARCOUNT" . NK-TEXTEDIT-UNDOCHARCOUNT)
-    ("NK-TEXTEDIT-UNDOSTATECOUNT" . NK-TEXTEDIT-UNDOSTATECOUNT)
-    ("WCHAR-MAX" . WCHAR-MAX) ("WINT-MIN" . WINT-MIN)
-    ("UINTPTR-MAX" . UINTPTR-MAX) ("SIG-ATOMIC-MIN" . SIG-ATOMIC-MIN)
-    ("SIZE-MAX" . SIZE-MAX) ("SIG-ATOMIC-MAX" . SIG-ATOMIC-MAX)
-    ("WCHAR-MIN" . WCHAR-MIN) ("WINT-MAX" . WINT-MAX)
-    ("INT-LEAST64-MAX" . INT-LEAST64-MAX) ("INT-LEAST32-MAX" . INT-LEAST32-MAX)
-    ("INT-LEAST16-MAX" . INT-LEAST16-MAX) ("PTRDIFF-MIN" . PTRDIFF-MIN)
-    ("INT-LEAST8-MAX" . INT-LEAST8-MAX) ("PTRDIFF-MAX" . PTRDIFF-MAX)
-    ("INTPTR-MAX" . INTPTR-MAX) ("INTMAX-MAX" . INTMAX-MAX)
-    ("UINT-FAST64-MAX" . UINT-FAST64-MAX) ("INTPTR-MIN" . INTPTR-MIN)
-    ("UINT-FAST16-MAX" . UINT-FAST16-MAX) ("INT-FAST32-MIN" . INT-FAST32-MIN)
-    ("UINT-FAST32-MAX" . UINT-FAST32-MAX) ("UINTMAX-MAX" . UINTMAX-MAX)
-    ("INT-FAST8-MAX" . INT-FAST8-MAX) ("INT-FAST16-MIN" . INT-FAST16-MIN)
-    ("INTMAX-MIN" . INTMAX-MIN) ("INT-FAST64-MIN" . INT-FAST64-MIN)
-    ("INT-FAST8-MIN" . INT-FAST8-MIN) ("INT-FAST64-MAX" . INT-FAST64-MAX)
-    ("UINT-FAST8-MAX" . UINT-FAST8-MAX) ("INT-FAST16-MAX" . INT-FAST16-MAX)
-    ("INT-FAST32-MAX" . INT-FAST32-MAX) ("UINT-LEAST32-MAX" . UINT-LEAST32-MAX)
-    ("UINT-LEAST64-MAX" . UINT-LEAST64-MAX)
-    ("UINT-LEAST8-MAX" . UINT-LEAST8-MAX)
-    ("UINT-LEAST16-MAX" . UINT-LEAST16-MAX) ("INT-LEAST8-MIN" . INT-LEAST8-MIN)
-    ("NK-CHART-MAX-SLOT" . NK-CHART-MAX-SLOT)
-    ("NK-FLAGS-STACK-SIZE" . NK-FLAGS-STACK-SIZE)
-    ("-DEFAULT-SOURCE" . -DEFAULT-SOURCE)
-    ("--USE-FORTIFY-LEVEL" . --USE-FORTIFY-LEVEL)
-    ("NK-FLOAT-STACK-SIZE" . NK-FLOAT-STACK-SIZE)
-    ("NK-STYLE-ITEM-STACK-SIZE" . NK-STYLE-ITEM-STACK-SIZE)
-    ("INT32-MIN" . INT32-MIN) ("NK-VECTOR-STACK-SIZE" . NK-VECTOR-STACK-SIZE)
-    ("INT64-MIN" . INT64-MIN) ("INT8-MAX" . INT8-MAX) ("INT16-MAX" . INT16-MAX)
-    ("INT32-MAX" . INT32-MAX) ("-ATFILE-SOURCE" . -ATFILE-SOURCE)
-    ("-STDC-PREDEF-H" . -STDC-PREDEF-H) ("INT8-MIN" . INT8-MIN)
-    ("NK-COLOR-STACK-SIZE" . NK-COLOR-STACK-SIZE) ("INT16-MIN" . INT16-MIN)
-    ("UINT64-MAX" . UINT64-MAX) ("-BSD-SOURCE" . -BSD-SOURCE)
-    ("INT-LEAST16-MIN" . INT-LEAST16-MIN) ("-POSIX-SOURCE" . -POSIX-SOURCE)
-    ("-POSIX-C-SOURCE" . -POSIX-C-SOURCE) ("INT-LEAST32-MIN" . INT-LEAST32-MIN)
-    ("INT-LEAST64-MIN" . INT-LEAST64-MIN) ("INT64-MAX" . INT64-MAX)
+  '(("NK-CHART-MAX-SLOT" . NK-CHART-MAX-SLOT)
+    ("INT-LEAST8-MAX" . INT-LEAST8-MAX) ("INT-LEAST64-MIN" . INT-LEAST64-MIN)
+    ("INT-LEAST32-MIN" . INT-LEAST32-MIN)
+    ("UINT-LEAST16-MAX" . UINT-LEAST16-MAX)
+    ("UINT-LEAST8-MAX" . UINT-LEAST8-MAX) ("INT-LEAST64-MAX" . INT-LEAST64-MAX)
+    ("WINT-MAX" . WINT-MAX) ("INT-LEAST32-MAX" . INT-LEAST32-MAX)
+    ("WINT-MIN" . WINT-MIN) ("INT-FAST32-MIN" . INT-FAST32-MIN)
+    ("INT-FAST16-MIN" . INT-FAST16-MIN) ("UINT-LEAST64-MAX" . UINT-LEAST64-MAX)
+    ("INT-FAST8-MIN" . INT-FAST8-MIN) ("UINT-LEAST32-MAX" . UINT-LEAST32-MAX)
+    ("INT-FAST32-MAX" . INT-FAST32-MAX) ("INT-FAST16-MAX" . INT-FAST16-MAX)
+    ("INT-FAST8-MAX" . INT-FAST8-MAX) ("INT-FAST64-MIN" . INT-FAST64-MIN)
+    ("INT64-MIN" . INT64-MIN) ("INT32-MIN" . INT32-MIN)
+    ("INT16-MIN" . INT16-MIN) ("INT8-MIN" . INT8-MIN) ("UINT8-MAX" . UINT8-MAX)
+    ("INT64-MAX" . INT64-MAX) ("INT32-MAX" . INT32-MAX)
+    ("INT16-MAX" . INT16-MAX) ("INT8-MAX" . INT8-MAX)
+    ("INT-LEAST16-MIN" . INT-LEAST16-MIN) ("INT-LEAST8-MIN" . INT-LEAST8-MIN)
+    ("UINT64-MAX" . UINT64-MAX) ("NK-UNDEFINED" . NK-UNDEFINED)
+    ("UINT32-MAX" . UINT32-MAX) ("UINT16-MAX" . UINT16-MAX)
+    ("-POSIX-C-SOURCE" . -POSIX-C-SOURCE) ("-POSIX-SOURCE" . -POSIX-SOURCE)
+    ("NK-FILE-LINE" . NK-FILE-LINE)
     ("--USE-POSIX-IMPLICITLY" . --USE-POSIX-IMPLICITLY)
-    ("UINT8-MAX" . UINT8-MAX) ("UINT16-MAX" . UINT16-MAX)
-    ("UINT32-MAX" . UINT32-MAX) ("-SVID-SOURCE" . -SVID-SOURCE)
-    ("-SYS-CDEFS-H" . -SYS-CDEFS-H) ("--GLIBC-MINOR--" . --GLIBC-MINOR--)
-    ("--STDC-IEC-559-COMPLEX--" . --STDC-IEC-559-COMPLEX--)
+    ("-ATFILE-SOURCE" . -ATFILE-SOURCE) ("UINTPTR-MAX" . UINTPTR-MAX)
+    ("UINT-FAST32-MAX" . UINT-FAST32-MAX) ("UINT-FAST8-MAX" . UINT-FAST8-MAX)
+    ("UINT-FAST64-MAX" . UINT-FAST64-MAX) ("INT-FAST64-MAX" . INT-FAST64-MAX)
     ("--STDC-IEC-559--" . --STDC-IEC-559--)
-    ("--GNU-LIBRARY--" . --GNU-LIBRARY--) ("--GLIBC--" . --GLIBC--)
-    ("--STDC-ISO-10646--" . --STDC-ISO-10646--)
-    ("--STDC-NO-THREADS--" . --STDC-NO-THREADS--) ("--WCHAR-MAX" . --WCHAR-MAX)
+    ("UINT-FAST16-MAX" . UINT-FAST16-MAX) ("-STDC-PREDEF-H" . -STDC-PREDEF-H)
+    ("INTMAX-MAX" . INTMAX-MAX) ("--GLIBC--" . --GLIBC--)
+    ("INTMAX-MIN" . INTMAX-MIN) ("--STDC-NO-THREADS--" . --STDC-NO-THREADS--)
+    ("--GNU-LIBRARY--" . --GNU-LIBRARY--)
+    ("--STDC-ISO-10646--" . --STDC-ISO-10646--) ("INTPTR-MIN" . INTPTR-MIN)
+    ("--STDC-IEC-559-COMPLEX--" . --STDC-IEC-559-COMPLEX--)
+    ("INTPTR-MAX" . INTPTR-MAX) ("PTRDIFF-MAX" . PTRDIFF-MAX)
+    ("SIG-ATOMIC-MIN" . SIG-ATOMIC-MIN) ("UINTMAX-MAX" . UINTMAX-MAX)
+    ("--GLIBC-MINOR--" . --GLIBC-MINOR--) ("PTRDIFF-MIN" . PTRDIFF-MIN)
+    ("SIZE-MAX" . SIZE-MAX) ("SIG-ATOMIC-MAX" . SIG-ATOMIC-MAX)
     ("NK-VALUE-PAGE-CAPACITY" . NK-VALUE-PAGE-CAPACITY)
-    ("-BITS-WCHAR-H" . -BITS-WCHAR-H)
-    ("NK-WINDOW-MAX-NAME" . NK-WINDOW-MAX-NAME) ("--WCHAR-MIN" . --WCHAR-MIN)
-    ("--USE-BSD" . --USE-BSD) ("--USE-SVID" . --USE-SVID)
-    ("--USE-MISC" . --USE-MISC) ("--USE-ATFILE" . --USE-ATFILE)
-    ("NK-VERTEX-LAYOUT-END" . NK-VERTEX-LAYOUT-END) ("NK-PI" . NK-PI)
-    ("NK-MAX-FLOAT-PRECISION" . NK-MAX-FLOAT-PRECISION)
+    ("NK-STYLE-ITEM-STACK-SIZE" . NK-STYLE-ITEM-STACK-SIZE)
     ("NK-FONT-STACK-SIZE" . NK-FONT-STACK-SIZE)
     ("NK-BUTTON-BEHAVIOR-STACK-SIZE" . NK-BUTTON-BEHAVIOR-STACK-SIZE)
-    ("NK-UTF-INVALID" . NK-UTF-INVALID) ("NK-INPUT-MAX" . NK-INPUT-MAX)
-    ("NK-UTF-SIZE" . NK-UTF-SIZE)
-    ("NK-SCROLLBAR-HIDING-TIMEOUT" . NK-SCROLLBAR-HIDING-TIMEOUT)
-    ("NK-MAX-NUMBER-BUFFER" . NK-MAX-NUMBER-BUFFER) ("-STDINT-H" . -STDINT-H)
+    ("NK-COLOR-STACK-SIZE" . NK-COLOR-STACK-SIZE)
+    ("NK-FLAGS-STACK-SIZE" . NK-FLAGS-STACK-SIZE)
+    ("NK-VECTOR-STACK-SIZE" . NK-VECTOR-STACK-SIZE)
+    ("NK-FLOAT-STACK-SIZE" . NK-FLOAT-STACK-SIZE)
+    ("NK-VERTEX-LAYOUT-END" . NK-VERTEX-LAYOUT-END)
+    ("NK-WINDOW-MAX-NAME" . NK-WINDOW-MAX-NAME)
+    ("NK-MAX-FLOAT-PRECISION" . NK-MAX-FLOAT-PRECISION) ("NK-PI" . NK-PI)
+    ("--USE-XOPEN2K" . --USE-XOPEN2K) ("--USE-XOPEN2K8" . --USE-XOPEN2K8)
+    ("NK-TEXTEDIT-UNDOSTATECOUNT" . NK-TEXTEDIT-UNDOSTATECOUNT)
+    ("--USE-POSIX199506" . --USE-POSIX199506) ("--USE-MISC" . --USE-MISC)
+    ("--USE-ATFILE" . --USE-ATFILE)
+    ("NK-TEXTEDIT-UNDOCHARCOUNT" . NK-TEXTEDIT-UNDOCHARCOUNT)
+    ("--USE-FORTIFY-LEVEL" . --USE-FORTIFY-LEVEL)
+    ("--USE-ISOC95" . --USE-ISOC95) ("--USE-POSIX" . --USE-POSIX)
+    ("--USE-POSIX2" . --USE-POSIX2) ("--USE-POSIX199309" . --USE-POSIX199309)
     ("-FEATURES-H" . -FEATURES-H) ("--USE-ISOC11" . --USE-ISOC11)
-    ("--USE-ISOC99" . --USE-ISOC99) ("--USE-ISOC95" . --USE-ISOC95)
-    ("--USE-POSIX2" . --USE-POSIX2) ("NK-FILE-LINE" . NK-FILE-LINE)
-    ("--USE-POSIX" . --USE-POSIX) ("--USE-POSIX199506" . --USE-POSIX199506)
-    ("--USE-POSIX199309" . --USE-POSIX199309)
-    ("--WORDSIZE-TIME64-COMPAT32" . --WORDSIZE-TIME64-COMPAT32)
-    ("--SYSCALL-WORDSIZE" . --SYSCALL-WORDSIZE)
-    ("--USE-XOPEN2K" . --USE-XOPEN2K) ("--WORDSIZE" . --WORDSIZE)
-    ("--USE-XOPEN2K8" . --USE-XOPEN2K8)))
+    ("--USE-ISOC99" . --USE-ISOC99) ("-DEFAULT-SOURCE" . -DEFAULT-SOURCE)
+    ("NK-MAX-NUMBER-BUFFER" . NK-MAX-NUMBER-BUFFER)
+    ("NK-SCROLLBAR-HIDING-TIMEOUT" . NK-SCROLLBAR-HIDING-TIMEOUT)
+    ("-STDINT-H" . -STDINT-H) ("NK-UTF-INVALID" . NK-UTF-INVALID)
+    ("NK-INPUT-MAX" . NK-INPUT-MAX) ("NK-UTF-SIZE" . NK-UTF-SIZE)
+    ("INT-LEAST16-MAX" . INT-LEAST16-MAX)))
 
 (COMMON-LISP:DEFPARAMETER +ARGUMENT-NAMES+
   '(("FONT-HEIGHT" . FONT-HEIGHT) ("TEXTURE" . TEXTURE) ("CNT" . CNT)
